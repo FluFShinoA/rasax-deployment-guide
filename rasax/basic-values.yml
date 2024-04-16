@@ -5,7 +5,7 @@ nginx:
     enabled: true
     # connect LoadBalancer directly to VMs' internal IP
     # You get this value with: $ hostname -I
-    externalIPs: [YOUR.SERVERS.IP.ADDRESS]
+    externalIPs: [192.168.136.137]
 
 rasax:
     # initialUser is the user which is created upon the initial start of Rasa X
