@@ -1,0 +1,55 @@
+version: "3.1"
+
+stories:
+  - story: IS Guidance strong
+    steps:
+      - intent: ask_guidance_take_IS_course
+      - action: utter_ask_IS_fields_okay
+      - intent: affirm
+      - action: utter_ask_adaptation_okay_IS
+      - intent: affirm
+      - action: utter_problem_solving_okay_IS
+      - intent: affirm
+      - action: utter_strongly_recommend_IS
+  - story: IS Guidance medium 1
+    steps:
+      - intent: ask_guidance_take_IS_course
+      - action: utter_ask_IS_fields_okay
+      - intent: affirm
+      - action: utter_ask_adaptation_okay_IS
+      - or:
+          - intent: affirm
+          - intent: deny
+      - action: utter_problem_solving_okay_IS
+      - intent: deny
+      - action: utter_medium_recommend_IS
+
+  - story: IS Guidance medium 2
+    steps:
+      - intent: ask_guidance_take_IS_course
+      - action: utter_ask_IS_fields_okay
+      - intent: affirm
+      - action: utter_ask_adaptation_okay_IS
+      - intent: deny
+      - action: utter_problem_solving_okay_IS
+      - intent: affirm
+      - action: utter_medium_recommend_IS
+
+  - story: IS Guidance slight
+    steps:
+      - intent: ask_guidance_take_IS_course
+      - action: utter_ask_IS_fields_okay
+      - intent: deny
+      - action: utter_ask_willing_adjust_IS_okay
+      - intent: affirm
+      - action: utter_slight_recommend_IS
+
+  - story: IS Guidance EEEEEEE
+    steps:
+      - intent: ask_guidance_take_IS_course
+      - action: utter_ask_IS_fields_okay
+      - intent: deny
+      - action: utter_ask_willing_adjust_IS_okay
+      - intent: deny
+      - action: utter_not_recommend_IS
+

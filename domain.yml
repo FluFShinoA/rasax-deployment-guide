@@ -1,29 +1,1871 @@
 version: '3.0'
+intents:
+- access_neuvle
+- admission_process_query
+- affirm
+- ask_BSIT_benefits
+- ask_BSIT_required_skills
+- ask_DigiAni_benefits
+- ask_DigiAni_required_skills
+- ask_back_end_learning_materials
+- ask_desktop_develop_learning_materials
+- ask_game_artist_challenges
+- ask_game_artist_education
+- ask_game_artist_growth
+- ask_game_artist_salary
+- ask_game_artist_skills
+- ask_game_designer_challenges
+- ask_game_designer_education
+- ask_game_designer_growth
+- ask_game_designer_salary
+- ask_game_designer_skills
+- ask_game_designer_versus_artist
+- ask_game_programmer_challenges
+- ask_game_programmer_education
+- ask_game_programmer_growth
+- ask_game_programmer_salary
+- ask_game_programmer_skills
+- ask_guidance_take_IT_course
+- ask_guidance_take_digiani_course
+- ask_guidance_take_gamedev_course
+- ask_help_choose_jobs
+- ask_how_become_3d_modeler
+- ask_how_become_IT_audit_assistant
+- ask_how_become_IT_support
+- ask_how_become_QA_tester
+- ask_how_become_ad_builders
+- ask_how_become_animator
+- ask_how_become_associate_game_producer
+- ask_how_become_business_dev_specialist
+- ask_how_become_computer_programmer
+- ask_how_become_concept_artist
+- ask_how_become_creative_content_developer
+- ask_how_become_db_admin
+- ask_how_become_desktop_developer
+- ask_how_become_dev_ops
+- ask_how_become_mobile_developer
+- ask_how_become_motion_graphics_designer
+- ask_how_become_multimedia_designer
+- ask_how_become_network_engineer
+- ask_how_become_senior_game_sound_engineer
+- ask_how_become_system_admin
+- ask_how_become_system_integration_admin
+- ask_how_become_technical_director
+- ask_how_become_video_editor
+- ask_how_become_visual_effects_artist
+- ask_how_become_web_developer
+- ask_js_dev_learning_materials
+- ask_mobile_develop_learning_materials
+- ask_multimedia_designer
+- ask_narrative_designer_challenges
+- ask_narrative_designer_education
+- ask_narrative_designer_growth
+- ask_narrative_designer_salary
+- ask_narrative_designer_skills
+- ask_program_recommendation
+- ask_programs_offered_cics
+- ask_tuition_fee
+- ask_video_editor
+- ask_visual_effects_artist
+- ask_web_design_learning_materials
+- ask_what_3d_modeler
+- ask_what_IT_audit_assistant
+- ask_what_IT_support
+- ask_what_QA_tester
+- ask_what_ad_builders
+- ask_what_animator
+- ask_what_associate_game_producer
+- ask_what_business_dev_specialist
+- ask_what_computer_programmer
+- ask_what_concept_artist
+- ask_what_creative_content_developer
+- ask_what_db_admin
+- ask_what_desktop_developer
+- ask_what_dev_ops
+- ask_what_game_artist
+- ask_what_game_designer
+- ask_what_game_programmer
+- ask_what_mobile_developer
+- ask_what_motion_graphics_designer
+- ask_what_narrative_designer
+- ask_what_network_engineer
+- ask_what_senior_game_sound_engineer
+- ask_what_system_admin
+- ask_what_system_integration_admin
+- ask_what_technical_director
+- ask_what_web_developer
+- blis_query
+- bscs_careers_query
+- bscs_query
+- bsemc_careers_query
+- bsemc_digiani_careers_query
+- bsemc_digiani_query
+- bsemc_gamedev_careers_query
+- bsemc_gamedev_query
+- bsemc_query
+- bsis_careers_query
+- bsis_query
+- bsit_careers_query
+- bsit_query
+- deny
+- express_AI_interest
+- express_back_end_interest
+- express_comp_troubleshooting_interest
+- express_cyber_sec_interest
+- express_data_interest
+- express_digi_art_interest
+- express_front_end_interest
+- express_game_dev_interest
+- express_library_interest
+- express_more_code_interest
+- express_more_design_interest
+- express_networking_interest
+- express_no_interest
+- express_software_interest
+- express_web_interest
+- goodbye
+- greet
+- inc_blis_query
+- inc_bscs_query
+- inc_bsemc_query
+- inc_bsis_query
+- inc_bsit_query
+- inform_units
+- nlu_fallback
+- provide_preferences
+- sample_image
+- thank
+- virtual_office
+
+
+#------------------------------------
+- ask_BSCS_benefits
+- ask_BSCS_salary
+- ask_BSCS_required_skills
+
+- ask_what_software_engineer
+- ask_what_software_developer
+- ask_what_data_scientist
+- ask_what_cybersecurity_analyst
+- ask_what_computer_scientist
+- ask_what_ethical_hacker
+- ask_what_cybersecurity_engineer
+- ask_what_penetration_tester
+- ask_what_cybersecurity_consultant
+- ask_what_it_support_specialist
+- ask_what_ml_engineer
+- ask_what_nlp_specialist
+- ask_what_computer_vision_engineer
+
+
+- ask_how_become_computer_vision_engineer
+- ask_how_become_nlp_specialist
+- ask_how_become_ethical_hacker
+- ask_how_become_cybersecurity_engineer
+- ask_how_become_penetration_tester
+- ask_how_become_cybersecurity_consultant
+- ask_how_become_software_developer
+- ask_how_become_data_scientist
+- ask_how_become_cybersecurity_analyst
+- ask_how_become_computer_scientist
+- ask_how_become_software_engineer
+- ask_how_become_it_support_specialist
+- ask_how_become_ml_engineer
+- ask_guidance_take_CS_course
+#---------------------------------------------------------------------------------------------------
+# - ask_what_is_BSIS
+- ask_BSIS_benefits
+# - ask_BSIS_careers
+- ask_BSIS_required_skills
+- ask_BSIS_BSIT_difference
+- ask_BSIT_BSCS_difference
+- ask_BSIS_BSCS_difference
+- ask_BSIS_BSIT_similarities
+- ask_BSIT_BSCS_similarities
+- ask_BSIS_BSCS_similarities
+- ask_what_data_analyst
+- ask_what_systems_analyst
+- ask_what_project_manager
+- ask_how_become_data_analyst
+- ask_how_become_systems_analyst
+- ask_how_become_project_manager
+- ask_other_universities
+- ask_what_solutions_specialist
+- ask_how_become_solutions_specialist
+- ask_what_documentation_specialist
+- ask_how_become_documentation_specialist
+- ask_what_end_user_trainer
+- ask_how_become_end_user_trainer
+- ask_what_organizational_process_analyst
+- ask_how_become_organizational_process_analyst
+- ask_guidance_take_IS_course
+#-----------------------------------------------------------
+# - ask_what_is_LibSci
+- ask_LibSci_benefits
+# - ask_LibSci_careers
+- ask_LibSci_required_skills
+
+- ask_what_librarian
+- ask_what_archivist
+- ask_what_research_specialist
+
+- ask_how_become_librarian
+- ask_help_library_exam
+- ask_how_become_archivist
+- ask_how_become_research_specialist
+- ask_guidance_take_libsci_course
+
+entities:
+- number_of_units
+- program
+- major
+- website
+- college_dept
+- preferences
+- career
+- bsit
+- bscs
+- bsemc
+- gamedev
+- digiani
+- blis
+- bsis
+slots:
+  preference1:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: preferences
+  preference2:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: preferences
+  preference3:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: preferences
+  preference4:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: preferences
+  preference5:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: preferences
+  preference6:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: preferences
+  preference7:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: preferences
+  preference8:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: preferences
+  preference9:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: preferences
+  preference10:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: preferences
+forms:
+  preference_form:
+    required_slots:
+    - preference1
+    - preference2
+    - preference3
+    - preference4
+    - preference5
+    - preference6
+    - preference7
+    - preference8
+    - preference9
+    - preference10
+responses:
+  utter_greet:
+  - text: Hey! How may I help you?
+    buttons:
+    - title: Degree Programs
+      payload: /ask_programs_offered_cics
+    - title: Admission Requirements/Procedures
+      payload: /admission_process_query
+    - title: Tuition Fee
+      payload: /ask_tuition_fee
+    - title: Virtual Offices
+      payload: /virtual_office
+    - title: Career Assistance
+      payload: /ask_program_recommendation
+  utter_greet2:
+  - text: What more would you like to know?
+    buttons:
+    - title: Degree Programs
+      payload: /ask_programs_offered_cics
+    - title: Admission Requirements/Procedures
+      payload: /admission_process_query
+    - title: Tuition Fee
+      payload: /ask_tuition_fee
+    - title: Virtual Offices
+      payload: /virtual_office
+    - title: Career Assistance
+      payload: /ask_program_recommendation
+  utter_greet3:
+  - text: Please feel free to ask me about any inquiries you may have!
+    buttons:
+    - title: Degree Programs
+      payload: /ask_programs_offered_cics
+    - title: Admission Requirements/Procedures
+      payload: /admission_process_query
+    - title: Tuition Fee
+      payload: /ask_tuition_fee
+    - title: Virtual Offices
+      payload: /virtual_office
+    - title: Career Assistance
+      payload: /ask_program_recommendation
+  utter_thanks:
+  - text: You are welcome, it was my pleasure to assist you.
+  utter_access_neuvle:
+  - text: 'Access the NEU Virtual Learning Environment through this link: https://neuvle.neu.edu.ph/'
+  utter_programs_offered:
+  - text: |
+      NEU CICS offers these programs:
+
+      - Bachelor of Library Information Science (Available in: Main Campus)
+      - Bachelor of Science in Information Technology (Available in: Main Campus)
+      - Bachelor of Science in Information Systems (Available in: Main & Pampanga Campuses)
+      - Bachelor of Science In Entertainment and Multimedia Computing Major in Digital Animation (Available in: Main Campus)
+      - Bachelor of Science In Entertainment and Multimedia Computing Major in Game Development (Available in: Main Campus)
+      - Bachelor of Science in Computer Science (Available in: Main Campus)
+  utter_programs_offered_buttons:
+  - text: Would you like to know more about these Degree Programs?
+    buttons:
+    - title: Bachelor of Science in Information Technology
+      payload: /bsit_query
+    - title: Bachelor of Science in Computer Science
+      payload: /bscs_query
+    - title: Bachelor of Science in Information Systems
+      payload: /bsis_query
+    - title: Bachelor of Library and Information Science
+      payload: /blis_query
+    - title: Bachelor of Science in Entertainment and Multimedia Computing
+      payload: /bsemc_query
+    - title: BSEMC Major in Game Development
+      payload: /bsemc_gamedev_query
+    - title: BSEMC Major in Digital Animation
+      payload: /bsemc_digiani_query
+  utter_goodbye:
+  - text: Goodbye! If you have more questions, feel free to ask.
+  utter_blis_answer:
+  - text: The BLIS Program is the study of the development, deployment, and management of information resources in print, non-print, electronic and digital formats and services. Graduates of this program are being prepared to apply information technology to basic library operations and functions. Moreover, they are trained to harness a range of bibliographical and online tools to support teaching, research, and other services.
+  utter_inc_blis_answer:
+  - text: Did you mean BLIS
+  utter_bsit_answer:
+  - text: The BS Information Technology program includes the study of the utilization of both hardware and software technologies involving planning, installing, customizing, operating, managing and administering and mainaining information technology infrastructure that provides computing solutions to address the needs of an organization.
+  utter_inc_bsit_answer:
+  - text: Did you mean BSIT
+  utter_bsit_careers:
+  - text: |
+      These are the possible careers/entry level jobs for a BS Information Technology graduate:
+
+      - Web and Applications Developer
+      - Junior Database Administrator
+      - Systems Administrator
+      - Network Engineer
+      - Junior Information Security Administrator
+      - Systems Integration Security Administrator
+      - Systems Integration Personnel
+      - IT Audit Assistant
+      - Technical Support Specialist
+      - QA Specialist
+      - Systems Analyst
+      - Computer Programmer
+  utter_bscs_answer:
+  - text: The BS Computer Science program includes the study of computing concepts and theories, algorithmic foundations and new developments in computing. The program prepares students to design and create algorithmically complex software and develop new and effective algorithms for solving computing problems.
+  utter_inc_bscs_answer:
+  - text: Did you mean BSCS
+  utter_bscs_careers:
+  - text: |
+      These are the possible careers for a BS Computer Science graduate:
+
+      - Software Engineer
+      - Systems Software Developer
+      - Research and Development computing professional
+      - Applications Software Developer
+      - Computer Programmer
+      - Systems Analyst
+      - Data Analyst
+      - Quality Assurance Specialist
+      - Software Support Specialist
+  utter_bsis_answer:
+  - text: The BS Information Systems program includes the study of application and effect of information technology to organizations. Graduates of the program should be able to implement an information system, which considers complex technological and organizational factors affecting it. These include components, tools, techniques, stategies, methodologies, etc.
+  utter_inc_bsis_answer:
+  - text: Did you mean BSIS
+  utter_bsis_careers:
+  - text: |
+      These are the possible careers for a BS Information Systems graduate:
+
+      - Organizational Process Analyst 
+      - Data Analyst
+      - Solutions Specialist
+      - Systems Analyst
+      - IS Project Management Personnel
+      - Applications Developer
+      - End User Trainer
+      - Documentation Specialist
+      - Quality Assurance Specialist
+  utter_bsemc_answer:
+  - text: The BS Entertainment and Multimedia Computing is the study and application of computing concepts, principles, and techniques in the creation of multimedia products and solutions
+  utter_inc_bsemc_answer:
+  - text: Did you mean BSEMC
+  utter_bsemc_gd_da_question:
+  - text: We have 2 specialization paths for the Degree Program BSEMC, press these buttons if you would like to know more about them.
+    buttons:
+    - title: BSEMC Major in Game Development
+      payload: /bsemc_gamedev_query
+    - title: BSEMC Major in Digital Animation
+      payload: /bsemc_digiani_query
+  utter_bsemc_gamedev_answer:
+  - text: The BSEMC Major in Game Development is the study and application of fundamental and advanced theories in game design, scientific simulations, use and development of gaming technology and tools, and production of commercially acceptable digital games and viable solutions for use in entertainement and scientific applications.
+  utter_bsemc_gamedev_careers:
+  - text: |
+      These are possible careers for a BSEMC Major in Game Development graduate:
+      - Game Designer
+      - Game Artist
+      - Game Programmer
+      - Narrative Designer
+      - Associate Game Producer
+      - Senior Game Sound Engineer
+      - Business Development Specialist
+      - Associate Business Development Specialist for Entertainment and Multimedia Industries
+    buttons:
+    - title: Game Designer
+      payload: /ask_what_game_designer
+    - title: Game Artist
+      payload: /ask_what_game_artist
+    - title: Game Programmer
+      payload: /ask_what_game_programmer
+    - title: Narrative Designer
+      payload: /ask_what_narrative_designer
+    - title: Associate Game Producer
+      payload: /ask_what_associate_game_producer
+    - title: Senior Game Sound Engineer
+      payload: /ask_what_senior_game_sound_engineer
+    - title: Business dev Specialist
+      payload: ask_what_business_dev_specialist
+  utter_bsemc_digiani_answer:
+  - text: The BSEMC Major in Digital Animation is the study and application of fundamental and advanced theories and advanced techniques in 2d and 3d animation, use and development for advancement of animation technologies, and production of commercially acceptable content and viable solutions for different platforms such as broadcast, web and mobile cast.
+  utter_bsemc_digiani_careers:
+  - text: |
+      Here are the possible careers for a BSEMC Major in Digital Animation graduate:
+
+      - Creative Content Developer
+      - Ad Builders
+      - Technical Director
+      - Multimedia Designer
+      - Video Editor
+      - Visual Effects Artist
+      - 3D Modeler
+      - Animator
+      - Concept Artist
+      - Motion Graphics Designer
+  utter_admission_process_answer_advising:
+  - text: |
+      Enrollment Procedures for new and old Tertiary students:
+
+      - Log in to SchoolAutomate (https://automate.neu.edu.ph)
+      - Click PARENTS/STUDENTS
+      - New students: Use your temporary ID as log in ID and password Old students: Use your user name and password.
+      - Click the Enrollment tab then Online Advising.
+      - Click Schedule (under Assign Section, Last Column Right) to choose the schedule then click Proceed.
+      - Click Save and take note of the assessment of fees and amount to be paid.
+  utter_admission_process_answer_payment:
+  - text: |
+      For Payment Procedures:
+
+      - Proceed to https://payment.neu.edu.ph for payment instructions.
+      - The PROOF OF PAYMENT must be submitted WITHIN 24 HOURS from the time Online Advising/Reservation was done.
+  utter_admission_process_answer_com:
+  - text: |
+      COM / OR:
+
+      - For Old Students, please check your SchoolAutomate account. If payment has been posted, your enrollment is confirmed and you will see a copy of your Certificate of Matriculation (COM) in the “FEES PAID DURING ENROLMENT” tab.
+      - For New Students, upon receipt of a copy of your Official Receipt (OR), please take note of your permanent Student ID Number (21-xxxxx-xxx) located on the upper part. Please use your Student ID Number (INCLUDING HYPHENS) as User Name and Password to access your SchoolAutomate account (https://automate.neu.edu.ph → PARENTS/STUDENTS) After logging in, create your own log in ID and password. Make sure that this is successful. Log in using your new log in ID and password.
+        Log in ID will have NEU as prefix. You will see a copy of your Certificate of Matriculation (COM) in the “FEES PAID DURING ENROLMENT” tab.
+  utter_admission_process_answer_start_class:
+  - text: |
+      Start of Classes:
+
+      - Visit the NEU website media account for advisory on the start of regular/online classes.
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite catch that. Could you rephrase that?
+  utter_confirm_career_assist:
+  - text: Certainly! I'd be happy to help you find a suitable degree program. Would you mind if I ask you a series of questions to better understand your interests?
+  utter_confirmed_career_assist:
+  - text: Alright, I'll start by asking you a series of questions to determine which degree program will be suitable for you based on your preferences!
+  utter_ask_preference1:
+  - text: What aspects of technology interest you the most?
+    buttons:
+    - title: A. Software development and programming
+      payload: /provide_preferences{{"preferences":"A"}}
+    - title: B. Information systems and data management
+      payload: /provide_preferences{{"preferences":"B"}}
+    - title: C. Multimedia and entertainment technologies (e.g. Video Games)
+      payload: /provide_preferences{{"preferences":"C"}}
+    - title: D. Library and information science
+      payload: /provide_preferences{{"preferences":"D"}}
+  utter_ask_preference2:
+  - text: Do you enjoy creating visual content, such as animations or games?
+    buttons:
+    - title: A. Yes
+      payload: /provide_preferences{{"preferences":"A"}}
+    - title: B. Not necessarily
+      payload: /provide_preferences{{"preferences":"B"}}
+  utter_ask_preference3:
+  - text: Which of the following best describes your preferred work environment?
+    buttons:
+    - title: A. Developing software applications
+      payload: /provide_preferences{{"preferences":"A"}}
+    - title: B. Managing and optimizing information systems
+      payload: /provide_preferences{{"preferences":"B"}}
+    - title: C. Troubleshooting computer hardware
+      payload: /provide_preferences{{"preferences":"C"}}
+    - title: D. Creating multimedia content for entertainment
+      payload: /provide_preferences{{"preferences":"D"}}
+    - title: E. Organizing and managing information resources in a library setting
+      payload: /provide_preferences{{"preferences":"E"}}
+  utter_ask_preference4:
+  - text: what skill listed below do u most prefer?
+    buttons:
+    - title: A. Computer Programming
+      payload: /provide_preferences{{"preferences":"A"}}
+    - title: B. Computer hardware troubleshooting
+      payload: /provide_preferences{{"preferences":"B"}}
+    - title: C. Game Development
+      payload: /provide_preferences{{"preferences":"C"}}
+    - title: D. Art (e.g. Digital/Traditional Art)
+      payload: /provide_preferences{{"preferences":"D"}}
+    - title: E. Data Management
+      payload: /provide_preferences{{"preferences":"E"}}
+  utter_ask_preference5:
+  - text: Are you interested in working with data and analyzing information for decision-making?
+    buttons:
+    - title: A. Yes
+      payload: /provide_preferences{{"preferences":"A"}}
+    - title: B.  Not necessarily
+      payload: /provide_preferences{{"preferences":"B"}}
+  utter_ask_preference6:
+  - text: Do you have a passion for storytelling through digital media?
+    buttons:
+    - title: A. Yes
+      payload: /provide_preferences{{"preferences":"A"}}
+    - title: B.  Not necessarily
+      payload: /provide_preferences{{"preferences":"B"}}
+  utter_ask_preference7:
+  - text: How would you describe your interest in gaming?
+    buttons:
+    - title: A. I enjoy playing games and exploring their design.
+      payload: /provide_preferences{{"preferences":"A"}}
+    - title: B. I'm not particularly interested in gaming.
+      payload: /provide_preferences{{"preferences":"B"}}
+  utter_ask_preference8:
+  - text: Are you more drawn to the organizational and management aspects of technology, or the creative and design aspects?
+    buttons:
+    - title: A. Organizational and management
+      payload: /provide_preferences{{"preferences":"A"}}
+    - title: ' B. Creative and design'
+      payload: /provide_preferences{{"preferences":"B"}}
+  utter_ask_preference9:
+  - text: What role do you see technology playing in your future career?
+    buttons:
+    - title: A. Creating innovative software solutions
+      payload: /provide_preferences{{"preferences":"A"}}
+    - title: B. Providing technical assistance
+      payload: /provide_preferences{{"preferences":"B"}}
+    - title: C. Managing and securing information systems
+      payload: /provide_preferences{{"preferences":"C"}}
+    - title: D. Designing engaging multimedia content
+      payload: /provide_preferences{{"preferences":"D"}}
+    - title: E. Preserving and organizing information in a library setting
+      payload: /provide_preferences{{"preferences":"E"}}
+  utter_ask_preference10:
+  - text: Which following jobs do interest you the most?
+    buttons:
+    - title: A. Software Engineer
+      payload: /provide_preferences{{"preferences":"A"}}
+    - title: B. IT Support
+      payload: /provide_preferences{{"preferences":"B"}}
+    - title: C. Systems Analyst
+      payload: /provide_preferences{{"preferences":"C"}}
+    - title: D. Game Designer/Developer
+      payload: /provide_preferences{{"preferences":"D"}}
+    - title: E. 3D Artist/Animator
+      payload: /provide_preferences{{"preferences":"E"}}
+    - title: F. Librarian
+      payload: /provide_preferences{{"preferences":"F"}}
+  utter_submit:
+  - text: I will now begin to analyze your answers!
+  utter_career_null:
+  - text: You can type "Degree Programs" or you can simply click the button below to know more about these programs.
+  utter_sample_image:
+  - text: Sample Image
+    image: https://www.mediafire.com/view/q03p4895fegejje/NEU_Main2.jpg/file
+  utter_know_more_programs:
+  - text: Which Degree program would you like to know more about?
+    buttons:
+    - title: BSCS
+      payload: /bscs_query
+    - title: BSIT
+      payload: /bsit_query
+    - title: BSIS
+      payload: /bsis_query
+    - title: BSEMC
+      payload: /bsemc_query
+    - title: BLIS
+      payload: /blis_query
+    - title: None
+      payload: /deny
+  utter_no_interest:
+  - text: Ok! Let me know if you have any more concerns
+    buttons:
+    - title: Degree Programs
+      payload: /ask_programs_offered_cics
+    - title: Admission Requirements/Procedures
+      payload: /admission_process_query
+    - title: Tuition Fee
+      payload: /ask_tuition_fee
+    - title: Virtual Offices
+      payload: /virtual_office
+    - title: Career Assistance
+      payload: /ask_program_recommendation
+  utter_virtual_office:
+  - text: |
+      If you have more concerns that are in need of human assistance, please visit these virtual offices below:
+
+        - [CICS Department](https://meet.google.com/orf-owbe-gef)
+        - [Computer Services Department](https://meet.google.com/vdy-enbt-xyo)
+        - [Library Department](https://meet.google.com/mxo-kyxn-yxs)
+  utter_ask_digiani_fields_okay:
+  - text: |
+      In Digital Animation, you will learn about animations, video editing, 3D modelling, and visual effects.
+      It is a creative industry where you have to show uniqueness in the art you create.
+      Are you willing to engage in a highly competitive field?
+  utter_ask_adaptation_okay_digiani:
+  - text: |
+      You also need to be keep up with the latest software technologies used to create Digital Art.
+      A good imagination is also needed in order to satisfy your clients' demands. 
+      Do you have these qualities within you?
+  utter_problem_solving_okay_digiani:
+  - text: |
+      Lastly, in order to stay motivated pursuing the field of Digital Animation, You need to 
+      be able to face rejection, handle criticism, and deal with uncertainties.
+      Will you be able to do so?
+  utter_ask_willing_adjust_digiani_okay:
+  - text: |
+      If you don't like the high competitiveness of this creative industry. Would you
+      still be able to keep yourself going as long as you enjoy creating your projects?
+  utter_strongly_recommend_digiani:
+  - text: |
+      Based on your responses, I believe DigiAni would be a great fit for you. As long as you
+      enjoy the process and keep grinding, I have no doubt you will eventually have a successful career.
+  utter_medium_recommend_digiani:
+  - text: |
+      Based on your responses, I believe DigiAni would be a suitable choice for you. Although you may not have
+      that good of an imagination, or struggle keeping up with technology, It is still possible for you to find a 
+      way to work around this. Let me know if you need advice about anything else.
+  utter_slight_recommend_digiani:
+  - text: |
+      That's good to hear. I admire your dedication to still push through taking DigiAni.
+      If you ever feel like falling behind your peers, just acknowledge your weaknesses and 
+      keep moving forward.
+  utter_not_recommend_digiani:
+  - text: |
+      Unfortunately, I don't think DigiAni aligns with your interests and skills. If you're really passionate about it, theres no harm in giving it a try. 
+      If you want to, I could recommend some other courses that might work out for you.
+  utter_ask_what_is_DigiAni:
+  - text: Digital Animation, often referred to as DigiAni, is the process of creating moving images through the use of digital technology. It involves techniques such as 2D and 3D animation, visual effects, and multimedia design.
+  utter_DigiAni_benefits:
+  - text: Studying Digital Animation opens up a world of creative possibilities. You'll learn valuable skills in animation, storytelling, and digital design, which are in high demand across various industries such as film, advertising, and gaming.
+  utter_DigiAni_required_skills:
+  - text: To excel in Digital Animation, you'll need a combination of artistic talent and technical skills. These may include proficiency in animation software, understanding of design principles, storytelling abilities, and attention to detail.
+  utter_ask_visual_effects_artist:
+  - text: A visual effects artist is a professional who creates special effects and computer-generated imagery (CGI) for films, television shows, and video games. They use software tools to enhance visual storytelling and create realistic digital effects.
+  utter_what_3d_modeler:
+  - text: A 3D modeler creates three-dimensional models and assets used in various industries like gaming, animation, and architecture, using specialized software to sculpt digital objects.
+  utter_what_animator:
+  - text: An animator brings characters, objects, and scenes to life through movement, employing techniques such as hand-drawn animation or computer-generated imagery (CGI) to create captivating animations for various media.
+  utter_what_concept_artist:
+  - text: A concept artist translates ideas into visual representations, creating initial designs and artwork that serve as the foundation for characters, environments, and assets in games, films, and comics.
+  utter_what_motion_graphics_designer:
+  - text: A motion graphics designer creates dynamic visual content for television, film, video games, and digital media, combining graphic design and animation techniques to produce engaging motion graphics that enhance storytelling and captivate audiences.
+  utter_ask_multimedia_designer:
+  - text: A multimedia designer is someone who combines graphic design, animation, and interactive elements to create engaging multimedia content. They work on projects such as websites, advertisements, presentations, and interactive applications.
+  utter_ask_video_editor:
+  - text: A video editor is responsible for assembling raw footage into a coherent and visually appealing sequence. They edit videos for various purposes, including films, television shows, commercials, and online content.
+  utter_DigiAni_simplified:
+  - text: Digital Animation is like being a digital artist. You'll use technology to create animated worlds and characters, just like drawing but with computers! It's like bringing your imagination to life!
+  utter_how_become_visual_effects_artist:
+  - text: |
+      To become a visual effects artist, you can start by gaining a strong foundation in art and computer graphics.
+      Consider pursuing a degree in animation, visual effects, computer graphics, or a related field.
+      Gain experience with industry-standard software such as Adobe After Effects, Autodesk Maya, or Nuke.
+      Building a strong portfolio showcasing your skills and creativity is also essential for entering this competitive field.
+  utter_how_become_multimedia_designer:
+  - text: |
+      To become a multimedia designer, consider earning a degree in multimedia design, graphic design, digital media, or a related field.
+      Develop proficiency in design software such as Adobe Creative Suite (Photoshop, Illustrator, InDesign), as well as multimedia authoring tools like Adobe Flash or HTML5.
+      Gain experience by working on projects that involve creating visual content for different mediums and platforms.
+      Building a diverse portfolio showcasing your design skills and creativity will help you stand out in the field.
+  utter_how_become_video_editor:
+  - text: |
+      To become a video editor, you can start by gaining experience with video editing software 
+      such as Adobe Premiere Pro, Final Cut Pro, or Avid Media Composer.
+      Consider pursuing a degree or certification in film production, digital media, 
+      or a related field to learn the fundamentals of video editing techniques and storytelling.
+      Gain practical experience by working on projects such as short films, documentaries, or online videos.
+      Building a strong portfolio showcasing your editing skills and creativity 
+      is crucial for securing employment opportunities in this field.
+  utter_how_become_3d_modeler:
+  - text: |
+      To become a 3D modeler, start by learning the fundamentals of 3D modeling software 
+      and techniques through online tutorials or courses.
+      Practice creating 3D models regularly to build your skills, 
+      and consider pursuing formal education in animation or digital arts for more advanced training.
+  utter_how_become_animator:
+  - text: |
+      To pursue a career as an animator, begin by learning animation principles 
+      and mastering animation software through self-study or formal education.
+      Build a strong portfolio showcasing your animation work and consider 
+      gaining experience through internships or freelance projects to improve your skills 
+      and increase your chances of employment.
+  utter_how_become_concept_artist:
+  - text: |
+      To become a concept artist, focus on developing your drawing and design skills 
+      by practicing regularly and studying art fundamentals.
+      Build a diverse portfolio showcasing your conceptual artwork and 
+      consider specializing in a particular niche, such as character design or environment concept art, 
+      to stand out in the industry.
+  utter_how_become_motion_graphics_designer:
+  - text: |
+      To pursue a career as a motion graphics designer, learn graphic design principles 
+      and animation techniques through courses, tutorials, or self-study.
+      Gain hands-on experience by working on motion graphics projects and 
+      collaborate with other professionals to expand your skills and network in the industry.
+  utter_what_creative_content_developer:
+  - text: A Creative Content Developer is responsible for creating engaging and compelling content across various mediums such as writing, graphic design, video production, and multimedia. They collaborate with teams to brainstorm ideas, develop content strategies, and produce content that resonates with the target audience.
+  utter_how_become_creative_content_developer:
+  - text: To become a Creative Content Developer, consider obtaining a degree in communications, marketing, graphic design, or a related field. Develop strong skills in writing, graphic design, video editing, and multimedia production. Gain experience through internships, freelance projects, or entry-level positions. Build a portfolio showcasing your creativity and versatility in creating content across different mediums.
+  utter_what_ad_builders:
+  - text: Ad Builders are professionals who design and create advertisements for various platforms such as digital, print, television, and social media. They collaborate with clients and marketing teams to understand advertising goals and target audience, and then develop creative ad campaigns that effectively convey the message and drive engagement.
+  utter_how_become_ad_builders:
+  - text: To become Ad Builders, consider obtaining a degree in advertising, marketing, graphic design, or a related field. Develop strong skills in graphic design, copywriting, and digital marketing. Gain experience through internships, apprenticeships, or entry-level positions in advertising agencies or marketing departments. Stay updated with industry trends and technologies to create innovative and effective ad campaigns.
+  utter_what_technical_director:
+  - text: A Technical Director oversees the technical aspects of a project or production, ensuring that technical requirements are met and technical solutions are implemented effectively. They collaborate with teams to define technical specifications, resolve technical issues, and ensure the successful execution of projects.
+  utter_how_become_technical_director:
+  - text: To become a Technical Director, consider obtaining a degree in computer science, engineering, or a related field. Gain experience in technical roles such as software development, systems engineering, or technical project management. Develop strong leadership, communication, and problem-solving skills. Stay updated with emerging technologies and industry best practices. Progress in your career by taking on increasing levels of responsibility and leadership roles.
+  utter_know_more_digiani:
+  - text: Would you like to know more about Digital Animation?
+    buttons:
+    - title: Yes
+      payload: /bsemc_digiani_query
+    - title: No
+      payload: /deny
+  utter_ask_gamedev_fields_okay:
+  - text: |
+      In Game Development, you will learn about game animations, game storytelling, and designing gameplay.
+      You will be involved in creating games that stand out from the rest.
+      Are you willing to engage in a highly competitive field?
+  utter_ask_adaptation_okay_gamedev:
+  - text: |
+      You may also need to be keep up with the latest game engines such as unreal, unity, and godot .
+      Game preferences also change over time where specific genres may suddenly rise in popularity. 
+      Are you willing to constantly adapt to the emerging trends?
+  utter_problem_solving_okay_gamedev:
+  - text: |
+      Lastly, in order to stay motivated pursuing the field of Game Development, You need to 
+      be able to face rejection, handle criticism, and deal with uncertainties.
+      Will you be able to do so?
+  utter_ask_willing_adjust_gamedev_okay:
+  - text: |
+      If you don't like the high competitiveness of the gaming industry. Would you
+      still be able to keep yourself going as long as you enjoy creating your projects?
+  utter_strongly_recommend_gamedev:
+  - text: |
+      Based on your responses, I believe gamedev would be a great fit for you. As long as you
+      enjoy the process and keep grinding, I have no doubt you will eventually have a successful career.
+  utter_medium_recommend_gamedev:
+  - text: |
+      Based on your responses, I believe DigiAni would be a suitable choice for you. Although you may not have
+      that good of an imagination, or struggle keeping up with technology, It is still possible for you to find a 
+      way to work around this.
+  utter_slight_recommend_gamedev:
+  - text: |
+      That's good to hear. I admire your dedication to still push through taking GameDev.
+      If you ever feel like falling behind your peers, just acknowledge your weaknesses and 
+      keep moving forward.
+  utter_not_recommend_gamedev:
+  - text: |
+      Unfortunately, I don't think gamedev might be the right course. You can still try, but trying is the first
+      step to failure. If you want to, I could recommend some other courses that might work out for you.
+  utter_game_designer_info:
+  - text: Game designers focus on the systems, rules, and gameplay in order to make sure the game is fun,playable and engaging. Would you like to know more about Game Designers?
+    buttons:
+    - title: Game Designer Skills
+      payload: /ask_game_designer_skills
+    - title: Game Designer Salary
+      payload: /ask_game_designer_salary
+    - title: Game Designer Qualifications
+      payload: /ask_game_designer_education
+    - title: Game Designer Growth
+      payload: /ask_game_designer_growth
+    - title: Game Designer Challenges
+      payload: /ask_game_designer_challenges
+    - title: Game Designer Vs. Game Artist
+      payload: /ask_game_designer_versus_artist
+  utter_game_designer_skills_info:
+  - text: Game designers need to be highly technical, adept, and have an understanding of player psychology.
+    buttons:
+    - title: Game Designer
+      payload: /ask_what_game_designer
+    - title: Game Designer Salary
+      payload: /ask_game_designer_salary
+    - title: Game Designer Qualifications
+      payload: /ask_game_designer_education
+    - title: Game Designer Growth
+      payload: /ask_game_designer_growth
+    - title: Game Designer Challenges
+      payload: /ask_game_designer_challenges
+  utter_game_designer_salary_info:
+  - text: According to Indeed, the salary for game designers average around 27,000 pesos a month here in the Philippines.
+    buttons:
+    - title: Game Designer
+      payload: /ask_what_game_designer
+    - title: Game Designer Skills
+      payload: /ask_game_designer_skills
+    - title: Game Designer Qualifications
+      payload: /ask_game_designer_education
+    - title: Game Designer Growth
+      payload: /ask_game_designer_growth
+    - title: Game Designer Challenges
+      payload: /ask_game_designer_challenges
+  utter_game_designer_education_info:
+  - text: A degree in game design, computer science, or a related field is often required to become a game designer.
+    buttons:
+    - title: Game Designer
+      payload: /ask_what_game_designer
+    - title: Game Designer Skills
+      payload: /ask_game_designer_skills
+    - title: Game Designer Salary
+      payload: /ask_game_designer_salary
+    - title: Game Designer Growth
+      payload: /ask_game_designer_growth
+    - title: Game Designer Challenges
+      payload: /ask_game_designer_challenges
+  utter_game_designer_growth_info:
+  - text: Game designers can advance to senior or lead roles and may have opportunities to work on larger projects or become creative directors.
+    buttons:
+    - title: Game Designer
+      payload: /ask_what_game_designer
+    - title: Game Designer Skills
+      payload: /ask_game_designer_skills
+    - title: Game Designer Salary
+      payload: /ask_game_designer_salary
+    - title: Game Designer Qualifications
+      payload: /ask_game_designer_education
+    - title: Game Designer Challenges
+      payload: /ask_game_designer_challenges
+  utter_game_designer_challenges_info:
+  - text: Game designers face challenges such as balancing gameplay mechanics, meeting deadlines, and keeping up with industry trends.
+    buttons:
+    - title: Game Designer
+      payload: /ask_what_game_designer
+    - title: Game Designer Skills
+      payload: /ask_game_designer_skills
+    - title: Game Designer Salary
+      payload: /ask_game_designer_salary
+    - title: Game Designer Qualifications
+      payload: /ask_game_designer_education
+    - title: Game Designer Growth
+      payload: /ask_game_designer_growth
+  utter_game_designer_versus_artist_info:
+  - text: Game designers focus on creating game mechanics and overall gameplay, while game artists focus on creating visual elements such as characters, environments, and animations.
+    buttons:
+    - title: Game Designer
+      payload: /ask_what_game_designer
+    - title: Game Artist
+      payload: /ask_what_game_artist
+  utter_game_artist_info:
+  - text: Game artists are responsible for creating visual elements such as characters, environments, and animations in video games. Would you like to know more about Game Artists?
+    buttons:
+    - title: Game Artist Skills
+      payload: /ask_game_artist_skills
+    - title: Game Artist Salary
+      payload: /ask_game_artist_salary
+    - title: Game Artist Qualifications
+      payload: /ask_game_artist_education
+    - title: Game Artist Growth
+      payload: /ask_game_artist_growth
+    - title: Game Artist Challenges
+      payload: /ask_game_artist_challenges
+    - title: Game Designer Vs. Game Artist
+      payload: /ask_game_designer_versus_artist
+  utter_game_artist_skills_info:
+  - text: Game artists need skills in digital art, 2D/3D modeling, texturing, animation, and concept art.
+    buttons:
+    - title: Game Artist
+      payload: /ask_what_game_artist
+    - title: Game Artist Salary
+      payload: /ask_game_artist_salary
+    - title: Game Artist Qualifications
+      payload: /ask_game_artist_education
+    - title: Game Artist Growth
+      payload: /ask_game_artist_growth
+    - title: Game Artist Challenges
+      payload: /ask_game_artist_challenges
+  utter_game_artist_salary_info:
+  - text: According to Indeed, average salary for Game artist is around 28,000 pesos per month in the Philippines.
+    buttons:
+    - title: Game Artist
+      payload: /ask_what_game_artist
+    - title: Game Artist Skills
+      payload: /ask_game_artist_skills
+    - title: Game Artist Qualifications
+      payload: /ask_game_artist_education
+    - title: Game Artist Growth
+      payload: /ask_game_artist_growth
+    - title: Game Artist Challenges
+      payload: /ask_game_artist_challenges
+  utter_game_artist_education_info:
+  - text: A degree in graphic design, digital media, or a related field is often required to become a game artist.
+    buttons:
+    - title: Game Artist
+      payload: /ask_what_game_artist
+    - title: Game Artist Skills
+      payload: /ask_game_artist_skills
+    - title: Game Artist Salary
+      payload: /ask_game_artist_salary
+    - title: Game Artist Growth
+      payload: /ask_game_artist_growth
+    - title: Game Artist Challenges
+      payload: /ask_game_artist_challenges
+  utter_game_artist_growth_info:
+  - text: Game artists can advance to senior or lead roles, specializing in areas such as character design, environment art, or animation.
+    buttons:
+    - title: Game Artist
+      payload: /ask_what_game_artist
+    - title: Game Artist Skills
+      payload: /ask_game_artist_skills
+    - title: Game Artist Salary
+      payload: /ask_game_artist_salary
+    - title: Game Artist Qualifications
+      payload: /ask_game_artist_education
+    - title: Game Artist Challenges
+      payload: /ask_game_artist_challenges
+  utter_game_artist_challenges_info:
+  - text: Game artists face challenges such as meeting tight deadlines, maintaining artistic consistency, and adapting to new technologies.
+    buttons:
+    - title: Game Artist
+      payload: /ask_what_game_artist
+    - title: Game Artist Skills
+      payload: /ask_game_artist_skills
+    - title: Game Artist Salary
+      payload: /ask_game_artist_salary
+    - title: Game Artist Qualifications
+      payload: /ask_game_artist_education
+    - title: Game Artist Growth
+      payload: /ask_game_artist_growth
+  utter_game_programmer_info:
+  - text: Game programmers are responsible for coding and implementing the functionalities and mechanics of video games. Would you like to know more about  Game Programmers?
+    buttons:
+    - title: Game Programmer Skills
+      payload: /ask_game_programmer_skills
+    - title: Game Programmer Salary
+      payload: /ask_game_programmer_salary
+    - title: Game Programmer Qualifications
+      payload: /ask_game_programmer_education
+    - title: Game Programmer Growth
+      payload: /ask_game_programmer_growth
+    - title: Game Programmer Challenges
+      payload: /ask_game_programmer_challenges
+  utter_game_programmer_skills_info:
+  - text: Game programmers need skills in programming languages such as C++, Java, or C#, as well as knowledge of game engines like Unity, Unreal,and Godot
+    buttons:
+    - title: Game Programmer
+      payload: /ask_what_game_programmer
+    - title: Game Programmer Salary
+      payload: /ask_game_programmer_salary
+    - title: Game Programmer Qualifications
+      payload: /ask_game_programmer_education
+    - title: Game Programmer Growth
+      payload: /ask_game_programmer_growth
+    - title: Game Programmer Challenges
+      payload: /ask_game_programmer_challenges
+  utter_game_programmer_salary_info:
+  - text: Game programmers average salary is 26,000 pesos
+    buttons:
+    - title: Game Programmer
+      payload: /ask_what_game_programmer
+    - title: Game Programmer Skills
+      payload: /ask_game_programmer_skills
+    - title: Game Programmer Qualifications
+      payload: /ask_game_programmer_education
+    - title: Game Programmer Growth
+      payload: /ask_game_programmer_growth
+    - title: Game Programmer Challenges
+      payload: /ask_game_programmer_challenges
+  utter_game_programmer_education_info:
+  - text: A degree in computer science, game development, or a related field is often required to become a game programmer.
+    buttons:
+    - title: Game Programmer
+      payload: /ask_what_game_programmer
+    - title: Game Programmer Skills
+      payload: /ask_game_programmer_skills
+    - title: Game Programmer Salary
+      payload: /ask_game_programmer_salary
+    - title: Game Programmer Growth
+      payload: /ask_game_programmer_growth
+    - title: Game Programmer Challenges
+      payload: /ask_game_programmer_challenges
+  utter_game_programmer_growth_info:
+  - text: Game programmers can advance to senior or lead roles, specialize in areas such as gameplay programming or engine development, or transition into technical leadership positions.
+    buttons:
+    - title: Game Programmer
+      payload: /ask_what_game_programmer
+    - title: Game Programmer Skills
+      payload: /ask_game_programmer_skills
+    - title: Game Programmer Salary
+      payload: /ask_game_programmer_salary
+    - title: Game Programmer Qualifications
+      payload: /ask_game_programmer_education
+    - title: Game Programmer Challenges
+      payload: /ask_game_programmer_challenges
+  utter_game_programmer_challenges_info:
+  - text: Game programmers face challenges such as debugging complex code, optimizing performance, and keeping up with rapidly evolving technologies.
+    buttons:
+    - title: Game Programmer
+      payload: /ask_what_game_programmer
+    - title: Game Programmer Skills
+      payload: /ask_game_programmer_skills
+    - title: Game Programmer Salary
+      payload: /ask_game_programmer_salary
+    - title: Game Programmer Qualifications
+      payload: /ask_game_programmer_education
+    - title: Game Programmer Growth
+      payload: /ask_game_programmer_growth
+  utter_narrative_designer_info:
+  - text: Narrative designers are responsible for crafting the story, characters, and dialogue in video games to create immersive and engaging experiences. Would you like to know more about Narrative Designer?
+    buttons:
+    - title: Narrative Designer Skills
+      payload: /ask_narrative_designer_skills
+    - title: Narrative Designer Salary
+      payload: /ask_narrative_designer_salary
+    - title: Narrative Designer Qualifications
+      payload: /ask_narrative_designer_education
+    - title: Narrative Designer Growth
+      payload: /ask_narrative_designer_growth
+    - title: Narrative Designer Challenges
+      payload: /ask_narrative_designer_challenges
+  utter_narrative_designer_skills_info:
+  - text: Narrative designers need skills in storytelling, creative writing, world-building, character development, and understanding player engagement.
+    buttons:
+    - title: Narrative Designer
+      payload: /ask_what_narrative_designer
+    - title: Narrative Designer Salary
+      payload: /ask_narrative_designer_salary
+    - title: Narrative Designer Qualifications
+      payload: /ask_narrative_designer_education
+    - title: Narrative Designer Growth
+      payload: /ask_narrative_designer_growth
+    - title: Narrative Designer Challenges
+      payload: /ask_narrative_designer_challenges
+  utter_narrative_designer_salary_info:
+  - text: According to Indeed, the average salary for narrative designers is around 25,000 pesos per month in the Philippines.
+    buttons:
+    - title: Narrative Designer
+      payload: /ask_what_narrative_designer
+    - title: Narrative Designer Skills
+      payload: /ask_narrative_designer_skills
+    - title: Narrative Designer Qualifications
+      payload: /ask_narrative_designer_education
+    - title: Narrative Designer Growth
+      payload: /ask_narrative_designer_growth
+    - title: Narrative Designer Challenges
+      payload: /ask_narrative_designer_challenges
+  utter_narrative_designer_education_info:
+  - text: A degree in creative writing, English literature, game design, or a related field is often required to become a narrative designer.
+    buttons:
+    - title: Narrative Designer
+      payload: /ask_what_narrative_designer
+    - title: Narrative Designer Skills
+      payload: /ask_narrative_designer_skills
+    - title: Narrative Designer Salary
+      payload: /ask_narrative_designer_salary
+    - title: Narrative Designer Growth
+      payload: /ask_narrative_designer_growth
+    - title: Narrative Designer Challenges
+      payload: /ask_narrative_designer_challenges
+  utter_narrative_designer_growth_info:
+  - text: Narrative designers can advance to lead or senior roles, specialize in specific genres or storytelling techniques, or transition into narrative directing or creative direction.
+    buttons:
+    - title: Narrative Designer
+      payload: /ask_what_narrative_designer
+    - title: Narrative Designer Skills
+      payload: /ask_narrative_designer_skills
+    - title: Narrative Designer Salary
+      payload: /ask_narrative_designer_salary
+    - title: Narrative Designer Qualifications
+      payload: /ask_narrative_designer_education
+    - title: Narrative Designer Challenges
+      payload: /ask_narrative_designer_challenges
+  utter_narrative_designer_challenges_info:
+  - text: Narrative designers face challenges such as maintaining coherence in branching narratives, balancing player agency with authored storytelling, and meeting tight deadlines.
+    buttons:
+    - title: Narrative Designer
+      payload: /ask_what_narrative_designer
+    - title: Narrative Designer Skills
+      payload: /ask_narrative_designer_skills
+    - title: Narrative Designer Salary
+      payload: /ask_narrative_designer_salary
+    - title: Narrative Designer Qualifications
+      payload: /ask_narrative_designer_education
+    - title: Narrative Designer Growth
+      payload: /ask_narrative_designer_growth
+  utter_what_associate_game_producer:
+  - text: An Associate Game Producer assists in the development and management of video game projects. They collaborate with teams to ensure projects are completed on time and within budget, and may also be involved in coordinating marketing efforts and analyzing market trends.
+    buttons:
+    - title: How to become an Associate Game Producer?
+      payload: /ask_how_become_associate_game_producer
+  utter_how_become_associate_game_producer:
+  - text: To become an Associate Game Producer, consider obtaining a degree in game design, computer science, or a related field. Gain experience in the gaming industry through internships or entry-level positions. Develop skills in project management, communication, and leadership. Build a portfolio showcasing your work on game projects.
+  utter_what_senior_game_sound_engineer:
+  - text: A Senior Game Sound Engineer is responsible for creating and implementing audio elements in video games. They design sound effects, compose music, and integrate audio into gameplay to enhance the player experience. Senior Game Sound Engineers may also mentor junior engineers and collaborate with other teams on game development.
+    buttons:
+    - title: How to become a Senior Game Sound Engineer?
+      payload: /ask_how_become_senior_game_sound_engineer
+  utter_how_become_senior_game_sound_engineer:
+  - text: To become a Senior Game Sound Engineer, start by gaining experience in audio production and sound design. Obtain a degree in audio engineering, music production, or a related field. Build a strong portfolio showcasing your work on game projects. Develop proficiency in audio software and tools used in game development. Network with professionals in the gaming industry to explore opportunities.
+  utter_what_business_dev_specialist:
+  - text: A Business Development Specialist identifies new business opportunities and builds relationships with potential clients or partners. They analyze market trends, develop strategies to expand the business, and negotiate contracts. Business Development Specialists play a crucial role in driving growth and revenue for an organization.
+    buttons:
+    - title: How to become a Business Development Specialist?
+      payload: /ask_how_become_business_dev_specialist
+  utter_how_become_business_dev_specialist:
+  - text: To become a Business Development Specialist, consider obtaining a degree in business administration, marketing, or a related field. Gain experience in sales, marketing, or customer relations. Develop strong communication, negotiation, and networking skills. Stay updated with industry trends and cultivate a strong professional network. Look for opportunities to demonstrate your ability to identify and capitalize on business opportunities.
+  utter_BSIT_benefits:
+  - text: There are many benefits to studying Bachelor of Science in Information Technology (BSIT). It opens up diverse career opportunities in the tech industry, offers high earning potential, and allows you to work on innovative projects that shape the future.
+  utter_BSIT_careers:
+  - text: With a Bachelor of Science in Information Technology (BSIT) degree, you can pursue various careers such as web developer, database administrator, IT support specialist, DevOps engineer, and QA tester.
+  utter_BSIT_required_skills:
+  - text: To succeed in Bachelor of Science in Information Technology (BSIT), it's important to have strong problem-solving skills, proficiency in programming languages, knowledge of networking concepts, and the ability to troubleshoot technical issues.
+  utter_ask_IT_fields_okay:
+  - text: |
+      I see. Are you familiar with at least one of the following fields of IT below:
+      * Computer Programming
+      * Networking
+      * Device Troubleshooting
+      * Data Analysis
+      * Information Security
+  utter_ask_adaptation_okay:
+  - text: |
+      The IT industry is continuously evolving with new technologies being released almost everyday. 
+      Do you prefer having to constantly learn new technologies and keep up with the trends?
+  utter_problem_solving_okay:
+  - text: |
+      A wise man said, " It's not the problem that's difficult, but understanding the client." Especially in IT where there is
+      a lot of practical application involved, Would you enjoy the process of brainstorming solutions and then successfully
+      implementing them.
+  utter_ask_willing_adjust_IT_okay:
+  - text: |
+      Would you be willing to learn about these fields, even if you're not familiar with them? 
+      Also IT requires determination, adaptation, and creative problem-solving skills. 
+      Would you still be fine then?
+  utter_strongly_recommend_IT:
+  - text: |
+      Based on your responses, I believe IT would be a great fit for you. As long as you
+      enjoy the process and keep grinding, I have no doubt you will eventually have a successful career.
+      If you need advice about anything else, I got yo back bruda.
+  utter_medium_recommend_IT:
+  - text: |
+      Based on your responses, I believe IT would be a suitable choice for you. Although you may not like
+      the constant adaptation, or the frustations of problem solving, It is still possible for you to find a 
+      way to work around this. Let me know if you need advice about anything else, I got yo back bruda.
+  utter_slight_recommend_IT:
+  - text: |
+      That's good to hear. I admire your dedication to still push through taking IT despite not being familiar
+      with its fields of study. However, you may have to work harder than your peers. Like Chihaya said,
+      "The more you want something, the faster your hand moves to reach it" Let me know if you need assistance with anything bruda.
+  utter_not_recommend_IT:
+  - text: |
+      Unfortunately, I don't think IT might be the right course. You can still try, but trying is the first
+      step to failure. If you want to, I could recommend some other courses that might work out for you.
+  utter_guidance_networking_careers:
+  - text: |
+      If you're interested in networking, there are numerous career opportunities available in this field.
+      Here you will be responsible for the creation and maintenance of network connections.
+      At the entry level, positions such as Network Technician provide hands-on experience.
+      As you advance in your career, you can go on to become a Network Engineer.
+      Let me know if you want help with any of the above careers.
+  utter_guidance_data_careers:
+  - text: |
+      If you're interested in working with data, there are several exciting career paths you can pursue.
+      Entry-level positions such as Data Analyst provide hands-on experience in using data to influence business decisions.
+      You can also apply to be a database administrator if you prefer maintenance of databases.
+      As you gain experience, you can progress to more advanced roles like Data Scientist or Data Engineer.
+      Let me know if you want help with becoming a data analyst or administrator.      
+  utter_guidance_comp_troubleshooting_careers:
+  - text: |
+      If you enjoy troubleshooting computers and helping fix problems, You should consider a career in IT support.
+      In here, you'll be responsible for providing assistance to hardware, software, and network issues.
+      The usual entry point for this field is Helpdesk Technician for hands-on experience.
+      As you gain experience, you can go on to be an IT Support Specialist, Network Engineer or System Administrator.
+      Let me know if you want help in starting your IT support career.        
+  utter_guidance_web_careers:
+  - text: |
+      That's great! I suggest considering a career in web development. In here, you can learn about 
+      website design and interaction (front-end), or you can learn about internet protocols and 
+      connections (back-end). It is also possible to gain proficiency in both and become a full-stack
+      developer. When you gain enough experience, you can apply for senior developer jobs and take on
+      more leadership roles. You can also branch out into mobile development, desktop development, or
+      even web cybersecurity. Let me know if you want help in starting your web development career.
+  utter_guidance_software_careers:
+  - text: |
+      If you want to develop software, You can choose between mobile, desktop, and web applications . 
+      Common roles include: Software Developer, Software Engineer, Mobile Developer, Web Developer and Desktop Developer.
+      I can help you if you need assistance starting a career in one of these fields.
+  utter_guidance_library_careers:
+  - text: |
+      If you prefer to work in the library field, Most responsibilities include ensuring the preservation 
+      and accessibility of information sources. Career options include: Librarian, Archivist, Database Administrator and 
+      Research Specialist. Let me know if you want help starting in the above career paths.
+  utter_guidance_cyber_sec_careers:
+  - text: |
+      If you're interested in pursuing a career in cybersecurity, there are a lot of in-demand options for you.
+      You can consult businesses on best cybersecurity practices, hack systems to discover potential vulnerabilities,
+      or design security systems. Common roles include: Security Analyst, Ethical Hacker, Security Engineer, Penetration Tester, and Cybersecurity Consultant.
+      Let me know if you want help starting in the above career paths.
+  utter_guidance_digi_art_careers:
+  - text: |
+      If you're interested in pursuing a career in the creative industry of tech, You can choose to
+      create animations, 3D objects, or visual effects.
+      Career paths include: Animator, Concept Artist, 3D Modeler, Visual Effects Artist, and Motion Graphics Designer.
+      If any of these roles interest you, I can guide you on starting your career in one of them.
+  utter_guidance_AI_careers:
+  - text: |
+      If you're interested in artificial intelligence (AI), there are a lot of opportunities in this rapidly growing field.
+      Common roles in AI include ML Engineer, Data Scientist, NLP Specialist, and Computer Vision Engineer.
+      These roles are involved in designing increasingly complicated algorithms to make computers "smarter".
+      If any of these roles interest you, I can guide you on starting your career in one of them.
+  utter_guidance_game_dev_careers:
+  - text: |
+      If you're interested in game development, You can specialize in
+      creating stories for games, programming game mechanics, or designing the graphics and
+      special effects. Common roles include: game designer, game programmer, narrative designer,
+      game artist, and animator. Let me know if you need any help in starting a career in these roles.
+  utter_help_choose_jobs:
+  - text: |
+      It's perfectly normal to feel unsure about career choices after graduation.
+      If you'd like, I can help you explore one of the career paths in IT listed below that you might be interested.
+    buttons:
+    - title: I want to create websites
+      payload: /express_web_interest
+    - title: I want to help fix computer problems
+      payload: /express_comp_troubleshooting_interest
+    - title: I want to manage and create networks
+      payload: /express_networking_interest
+    - title: I want to analyze data
+      payload: /express_data_interest
+    - title: I want to create software
+      payload: /express_software_interest
+    - title: I want to be a librarian
+      payload: /express_library_interest
+    - title: I want to get into cybersecurity
+      payload: /express_cyber_sec_interest
+    - title: I want to get in the gaming industry
+      payload: /express_game_dev_interest
+    - title: I want to get in the creative industry (animation, digital art, special effects)
+      payload: /express_digi_art_interest
+    - title: I want to create my own AI
+      payload: /express_AI_interest
+  utter_guidance_no_interest:
+  - text: |
+      Impossible! If there is any career path I have missed, Please enter it below. 
+      In future updates, I may be able to assist you with it, though I doubt this chatbot will get updates
+      after the stonecap completion.
+  utter_what_web_developer:
+  - text: A web developer is a professional who designs and creates websites. They use programming languages like HTML, CSS, and JavaScript to build the web applications we see today.
+  utter_how_become_web_developer:
+  - text: |
+      Great Choice! There are two types of web developers. You have the backend which deals more with servers, databases, 
+      and security, while the frontend deals with website design, and client-side processing. Which one do you prefer
+    buttons:
+    - title: Front End
+      payload: /express_front_end_interest
+    - title: Back End
+      payload: /express_back_end_interest
+  utter_front_end_interest:
+  - text: |
+      Alright! So here in the frontend side  you are responsible for designing the website and handling its logic.
+      Now, do you want more design and less coding?, or less design and more coding?
+    buttons:
+    - title: More Design
+      payload: /express_more_design_interest
+    - title: More Coding
+      payload: /express_more_coding_interest
+  utter_more_design_interest:
+  - text: |
+      Nice! I look forward to seeing websites designed by you someday. For now, I suggest familiarizing with website
+      builders like WordPress and Wix. Read up on best design practices, user experience, and even Search Engine Optimization.
+      Learn a bit of javascript and php, it will help you a lot. But most of all don't be afraid to make mistakes and keep designing 
+      to get better everyday. 
+  utter_recommend_learning_materials:
+  - text: I can recommend a few learning materials if you want.
+  utter_web_design_learning_materials:
+  - text: |
+      Sure! Here are a few learning materials you can use:
+      1. Envato Tuts Youtube Web Design Course
+      2. Web Design Playground: HTML & CSS the Interactive Way pdf
+      3. Codecademy Web Design Course
+  utter_more_code_interest:
+  - text: |
+      Nice! Welcome to website programming hell. I strongly suggest having a good understanding of 
+      programming concepts such as OOP and SOLID. The programming language needed here is Javascript,
+      as it is used to create website logic. After that, learn the popular Javascript frameworks 
+      today like React, Angular, and Vue. You can also learn backend development along the way and then 
+      transition into a full-stack developer. The road is hard, but if it is not hard, then it is soft.
+  utter_js_dev_learning_materials:
+  - text: |
+      Sure! Here are a few learning materials you can use:
+      1. FreeCodeCamp Javascript, Data Structures and Algorithms Course (With certificate)
+      2. The Odin Project
+      3. Web Dev Simplified YT channel
+  utter_back_end_interest:
+  - text: |
+      Sugoi! Here in backend side you will be responsible for setting up the underlying infrastructure of the website.
+      Start by getting comfortable in a programming language. Then learn the popular frameworks for backend like ASP.NET for
+      C#, Node.js for Javascript, Laravel for PHP, and Django for Python. You need to know how to use these frameworks
+      to setup database connections, server routes, and handle load efficiently. You can also learn frontend development 
+      along the way and then transition into a full-stack developer. Like I always say, "Practice makes perfect, but
+      nobody is perfect, so therefore practice makes imperfect, I thank you".
+  utter_back_end_learning_materials:
+  - text: |
+      Sure! Here are a few learning materials you can use:
+      1. FreeCodeCamp Microservices and API
+      2. The Odin Project
+      3. W3schools.com
+  utter_what_db_admin:
+  - text: A database administrator (DBA) is responsible for the performance, integrity, and security of a database. They manage and maintain databases, ensure data availability, and troubleshoot any issues that arise.
+  utter_how_become_db_admin:
+  - text: To become a database administrator, you typically need a bachelor's degree in computer science, information technology, or a related field. Gain experience with database management systems like SQL Server, Oracle, or MySQL. Certifications such as Oracle Certified Professional (OCP) or Microsoft Certified Database Administrator (MCDBA) can also enhance your credentials.
+  utter_what_dev_ops:
+  - text: DevOps is a software development methodology that combines software development (Dev) with IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality.
+  utter_how_become_dev_ops:
+  - text: To become a DevOps professional, you need a strong foundation in software development and IT operations. Learn automation, continuous integration/continuous deployment (CI/CD), cloud technologies, and collaboration tools. Gain experience with configuration management tools like Puppet, Chef, or Ansible. Certifications such as AWS Certified DevOps Engineer or Docker Certified Associate can also be beneficial.
+  utter_what_network_engineer:
+  - text: A network engineer designs, implements, and manages computer networks. They are responsible for ensuring network availability, performance, and security.
+  utter_how_become_network_engineer:
+  - text: To become a network engineer, you typically need a bachelor's degree in computer science, information technology, or a related field. Gain experience with networking concepts, protocols, and technologies such as TCP/IP, routing, switching, and firewalls. Certifications like Cisco Certified Network Associate (CCNA) or CompTIA Network+ can also demonstrate your expertise.
+  utter_what_IT_support:
+  - text: IT support involves providing technical assistance and support to users and organizations. IT support professionals troubleshoot and resolve hardware, software, and network issues to ensure smooth operations.
+  utter_how_become_IT_support:
+  - text: To become an IT support specialist, you can start with a high school diploma or an associate degree in information technology. Gain hands-on experience with computer systems, networks, and troubleshooting techniques. Certifications such as CompTIA A+, Microsoft Certified Desktop Support Technician (MCDST), or ITIL Foundation can help you demonstrate your skills and knowledge.
+  utter_what_QA_tester:
+  - text: A QA tester, or quality assurance tester, is responsible for testing software applications to ensure they meet quality standards. They identify defects, report bugs, and work closely with developers to ensure product quality.
+  utter_how_become_QA_tester:
+  - text: To become a QA tester, you will typically need a bachelor's degree in computer science, engineering, or a related field. Gain knowledge of software testing methodologies, tools, and techniques. Develop skills in test case design, execution, and defect tracking. Certifications such as ISTQB Certified Tester or Certified Software Tester (CSTE) can also help you establish credibility in the field.
+  utter_how_become_IT_audit_assistant:
+  - text: To become an IT Audit Assistant, consider earning a degree in information technology, accounting, or a related field. Gain experience with auditing processes and tools, and consider pursuing certifications such as Certified Information Systems Auditor (CISA) to enhance your credentials.
+  utter_what_IT_audit_assistant:
+  - text: An IT Audit Assistant is responsible for assisting in the auditing of information technology systems and processes. They help identify risks, assess controls, and ensure compliance with regulations and standards to protect organizational assets and data.
+  utter_how_become_system_integration_admin:
+  - text: 'To become a System Integration Admin, gain expertise in integrating various hardware and software systems. Acquire knowledge of networking, databases, and system architecture. Obtain relevant certifications such as CompTIA Network+ or Microsoft Certified: Azure Solutions Architect Expert.'
+  utter_what_system_integration_admin:
+  - text: A System Integration Admin is responsible for integrating and managing complex IT systems and infrastructure within an organization. They ensure seamless communication and interoperability between different systems, applications, and platforms to optimize business processes.
+  utter_how_become_computer_programmer:
+  - text: To become a Computer Programmer, learn programming languages such as Python, Java, or C++. Earn a degree in computer science, software engineering, or a related field. Gain practical experience by working on coding projects and contributing to open-source projects.
+  utter_what_computer_programmer:
+  - text: A Computer Programmer is responsible for writing, testing, and maintaining software code to create computer programs. They analyze user requirements, design algorithms, and troubleshoot issues to develop efficient and functional software solutions.
+  utter_how_become_system_admin:
+  - text: 'To become a System Administrator, gain expertise in operating systems such as Windows, Linux, or Unix. Acquire knowledge of networking, security, and server administration. Consider obtaining certifications such as Microsoft Certified: Azure Administrator or CompTIA Server+.'
+  utter_what_system_admin:
+  - text: A System Administrator is responsible for managing and maintaining computer systems, networks, and servers within an organization. They ensure system reliability, security, and performance by installing, configuring, and troubleshooting hardware, software, and infrastructure components.
+  utter_what_mobile_developer:
+  - text: A mobile developer is someone who specializes in creating applications for mobile devices such as smartphones and tablets. They develop apps for various platforms like iOS and Android, using programming languages like Dart, C#, Java, Swift, or Kotlin.
+  utter_how_become_mobile_developer:
+  - text: 'To become a mobile developer, start by picking a programming language. Most popular today are: Dart for the Flutter framework, C# for Xamarin, Kotlin, Java, Swift, and Javascript for React Native. Build your portfolio by creating projects that showcase your abilities, and also apply for internships to get hands-on experience. If you want, I can give you learning materials for mobile development.'
+  utter_mobile_develop_learning_materials:
+  - text: |
+      Sure here are some you can use:
+      * https://developer.android.com/courses
+      * FCC Android Development for Beginners full course
+      * IOS Academy App Development for Beginners
+  utter_what_desktop_developer:
+  - text: A desktop developer is someone who specializes in creating applications that run on desktop computers. They develop apps for desktop platforms such as Windows, MacOS, and Linux using programming languages like C++, C#, JavaScript, Java, and Python
+  utter_how_become_desktop_developer:
+  - text: 'To become a desktop developer, start by picking a programming language. Most popular today are: C++ for Qt framework, Javascript for electron, C# for .NET, and Java for Swing Build your portfolio by creating projects that showcase your abilities, and also apply for internships to get hands-on experience. If you want, I can give you learning materials for desktop development.'
+  utter_desktop_develop_learning_materials:
+  - text: |
+      Sure here are some you can use:
+      * Qt widgets docs
+      * Simple C# Desktop Application Complete Tutorial Series Playlist
+      * Electron Complete Course - coderJeet
+
+  utter_ask_CS_fields_okay:
+    - text: |
+        I see. Are you familiar with at least one of the following fields of CS below:
+        * Computer Programming
+        * Networking
+        * Device Troubleshooting
+        * Machine Learning Algorithms
+        * Information Security
+
+  utter_ask_adaptation_okay_CS:
+    - text: |
+        The CS industry is continuously evolving with new technologies being released almost everyday. 
+        Do you prefer having to constantly learn new technologies and keep up with the trends?
+
+  utter_problem_solving_okay_CS:
+    - text: |
+        In CS, you need to be able to understand complex algorithms, or troubleshoot hardware. 
+        These involve a lot of trial and error, are you fine with that?
+  utter_ask_willing_adjust_CS_okay:
+    - text: |
+        Would you be willing to learn about these fields, even if you're not familiar with them? 
+        Also CS requires determination, adaptation, and creative problem-solving skills. 
+        Would you still be fine then?
+
+  utter_strongly_recommend_CS:
+    - text: |
+        Based on your responses, I believe CS would be a great fit for you. As long as you
+        enjoy the process and keep grinding, I have no doubt you will eventually have a successful career.
+        If you need advice about anything else, I got yo back bruda.
+  utter_medium_recommend_CS:
+    - text: |
+        Based on your responses, I believe CS would be a suitable choice for you. Although you may not like
+        the constant adaptation, or the frustations of problem solving, It is still possible for you to find a 
+        way to work around this. Let me know if you need advice about anything else, I got yo back bruda.
+
+  utter_slight_recommend_CS:
+    - text: |
+        That's good to hear. I admire your dedication to still push through taking CS despite not being familiar
+        with its fields of study. However, you may have to work harder than your peers. Like Chihaya said,
+        "The more you want something, the faster your hand moves to reach it" Let me know if you need assistance with anything bruda.
+  utter_not_recommend_CS:
+    - text: |
+        Unfortunately, I don't think CS might be the right course. You can still try, but trying is the first
+        step to failure. If you want to, I could recommend some other courses that might work out for you.
+  #BSCS general
+  # utter_what_is_BSCS:
+  #   - text: "Bachelor of Science in Computer Science (BSCS) is a program that focuses on the study of computers and computational systems. It covers topics such as algorithms, data structures, programming languages, software engineering, and computer architecture."
+
+  # utter_BSCS_stupified:
+  #   - text: "In other words, it is like learning how to use computers to do cool stuff like making apps, games, and websites. It's kind of like learning how to be a wizard with computers!"
+
+
+  utter_BSCS_benefits:
+    - text: "There are many benefits to studying Bachelor of Science in Computer Science (BSCS). It opens up diverse career opportunities in technology, offers high earning potential, and allows you to work on innovative projects that shape the future."
+
+  # utter_BSCS_careers:
+  #   - text: "With a BSCS degree, you can pursue various careers in technology, such as software developer, cybersecurity analyst, data scientist, and computer scientist."
+
+  utter_BSCS_salary:
+    - text: "The salary for professionals with a BSCS degree can vary depending on factors such as location, experience, and job role. However, it generally offers competitive salaries and strong earning potential."
+
+  utter_BSCS_required_skills:
+    - text: "To succeed in BSCS, it's important to have strong problem-solving skills, proficiency in programming languages, knowledge of algorithms and data structures, and the ability to work well in teams."
+
+  utter_what_software_developer:
+    - text: "A software developer is a professional who designs, develops, and maintains software applications or systems. They work with programming languages, frameworks, and tools to create functional and user-friendly software solutions."
+
+  utter_what_data_scientist:
+    - text: "A data scientist is a professional who analyzes large datasets to extract insights and make data-driven decisions. They use statistical analysis, machine learning algorithms, and programming skills to uncover patterns and trends in data."
+
+  utter_what_cybersecurity_analyst:
+    - text: "A cybersecurity analyst is a professional who protects organizations' computer systems and networks from cyber threats. They monitor for security breaches, investigate incidents, and implement security measures to prevent attacks."
+
+  utter_what_computer_scientist:
+    - text: "A computer scientist is a professional who studies the theory, design, development, and application of computer systems. They explore algorithms, data structures, programming languages, and computational theory to advance technology."
+
+  utter_what_ml_engineer:
+    - text: "A machine learning engineer is responsible for designing, implementing, and deploying machine learning models to solve complex problems. They work with large datasets and algorithms to train models that can make predictions or automate tasks."
+
+  utter_what_nlp_specialist:
+    - text: "An NLP specialist, also known as a natural language processing specialist, focuses on developing algorithms and techniques to enable computers to understand, interpret, and generate human language. They work on tasks such as sentiment analysis, language translation, and speech recognition."
+
+  utter_what_computer_vision_engineer:
+    - text: "A computer vision engineer develops algorithms and systems that enable computers to interpret and analyze visual information from the real world. They work on applications such as image recognition, object detection, and video surveillance."
+
+
+  utter_how_become_ml_engineer:
+    - text: "To become a machine learning engineer, you should start by gaining a strong foundation in mathematics, statistics, and computer science. Then, learn programming languages like Python and acquire skills in machine learning frameworks and tools. Pursue relevant courses, certifications, and practical experience through projects or internships to build your expertise."
+
+  utter_how_become_nlp_specialist:
+    - text: "To become an NLP specialist, start by learning programming languages like Python and acquiring knowledge of machine learning and deep learning techniques. Focus on NLP concepts such as tokenization, part-of-speech tagging, and named entity recognition. Gain practical experience by working on NLP projects, contributing to open-source projects, and participating in NLP competitions."
+
+  utter_how_become_computer_vision_engineer:
+    - text: "To become a computer vision engineer, you should develop a strong understanding of computer vision algorithms, image processing techniques, and deep learning models. Learn programming languages like Python and frameworks such as OpenCV and TensorFlow. Gain practical experience through hands-on projects, internships, and research opportunities in computer vision."
+
+  utter_how_become_software_developer:
+    - text: "To become a software developer, you can start by learning programming languages such as Python, Java, or JavaScript. Pursuing a degree in computer science or related field, building a portfolio of projects, and participating in internships can also help. Continuous learning and staying updated with technology trends are essential in this field."
+
+  utter_how_become_data_scientist:
+    - text: "To become a data scientist, you should develop skills in statistics, programming (e.g., Python, R), data visualization, and machine learning. Obtaining a degree in a quantitative field, gaining practical experience through internships or projects, and obtaining relevant certifications can also be beneficial. Networking within the data science community and staying updated with emerging technologies are key."
+
+  utter_how_become_cybersecurity_analyst:
+    - text: "To become a cybersecurity analyst, you can start by learning about network security, system security, and incident response. Pursuing a degree in cybersecurity, gaining practical experience through internships or cybersecurity competitions, and obtaining relevant certifications (e.g., CompTIA Security+, CISSP) are important steps. Continuous learning and staying updated with cybersecurity threats and defense techniques are crucial in this field."
+
+  utter_how_become_computer_scientist:
+    - text: "To become a computer scientist, you should focus on developing strong problem-solving skills, logical thinking, and proficiency in programming languages such as C++, Java, or Python. Pursuing a degree in computer science or related field, gaining practical experience through internships or research projects, and participating in coding competitions can also be helpful. Continuous learning and staying updated with advancements in computer science are essential."
+
+
+  utter_how_become_software_engineer:
+    - text: "To become a software engineer, you can start by earning a degree in computer science, software engineering, or a related field. Gain proficiency in programming languages such as Java, Python, or C++. Build practical experience through internships, projects, and coding competitions. Stay updated with industry trends and technologies, and consider obtaining relevant certifications to enhance your skills."
+
+  utter_how_become_ethical_hacker:
+    - text: "To become an ethical hacker, acquire knowledge of computer systems and networks, and gain expertise in cybersecurity tools and techniques. Consider earning certifications such as Certified Ethical Hacker (CEH) and gaining practical experience through internships or projects."
+
+  utter_how_become_security_engineer:
+    - text: "To become a security engineer, focus on obtaining a solid understanding of computer networks, encryption protocols, and cybersecurity principles. Pursue relevant certifications like Certified Information Systems Security Professional (CISSP) and gain hands-on experience through internships or entry-level positions."
+
+  utter_how_become_penetration_tester:
+    - text: "To become a penetration tester, develop skills in ethical hacking, vulnerability assessment, and penetration testing methodologies. Obtain certifications like Certified Ethical Hacker (CEH) or Offensive Security Certified Professional (OSCP), and gain practical experience through labs, challenges, or real-world projects."
+
+  utter_how_become_cybersecurity_consultant:
+    - text: "To become a cybersecurity consultant, acquire expertise in cybersecurity frameworks, risk management, and compliance regulations. Gain relevant certifications such as Certified Information Systems Security Professional (CISSP) or Certified Information Security Manager (CISM), and develop strong communication and problem-solving skills."
+
+  utter_how_become_it_support_specialist:
+    - text: |
+        To become an IT support specialist, you can start by gaining a strong foundation in computer science, information technology, or a related field.
+        Consider pursuing certifications such as CompTIA A+ or Microsoft Certified Desktop Support Technician (MCDST).
+        Gain practical experience through internships or entry-level positions to develop your technical skills and knowledge.
+
+
+  utter_what_software_engineer:
+    - text: "A software engineer designs, develops, and maintains software applications and systems. They analyze user needs, design software solutions, write code, and test and debug applications to ensure they meet quality standards. Software engineers work in various industries, including technology, finance, healthcare, and entertainment, and collaborate with cross-functional teams to deliver innovative software products."
+
+  utter_what_ethical_hacker:
+    - text: "An ethical hacker, also known as a white-hat hacker, is a cybersecurity professional who legally assesses the security of computer systems, networks, or applications to identify vulnerabilities and weaknesses. They use their skills to strengthen security measures and protect against malicious cyber attacks."
+
+  utter_what_security_engineer:
+    - text: "A security engineer is responsible for designing, implementing, and managing security measures to protect an organization's computer systems and networks from cyber threats. They analyze security risks, develop security solutions, and ensure compliance with industry standards and regulations."
+
+  utter_what_penetration_tester:
+    - text: "A penetration tester, also known as an ethical hacker or white-hat hacker, is a cybersecurity professional who assesses the security of computer systems, networks, or applications by simulating cyber attacks. Their role involves identifying vulnerabilities and weaknesses to help organizations improve their security posture."
+
+  utter_what_cybersecurity_consultant:
+    - text: "A cybersecurity consultant provides advisory services to organizations on cybersecurity strategies, policies, and practices to mitigate cyber risks and protect sensitive information. They assess security needs, develop customized solutions, and provide guidance on implementing security measures to safeguard against cyber threats."
+
+  utter_what_it_support_specialist:
+    - text: |
+        An IT support specialist provides technical assistance and support to individuals and organizations for computer systems, software, and hardware.
+        They diagnose and resolve technical issues, install and maintain computer systems, and provide training to users.
+
+  utter_ask_IS_fields_okay:
+      - text: |
+          I see. Are you familiar with at least one of the following fields of IS below:
+          * Computer Programming
+          * Networking
+          * Data Analysis
+          * Business Analytics
+          * Information Security
+
+  utter_ask_adaptation_okay_IS:
+    - text: |
+        The IS industry is continuously evolving with new technologies being released almost everyday. 
+        Do you prefer having to constantly learn new technologies and keep up with the trends?
+
+  utter_problem_solving_okay_IS:
+    - text: |
+        In IS, you'll need to be able to understand business processes and learn how to
+        integrate them together. You'll also be exposed to a bit more managing roles.
+        Are you fine with the need for a lot of communication?
+  utter_ask_willing_adjust_IS_okay:
+    - text: |
+        Would you be willing to learn about these fields, even if you're not familiar with them? 
+        Also IS requires determination, adaptation, and creative problem-solving skills. 
+        Would you still be fine then?
+
+  utter_strongly_recommend_IS:
+    - text: |
+        Based on your responses, I believe IS would be a great fit for you. As long as you
+        enjoy the process and keep grinding, I have no doubt you will eventually have a successful career.
+        If you need advice about anything else, I got yo back bruda.
+  utter_medium_recommend_IS:
+    - text: |
+        Based on your responses, I believe IS would be a suitable choice for you. Although you may not like
+        the constant adaptation, or the need for good communication skills, It is still possible for you to find a 
+        way to work around this. Let me know if you need advice about anything else, I got yo back bruda.
+
+  utter_slight_recommend_IS:
+    - text: |
+        That's good to hear. I admire your dedication to still push through taking IS despite not being familiar
+        with its fields of study. However, you may have to work harder than your peers. Like Chihaya said,
+        "The more you want something, the faster your hand moves to reach it" Let me know if you need assistance with anything bruda.
+
+  utter_not_recommend_IS:
+    - text: |
+        Unfortunately, I don't think IS might be the right course. You can still try, but trying is the first
+        step to failure. If you want to, I could recommend some other courses that might work out for you.
+  #BSIS general
+  # utter_BSIS_stupified:
+  #   - text: "In other words, it is where you learn how businesses use computers and data to make important decisions. You'll learn about things like managing information, creating technology solutions for businesses, and using data to solve real-world problems."
+
+  # utter_what_is_BSIS:
+  #   - text: "Bachelor of Science in Information Systems (BSIS) is a program that focuses on the study of information systems, including their design, implementation, and management."
+
+  utter_BSIS_benefits:
+    - text: "The benefits of graduating with BSIS degree include high demand, high salary potential, and opportunities for remote work."
+
+  # utter_BSIS_careers:
+  #   - text: "After completing Bachelor of Science in Information Systems (BSIS), you can pursue careers such as systems analyst, data analyst, project manager, and business analyst."
+
+  utter_BSIS_required_skills:
+    - text: "Required skills for BSIS include proficiency in programming languages, database management, problem-solving, and communication."
+
+
+
+  utter_BSIS_BSIT_difference:
+    - text: " BSIS focuses more on using technology to support businesses and manage information, while BSCS focuses more on the technical aspects of computers and software development."
+
+  utter_BSIT_BSCS_difference:
+    - text: "in BSCS the question is 'How do computer technologies work? while in BSIT it is 'how do we make computer technologies do our work'"
+
+  utter_BSIS_BSCS_difference:
+    - text: "BSCS focuses on how computers work while BSIS is focused on the structure of systems and effective use of data which may or may not cross with the study areas of BSCS"
+
+  utter_BSIS_BSIT_similarities:
+    - text: "BSIS and BSIT both deal a lot with data and data technologies like SQL, and database administration. "
+
+  utter_BSIT_BSCS_similarities:
+    - text: "BSIT and BSCS both deal with best practices of software development and programming languages"
+
+  utter_BSIS_BSCS_similarities:
+    - text: "BSIS and BSCS both study the use of computer technology albeit for different reasons. du bist sehr blod. hast du kein kopf?"
+
+
+
+
+  utter_what_data_analyst:
+    - text: "A data analyst is responsible for analyzing data to help organizations make informed decisions."
+
+  utter_what_systems_analyst:
+    - text: "A systems analyst is responsible for analyzing business needs and designing technology solutions to meet those needs."
+
+  utter_what_project_manager:
+    - text: "A project manager is responsible for planning, executing, and overseeing projects to ensure they are completed on time and within budget."
+
+
+  utter_how_become_data_analyst:
+    - text: "To become a data analyst, you can start by learning essential skills such as data analysis, statistics, and programming languages like Python or R. Pursuing relevant education, certifications, and gaining hands-on experience through internships or projects can also help. Continuous learning and staying updated with industry trends are key."
+
+  utter_how_become_systems_analyst:
+    - text: "Becoming a systems analyst typically involves acquiring skills in system analysis, software development methodologies, and understanding business processes. Pursuing relevant education in computer science or information systems, gaining experience in systems development, and obtaining certifications can pave the way. Networking within the industry and staying updated with technology trends is also beneficial."
+
+  utter_how_become_project_manager:
+    - text: "To become a project manager, you should focus on developing skills in project management, leadership, communication, and risk management. Obtaining relevant certifications such as PMP (Project Management Professional) or PRINCE2 can be advantageous. Gaining experience in project coordination or leadership roles, along with continuous learning and networking, are also essential steps."
+
+
+
+
+  utter_other_universities:
+    - text: "Computer courses in NEU 1000% self learning. Please, anata no shourai wa anata ni daiji dakara, STI, MAPUA, AMA, UST ni ikiru wa ichiban saikou no ketsudan desu. Onegaishimasu NEU KARA HANARERU!!!"
+  utter_advise_difference_not_matter:
+    - text: "Do not be afraid of choosing the wrong course, as most subjects between these courses have similar concepts with each other, not to mention the wide availability of learning materials online. Follow your heart, and choose the one you think will be the most enjoyable"
+
+
+
+
+  utter_what_solutions_specialist:
+    - text: "A Solutions Specialist is responsible for analyzing customer needs and providing tailored solutions to meet their requirements. They collaborate with sales teams, engineers, and product managers to design and implement effective solutions that address customer challenges."
+
+  utter_how_become_solutions_specialist:
+    - text: "To become a Solutions Specialist, consider obtaining a degree in a relevant field such as computer science, information technology, or business. Gain experience in sales, customer service, or technical support. Develop strong communication and problem-solving skills. Acquire certifications in relevant technologies or products to enhance your credentials."
+
+  utter_what_documentation_specialist:
+    - text: "A Documentation Specialist creates, organizes, and maintains documentation such as user guides, technical manuals, and training materials. They ensure that documentation is accurate, accessible, and up-to-date to support users, customers, and internal teams."
+
+  utter_how_become_documentation_specialist:
+    - text: "To become a Documentation Specialist, consider earning a degree in technical writing, communication, or a related field. Develop strong writing, editing, and organizational skills. Gain experience in creating and managing documentation. Familiarize yourself with documentation tools and standards. Build a portfolio showcasing your writing skills and attention to detail."
+
+  utter_what_end_user_trainer:
+    - text: "An End User Trainer is responsible for providing training and support to end users on how to use software applications, systems, or products effectively. They develop training materials, conduct training sessions, and provide ongoing support to ensure users can maximize their productivity and efficiency."
+
+  utter_how_become_end_user_trainer:
+    - text: "To become an End User Trainer, consider obtaining a degree in education, instructional design, or a related field. Gain experience in training, teaching, or technical support. Develop strong communication, presentation, and interpersonal skills. Acquire knowledge of instructional design principles and learning technologies."
+
+  utter_what_organizational_process_analyst:
+    - text: "An Organizational Process Analyst analyzes business processes, identifies areas for improvement, and designs solutions to streamline operations and enhance efficiency. They work closely with stakeholders to understand business needs, gather requirements, and implement process improvements."
+
+  utter_how_become_organizational_process_analyst:
+    - text: "To become an Organizational Process Analyst, consider earning a degree in business administration, management, industrial engineering, or a related field. Gain experience in process analysis, project management, or consulting. Develop strong analytical, problem-solving, and project management skills. Acquire certifications in process improvement methodologies such as Six Sigma or Lean."
+
+  utter_ask_libsci_fields_okay:
+    - text: |
+        I see. In Library Science, you will mostly learn about organizing information,
+        conducting research and managing information sources. This may appear boring and
+        repetitive to some people, does this apply to you?
+
+
+  utter_ask_adaptation_okay_libsci:
+    - text: |
+        The field of Library Science today requires knowledge of current technology trends in managing data.
+        It also requires good communication skills in order to assist clients in finding information.
+        Do you have/are you willing to learn these skills?
+
+  utter_problem_solving_okay_libsci:
+    - text: |
+        Lastly, in order to stay motivated pursuing the field of Library Science, a passion for 
+        serving the community by making sure information is readily accessible by everyone is needed.
+        Are you willing to dedicate yourself to this?
+
+  utter_ask_willing_adjust_libsci_okay:
+    - text: |
+        If you don't like organization but have good communication skills, and are passionate 
+        about doing public service. Library Science might still work for you.
+        Are you willing to continue?
+  utter_strongly_recommend_libsci:
+    - text: |
+        Based on your responses, I believe IS would be a great fit for you. As long as you
+        enjoy the process and keep grinding, I have no doubt you will eventually have a successful career.
+        If you need advice about anything else, I got yo back bruda.
+  utter_medium_recommend_libsci:
+    - text: |
+        Based on your responses, I believe IS would be a suitable choice for you. Although you may not like
+        public service, talking to people, or struggle keeping up with technology, It is still possible for you to find a 
+        way to work around this. Let me know if you need advice about anything else, I got yo back bruda.
+
+  utter_slight_recommend_libsci:
+    - text: |
+        That's good to hear. I admire your dedication to still push through taking Library Science.
+        If you ever feel like falling behind your peers, just acknowledge your weaknesses and 
+        keep moving forward. Like Chihaya said,"The more you want something, 
+        the faster your hand moves to reach it" Let me know if you need assistance with anything pareh.
+
+  utter_not_recommend_libsci:
+    - text: |
+        Unfortunately, I don't think Library Science aligns with your interests and skills. You can still try, 
+        but trying is the first step to failure. If you want to, I could recommend some other courses 
+        that might work out for you.
+  # general libsci
+  # utter_what_is_LibSci:
+  #   - text: "Library Science involves the study of principles and practices related to library management, 
+  #   information organization, and information retrieval."
+
+  # utter_LibSci_stupified:
+  #   - text: "In other words, it is more about making sure libraries have the best quality books, 
+  #         well organized collections, and properly allocating the budget."
+
+  utter_LibSci_benefits:
+    - text: "LibSci offers various benefits such as providing access to organized information, promoting literacy, supporting research and education, preserving cultural heritage, and fostering community engagement."
+
+  # utter_LibSci_careers:
+  #   - text: "Careers in LibSci include roles such as librarian,archivist, and research specialist. These roles involve work in libraries, archives, museums, universities, and other information institutions."
+
+  utter_LibSci_required_skills:
+    - text: "Required skills for a career in LibSci may include information organization, cataloging, classification systems (such as Dewey Decimal or Library of Congress), reference services, information retrieval, digital literacy, communication, customer service, and project management."
+
+
+
+  utter_what_librarian:
+    - text: "A librarian is responsible for organizing and managing library resources, assisting patrons with research and information needs, cataloging materials, and developing library programs. They may also provide instruction on information literacy and manage library facilities."
+
+  utter_what_archivist:
+    - text: "An archivist is responsible for appraising, preserving, and providing access to historical documents and records. They organize collections, create finding aids, and may also conduct research, assist patrons, and contribute to exhibitions or educational programs."
+
+  utter_what_research_specialist:
+    - text: "A research specialist conducts in-depth research and analysis on specific topics or areas of interest. They gather data, analyze information, and produce reports or recommendations based on their findings. Research specialists may work in various fields, including academia, government, or private organizations."
+
+
+
+  utter_how_become_librarian:
+    - text: |
+       To become a librarian here in the Philippines, you need a bachelor or master's degree in BLIS. 
+       Then you need to pass the Library Licensure Exam (LLE). After that, you can start applying for
+       entry-level librarian jobs as employee or an intern to gain valuable experience. Then, you can apply for
+       more senior librarian jobs or specialize and become an archivist or research specialist. 
+       Let me know if you need help preparing for the exam or anything else.
+  utter_help_library_exam:
+    - text: |
+        For your licensure exam in library science, make sure to review key concepts and theories 
+        covered in your coursework. Practice with sample questions and seek guidance from 
+        professors, and former examinees. Keep yourself motivated by setting small goals everyday
+        If you want more specific help, I recommend visiting examsapinas.com's LLE guide.
+        Link is: https://examspinas.com/unlocking-success-a-comprehensive-guide-to-the-librarians-licensure-examination-lle/
+
+  utter_how_become_archivist:
+    - text: "To become an archivist, you need to have background experience in archiving materials 
+    usually in museums or art centers. BLIS and MLIS degrees are required. Specialization in archiving
+     from those courses are also preferred"
+
+  utter_how_become_research_specialist:
+    - text: "To become a research specialist, you typically need a bachelor's degree in a relevant field such as library science, information science, or a subject area related to your research focus. Pursuing advanced degrees or certifications may enhance your qualifications. Gaining experience through research projects, internships, or entry-level positions can also be helpful."
+
+
+
+
+actions:
+- action_calculate_tuition_fee
+- action_tuition_fee
+- utter_greet2
+- utter_no_interest
+- utter_game_programmer_info
+- utter_bsemc_gamedev_careers
+- utter_bsemc_gamedev_answer
+- utter_game_designer_info
+- utter_what_ad_builders
+- utter_DigiAni_simplified
+- utter_ask_what_is_DigiAni
+- utter_bsemc_digiani_answer
+- utter_bsemc_digiani_careers
+- utter_greet
+- utter_thanks
+- utter_goodbye
+- utter_access_neuvle
+- utter_programs_offered
+- utter_bsit_answer
+- utter_bscs_answer
+- utter_bsis_answer
+- utter_bsemc_answer
+- utter_admission_process_answer_advising
+- utter_admission_process_answer_payment
+- utter_admission_process_answer_com
+- utter_admission_process_answer_start_class
+- utter_please_rephrase
+- utter_ask_preference1
+- utter_ask_preference2
+- utter_ask_preference3
+- utter_ask_preference4
+- utter_ask_preference5
+- utter_ask_preference6
+- utter_ask_preference7
+- utter_ask_preference8
+- utter_ask_preference9
+- utter_ask_preference10
+- utter_submit
+- utter_recommend_degree
+- utter_confirm_career_assist
+- utter_confirmed_career_assist
+- validate_preference_form
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-intents:
-- greet
-- goodbye
-- affirm
-- deny
-- mood_great
-- mood_unhappy
-- bot_challenge
-- test_action
-responses:
-  utter_greet:
-  - text: Hey! How are you?
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
-  utter_goodbye:
-  - text: Bye
-  utter_iamabot:
-  - text: I am a bot, powered by Rasa.
-actions:
-- action_hello_world

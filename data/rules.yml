@@ -1,14 +1,207 @@
-version: "3.0"
+version: "3.1"
+
 rules:
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
-- rule: Say 'I am a bot' anytime the user challenges
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
-- rule: Test custom action
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+  
+- rule: Activate preference form
   steps:
-  - intent: test_action
-  - action: action_hello_world
+  - action: utter_confirm_career_assist
+  - intent: affirm
+  - action: utter_confirmed_career_assist
+  - action: preference_form
+  - active_loop: preference_form
+
+- rule: Submit preference form
+  condition:
+  - active_loop: preference_form
+  steps:
+  - action: preference_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_greet2
+
+- rule: Ask About Game Designer Role
+  steps:
+  - intent: ask_what_game_designer
+  - action: utter_game_designer_info
+
+- rule: Ask About Game Designer Skills
+  steps:
+  - intent: ask_game_designer_skills
+  - action: utter_game_designer_skills_info
+
+- rule: Ask About Game Designer Salary
+  steps:
+  - intent: ask_game_designer_salary
+  - action: utter_game_designer_salary_info
+
+- rule: Ask About Game Designer Education
+  steps:
+  - intent: ask_game_designer_education
+  - action: utter_game_designer_education_info
+
+- rule: Ask About Game Designer Growth
+  steps:
+  - intent: ask_game_designer_growth
+  - action: utter_game_designer_growth_info
+
+- rule: Ask About Game Designer Challenges
+  steps:
+  - intent: ask_game_designer_challenges
+  - action: utter_game_designer_challenges_info
+
+- rule: Ask About Game Artist Role
+  steps:
+  - intent: ask_what_game_artist
+  - action: utter_game_artist_info
+
+- rule: Ask About Game Artist Skills
+  steps:
+  - intent: ask_game_artist_skills
+  - action: utter_game_artist_skills_info
+
+- rule: Ask About Game Artist Salary
+  steps:
+  - intent: ask_game_artist_salary
+  - action: utter_game_artist_salary_info
+
+- rule: Ask About Game Artist Education
+  steps:
+  - intent: ask_game_artist_education
+  - action: utter_game_artist_education_info
+
+- rule: Ask About Game Artist Growth
+  steps:
+  - intent: ask_game_artist_growth
+  - action: utter_game_artist_growth_info
+
+- rule: Ask About Game Artist Challenges
+  steps:
+  - intent: ask_game_artist_challenges
+  - action: utter_game_artist_challenges_info
+
+- rule: Ask About Game Programmer Role
+  steps:
+  - intent: ask_what_game_programmer
+  - action: utter_game_programmer_info
+
+- rule: Ask About Game Programmer Skills
+  steps:
+  - intent: ask_game_programmer_skills
+  - action: utter_game_programmer_skills_info
+
+- rule: Ask About Game Programmer Salary
+  steps:
+  - intent: ask_game_programmer_salary
+  - action: utter_game_programmer_salary_info
+
+- rule: Ask About Game Programmer Education
+  steps:
+  - intent: ask_game_programmer_education
+  - action: utter_game_programmer_education_info
+
+- rule: Ask About Game Programmer Growth
+  steps:
+  - intent: ask_game_programmer_growth
+  - action: utter_game_programmer_growth_info
+
+- rule: Ask About Game Programmer Challenges
+  steps:
+  - intent: ask_game_programmer_challenges
+  - action: utter_game_programmer_challenges_info
+
+- rule: Respond to ask_about_narrative_designer_role
+  steps:
+  - intent: ask_what_narrative_designer
+  - action: utter_narrative_designer_info
+
+- rule: Respond to ask_about_narrative_designer_skills
+  steps:
+  - intent: ask_narrative_designer_skills
+  - action: utter_narrative_designer_skills_info
+
+- rule: Respond to ask_about_narrative_designer_salary
+  steps:
+  - intent: ask_narrative_designer_salary
+  - action: utter_narrative_designer_salary_info
+
+- rule: Respond to ask_about_narrative_designer_education
+  steps:
+  - intent: ask_narrative_designer_education
+  - action: utter_narrative_designer_education_info
+
+- rule: Respond to ask_about_narrative_designer_growth
+  steps:
+  - intent: ask_narrative_designer_growth
+  - action: utter_narrative_designer_growth_info
+
+- rule: Respond to ask_about_narrative_designer_challenges
+  steps:
+  - intent: ask_narrative_designer_challenges
+  - action: utter_narrative_designer_challenges_info
+
+- rule: Respond to ask_about_game_designer_versus_artist
+  steps:
+    - intent: ask_game_designer_versus_artist
+    - action: utter_game_designer_versus_artist_info
+
+- rule: Respond to ask_about_associate_game_producer_role
+  steps:
+    - intent: ask_what_associate_game_producer
+    - action: utter_what_associate_game_producer
+
+- rule: Provide guidance on becoming an Associate Game Producer
+  steps:
+    - intent: ask_how_become_associate_game_producer
+    - action: utter_how_become_associate_game_producer
+
+- rule: Respond to ask_about_senior_game_sound_engineer_role
+  steps:
+    - intent: ask_what_senior_game_sound_engineer
+    - action: utter_what_senior_game_sound_engineer
+
+- rule: Provide guidance on becoming a Senior Game Sound Engineer
+  steps:
+    - intent: ask_how_become_senior_game_sound_engineer
+    - action: utter_how_become_senior_game_sound_engineer
+
+- rule: Respond to ask_about_business_dev_specialist_role
+  steps:
+    - intent: ask_what_business_dev_specialist
+    - action: utter_what_business_dev_specialist
+
+- rule: Provide guidance on becoming a Business Development Specialist
+  steps:
+    - intent: ask_how_become_business_dev_specialist
+    - action: utter_how_become_business_dev_specialist
+
+- rule: Respond to ask_BSIT_benefits
+  steps:
+  - intent: ask_BSIT_benefits
+  - action: utter_BSIT_benefits
+
+# - rule: Respond to ask_BSIT_careers
+#   steps:
+#   - intent: ask_BSIT_careers
+#   - action: utter_BSIT_careers
+
+- rule: Respond to ask_BSIT_required_skills
+  steps:
+  - intent: ask_BSIT_required_skills
+  - action: utter_BSIT_required_skills
+
+- rule: Respond to ask_what_web_developer
+  steps:
+  - intent: ask_what_web_developer
+  - action: utter_what_web_developer
+

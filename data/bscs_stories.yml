@@ -1,0 +1,139 @@
+version: "3.1"
+
+stories:
+  - story: CS Guidance strong
+    steps:
+      - intent: ask_guidance_take_CS_course
+      - action: utter_ask_CS_fields_okay
+      - intent: affirm
+      - action: utter_ask_adaptation_okay_CS
+      - intent: affirm
+      - action: utter_problem_solving_okay_CS
+      - intent: affirm
+      - action: utter_strongly_recommend_CS
+  - story: CS Guidance medium 1
+    steps:
+      - intent: ask_guidance_take_CS_course
+      - action: utter_ask_CS_fields_okay
+      - intent: affirm
+      - action: utter_ask_adaptation_okay_CS
+      - or:
+          - intent: affirm
+          - intent: deny
+      - action: utter_problem_solving_okay_CS
+      - intent: deny
+      - action: utter_medium_recommend_CS
+
+  - story: CS Guidance medium 2
+    steps:
+      - intent: ask_guidance_take_CS_course
+      - action: utter_ask_CS_fields_okay
+      - intent: affirm
+      - action: utter_ask_adaptation_okay_CS
+      - intent: deny
+      - action: utter_problem_solving_okay_CS
+      - intent: affirm
+      - action: utter_medium_recommend_CS
+
+  - story: CS Guidance slight
+    steps:
+      - intent: ask_guidance_take_CS_course
+      - action: utter_ask_CS_fields_okay
+      - intent: deny
+      - action: utter_ask_willing_adjust_CS_okay
+      - intent: affirm
+      - action: utter_slight_recommend_CS
+
+  - story: CS Guidance EEEEEEE
+    steps:
+      - intent: ask_guidance_take_CS_course
+      - action: utter_ask_CS_fields_okay
+      - intent: deny
+      - action: utter_ask_willing_adjust_CS_okay
+      - intent: deny
+      - action: utter_not_recommend_CS
+
+
+
+
+  - story: HowBecomeEthicalHacker
+    steps:
+      - intent: ask_how_become_ethical_hacker
+      - action: utter_how_become_ethical_hacker
+
+  - story: WhatIsEthicalHacker
+    steps:
+      - intent: ask_what_ethical_hacker
+      - action: utter_what_ethical_hacker
+
+  - story: HowBecomeSecurityEngineer
+    steps:
+      - intent: ask_how_become_cybersecurity_engineer
+      - action: utter_how_become_security_engineer
+
+  - story: WhatIsSecurityEngineer
+    steps:
+      - intent: ask_what_cybersecurity_engineer
+      - action: utter_what_security_engineer
+
+  - story: HowBecomePenetrationTester
+    steps:
+      - intent: ask_how_become_penetration_tester
+      - action: utter_how_become_penetration_tester
+
+  - story: WhatIsPenetrationTester
+    steps:
+      - intent: ask_what_penetration_tester
+      - action: utter_what_penetration_tester
+
+  - story: HowBecomeCybersecurityConsultant
+    steps:
+      - intent: ask_how_become_cybersecurity_consultant
+      - action: utter_how_become_cybersecurity_consultant
+
+  - story: WhatIsCybersecurityConsultant
+    steps:
+      - intent: ask_what_cybersecurity_consultant
+      - action: utter_what_cybersecurity_consultant
+
+  - story: What ML Engineer
+    steps:
+      - intent: ask_what_ml_engineer
+      - action: utter_what_ml_engineer
+
+  - story: What NLP Specialist
+    steps:
+      - intent: ask_what_nlp_specialist
+      - action: utter_what_nlp_specialist
+
+  - story: What Computer Vision Engineer
+    steps:
+      - intent: ask_what_computer_vision_engineer
+      - action: utter_what_computer_vision_engineer
+
+  - story: How Become ML Engineer
+    steps:
+      - intent: ask_how_become_ml_engineer
+      - action: utter_how_become_ml_engineer
+
+  - story: How Become NLP Specialist
+    steps:
+      - intent: ask_how_become_nlp_specialist
+      - action: utter_how_become_nlp_specialist
+
+  - story: How Become Computer Vision Engineer
+    steps:
+      - intent: ask_how_become_computer_vision_engineer
+      - action: utter_how_become_computer_vision_engineer
+
+  - story: What IT Support Specialist
+    steps:
+      - intent: ask_what_it_support_specialist
+      - action: utter_what_it_support_specialist
+
+  - story: How Become IT Support Specialist
+    steps:
+      - intent: ask_how_become_it_support_specialist
+      - action: utter_how_become_it_support_specialist
+
+

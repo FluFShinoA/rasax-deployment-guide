@@ -1,0 +1,104 @@
+version: "3.1"
+
+nlu:
+  - intent: ask_guidance_take_libsci_course
+    examples: |
+      - Please give me guidance in taking Library Science
+      - I'm unsure about taking libsci
+      - Is libsci a good course for me?
+      - Is it okay for me to take libsci?
+      - I want to enroll in libsci course
+      - I don't know how to code can I still get into BLIS?
+      - Do I need good computer skills to get into BLIS?
+      - I know programming and I am tech savvy, should I take BLIS?
+      
+
+  # - intent: ask_what_is_LibSci
+  #   examples: |
+  #     - What is LibSci?
+  #     - Can you explain LibSci?
+  #     - I'm curious about LibSci, what is it exactly?
+
+  - intent: ask_LibSci_benefits
+    examples: |
+      - What are the benefits of LibSci?
+      - Why choose LibSci?
+      - Does LibSci have advantages?
+
+  # - intent: ask_LibSci_careers
+  #   examples: |
+  #     - What career opportunities are available in LibSci?
+  #     - Can you tell me about careers in LibSci?
+  #     - What are the job prospects in LibSci?
+
+  - intent: ask_LibSci_required_skills
+    examples: |
+      - What skills are required for working in LibSci?
+      - What skills do I need to have for a career in LibSci?
+      - Could you list the essential skills needed in LibSci?
+
+  - intent: ask_help_library_exam
+    examples: |
+      - Can you provide some advice for the librarian licensure exam?
+      - I'm preparing for my librarian licensure exam. Any tips?
+      - Yes, please help me prepare for the exam
+#  - intent: express_interest_lib_sci
+#    examples: |
+#      - I want to see if Library Information Science is right for me
+#      - Is LibSci suitable for me
+#      - I think I'd like to take lib sci
+#  - intent: express_reason_like_books
+#    examples: |
+#      - I've always loved taking care of books
+#      - My favorite place in school is the library
+#
+
+  - intent: ask_how_become_librarian
+    examples: |
+      - How can I become a librarian?
+      - What steps do I need to take to become a librarian?
+      - Can you provide guidance on pursuing a career as a librarian?
+      - What qualifications are required to become a librarian?
+      - How do I gain the necessary skills and experience to work as a librarian?
+
+  - intent: ask_how_become_archivist
+    examples: |
+      - How can I become an archivist?
+      - What steps do I need to take to become an archivist?
+      - Can you provide guidance on pursuing a career as an archivist?
+      - What qualifications are required to become an archivist?
+      - How do I gain the necessary skills and experience to work as an archivist?
+
+  - intent: ask_how_become_research_specialist
+    examples: |
+      - How can I become a research specialist?
+      - What steps do I need to take to become a research specialist?
+      - Can you provide guidance on pursuing a career as a research specialist?
+      - What qualifications are required to become a research specialist?
+      - How do I gain the necessary skills and experience to work as a research specialist?
+  
+  
+
+  - intent: ask_what_librarian
+    examples: |
+      - What does a librarian do?
+      - Can you explain the role of a librarian?
+      - What are the responsibilities of a librarian?
+      - What tasks are typically performed by librarians?
+      - Can you provide information about the duties of a librarian?
+
+  - intent: ask_what_archivist
+    examples: |
+      - What does an archivist do?
+      - Can you explain the role of an archivist?
+      - What are the responsibilities of an archivist?
+      - What tasks are typically performed by archivists?
+      - Can you provide information about the duties of an archivist?
+
+  - intent: ask_what_research_specialist
+    examples: |
+      - What does a research specialist do?
+      - Can you explain the role of a research specialist?
+      - What are the responsibilities of a research specialist?
+      - What tasks are typically performed by research specialists?
+      - Can you provide information about the duties of a research specialist?

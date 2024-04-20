@@ -1,0 +1,82 @@
+version: "3.1"
+
+rules:
+
+# - rule: Respond to ask_what_is_BSCS
+#   steps:
+#   - intent: ask_what_is_BSCS
+#   - action: utter_what_is_BSCS
+#   - action: utter_BSCS_stupified
+
+- rule: Respond to ask_BSCS_benefits
+  steps:
+  - intent: ask_BSCS_benefits
+  - action: utter_BSCS_benefits
+
+# - rule: Respond to ask_BSCS_careers
+#   steps:
+#   - intent: ask_BSCS_careers
+#   - action: utter_BSCS_careers
+
+- rule: Respond to ask_BSCS_salary
+  steps:
+  - intent: ask_BSCS_salary
+  - action: utter_BSCS_salary
+
+- rule: Respond to ask_BSCS_required_skills
+  steps:
+  - intent: ask_BSCS_required_skills
+  - action: utter_BSCS_required_skills
+
+- rule: Respond to ask_what_software_developer
+  steps:
+  - intent: ask_what_software_developer
+  - action: utter_what_software_developer
+
+- rule: Respond to ask_what_data_scientist
+  steps:
+  - intent: ask_what_data_scientist
+  - action: utter_what_data_scientist
+
+- rule: Respond to ask_what_cybersecurity_analyst
+  steps:
+  - intent: ask_what_cybersecurity_analyst
+  - action: utter_what_cybersecurity_analyst
+
+- rule: Respond to ask_what_computer_scientist
+  steps:
+  - intent: ask_what_computer_scientist
+  - action: utter_what_computer_scientist
+
+
+- rule: Route how_become_software_developer to utter_how_become_software_developer
+  steps:
+    - intent: ask_how_become_software_developer
+    - action: utter_how_become_software_developer
+
+- rule: Route how_become_data_scientist to utter_how_become_data_scientist
+  steps:
+    - intent: ask_how_become_data_scientist
+    - action: utter_how_become_data_scientist
+
+- rule: Route how_become_cybersecurity_analyst to utter_how_become_cybersecurity_analyst
+  steps:
+    - intent: ask_how_become_cybersecurity_analyst
+    - action: utter_how_become_cybersecurity_analyst
+
+- rule: Route how_become_computer_scientist to utter_how_become_computer_scientist
+  steps:
+    - intent: ask_how_become_computer_scientist
+    - action: utter_how_become_computer_scientist
+
+# Software Engineer stories
+
+- rule: SoftwareEngineerInterest
+  steps:
+    - intent: ask_how_become_software_engineer
+    - action: utter_how_become_software_engineer
+
+- rule: WhatSoftwareEngineer
+  steps:
+    - intent: ask_what_software_engineer
+    - action: utter_what_software_engineer

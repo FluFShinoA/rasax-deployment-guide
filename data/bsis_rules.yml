@@ -1,0 +1,136 @@
+version: "3.1"
+
+rules:
+
+
+# - rule: Respond to ask_what_is_BSIS
+#   steps:
+#   - intent: ask_what_is_BSIS
+#   - action: utter_what_is_BSIS
+#   - action: utter_BSIS_stupified
+
+- rule: Respond to ask_BSIS_benefits
+  steps:
+  - intent: ask_BSIS_benefits
+  - action: utter_BSIS_benefits
+
+# - rule: Respond to ask_BSIS_careers
+#   steps:
+#   - intent: ask_BSIS_careers
+#   - action: utter_BSIS_careers
+
+- rule: Respond to ask_BSIS_required_skills
+  steps:
+  - intent: ask_BSIS_required_skills
+  - action: utter_BSIS_required_skills
+
+- rule: Respond to ask_BSIS_BSIT_difference
+  steps:
+  - intent: ask_BSIS_BSIT_difference
+  - action: utter_BSIS_BSIT_difference
+  - action: utter_advise_difference_not_matter
+- rule: Respond to ask_BSIT_BSCS_difference
+  steps:
+  - intent: ask_BSIT_BSCS_difference
+  - action: utter_BSIT_BSCS_difference
+  - action: utter_advise_difference_not_matter
+- rule: Respond to ask_BSIS_BSCS_difference
+  steps:
+  - intent: ask_BSIS_BSCS_difference
+  - action: utter_BSIS_BSCS_difference
+  - action: utter_advise_difference_not_matter
+- rule: Respond to ask_BSIS_BSIT_similarities
+  steps:
+  - intent: ask_BSIS_BSIT_similarities
+  - action: utter_BSIS_BSIT_similarities
+  - action: utter_advise_difference_not_matter
+- rule: Respond to ask_BSIT_BSCS_similarities
+  steps:
+  - intent: ask_BSIT_BSCS_similarities
+  - action: utter_BSIT_BSCS_similarities
+  - action: utter_advise_difference_not_matter
+- rule: Respond to ask_BSIS_BSCS_similarities
+  steps:
+  - intent: ask_BSIS_BSCS_similarities
+  - action: utter_BSIS_BSCS_similarities
+  - action: utter_advise_difference_not_matter
+
+- rule: Respond to ask_what_data_analyst
+  steps:
+  - intent: ask_what_data_analyst
+  - action: utter_what_data_analyst
+
+- rule: Respond to ask_what_systems_analyst
+  steps:
+  - intent: ask_what_systems_analyst
+  - action: utter_what_systems_analyst
+
+- rule: Respond to ask_what_project_manager
+  steps:
+  - intent: ask_what_project_manager
+  - action: utter_what_project_manager
+
+
+- rule: Route how_become_data_analyst to utter_how_become_data_analyst
+  steps:
+    - intent: ask_how_become_data_analyst
+    - action: utter_how_become_data_analyst
+
+- rule: Route how_become_systems_analyst to utter_how_become_systems_analyst
+  steps:
+    - intent: ask_how_become_systems_analyst
+    - action: utter_how_become_systems_analyst
+
+- rule: Route how_become_project_manager to utter_how_become_project_manager
+  steps:
+    - intent: ask_how_become_project_manager
+    - action: utter_how_become_project_manager
+
+
+
+- rule: Respond to ask_other_universities
+  steps:
+  - intent: ask_other_universities
+  - action: utter_other_universities
+
+
+
+- rule: Respond to inquiry about Solutions Specialist role
+  steps:
+    - intent: ask_what_solutions_specialist
+    - action: utter_what_solutions_specialist
+
+- rule: Provide guidance on becoming a Solutions Specialist
+  steps:
+    - intent: ask_how_become_solutions_specialist
+    - action: utter_how_become_solutions_specialist
+
+- rule: Respond to inquiry about Documentation Specialist role
+  steps:
+    - intent: ask_what_documentation_specialist
+    - action: utter_what_documentation_specialist
+
+- rule: Provide guidance on becoming a Documentation Specialist
+  steps:
+    - intent: ask_how_become_documentation_specialist
+    - action: utter_how_become_documentation_specialist
+
+- rule: Respond to inquiry about End User Trainer role
+  steps:
+    - intent: ask_what_end_user_trainer
+    - action: utter_what_end_user_trainer
+
+- rule: Provide guidance on becoming an End User Trainer
+  steps:
+    - intent: ask_how_become_end_user_trainer
+    - action: utter_how_become_end_user_trainer
+
+- rule: Respond to inquiry about Organizational Process Analyst role
+  steps:
+    - intent: ask_what_organizational_process_analyst
+    - action: utter_what_organizational_process_analyst
+
+- rule: Provide guidance on becoming an Organizational Process Analyst
+  steps:
+    - intent: ask_how_become_organizational_process_analyst
+    - action: utter_how_become_organizational_process_analyst

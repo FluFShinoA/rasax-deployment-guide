@@ -1,4 +1,4 @@
-version: "3.0"
+version: "3.1"
 nlu:
 - intent: greet
   examples: |
@@ -8,80 +8,1123 @@ nlu:
     - hello there
     - good morning
     - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
+    - see you
+    - good bye
+    - see you later
     - good night
     - bye
-    - goodbye
-    - have a nice day
-    - see you around
     - bye bye
-    - see you later
+- intent: thank
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it
+    - many thanks
+- intent: access_neuvle
+  examples: |
+    - How to access [neuvle] (website)
+    - How can I log in to [neuvle] (website)
+    - How to sign in to [neuvle] (website)
+- intent: ask_tuition_fee
+  examples: |
+    - How much is the tuition fee
+    - Can you tell me about the tuition fee
+    - What is the cost per unit for tuition
+    - How much does one unit of tuition cost
+    - tuition fee
+- intent: inform_units
+  examples: |
+    - I'm planning on enrolling [15](number_of_units) units
+    - I want to take [12](number_of_units) units next semester
+    - Considering [20](number_of_units) units for the upcoming term
+    - [23](number_of_units) units
+    - im enrolling [20](number_of_units) units
+    - [17](number_of_units)
+    - [22](number_of_units) units
+- intent: ask_programs_offered_cics
+  examples: |
+    - What degree programs does [cics](college_dept) offer
+    - Can you list the programs available at [cics](college_dept)
+    - What degree programs are there at [cics](college_dept)
+    - List the degrees offered by [cics](college_dept)
+    - programs offered by [cics](college_dept)
+    - [cics](college_dept) programs
+    - [cics](college_dept) programs offered 
+- intent: ask_program_recommendation
+  examples: |
+    - Can you recommend a degree program for me?
+    - What degree should I enroll in?
+    - I need help choosing a degree.
+    - Can you help me in choosing a degree.
+    - can u help me choose a degree program
+    - can u recommend me a degree
+    - can you help me choose a degree
+    - can you help me choose a degree program
+    - can you recommend me a degree program
+    - what degree program should i enroll
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - I don't mind
+    - sure
+    - Yes
+    - yep
+    - yeah
 - intent: deny
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-- intent: mood_great
+    - No
+    - I'd rather not
+    - Not interested
+    - nope
+    - none
+    - nah
+- intent: blis_query
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-- intent: mood_unhappy
+    - what is [blis](blis)
+    - [BLIS](blis)
+    - what does [blis](blis) mean
+    - [bachelor of library and information science](blis)
+    - whats [BLIS](blis)
+    - what is [bachelor of library and information science](blis)
+- intent: inc_blis_query
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-- intent: bot_challenge
+    - LIS
+    - [library information science](blis)
+    - [library course](blis)
+    - [library degree](blis) 
+    - [library information science](blis) degree
+- intent: bsit_query
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-- intent: test_action
+    - what is [bsit](bsit)
+    - [BSIT](bsit)
+    - what does [bsit](bsit) mean
+    - [bachelor of science in information technology](bsit)
+    - [bs information technology](bsit)
+    - whats [bsit](bsit)
+    - what is [bs information technology](bsit)
+- intent: inc_bsit_query
   examples: |
-    - test action
+    - IT
+    - it
+    - infotech
+    - [information technology](bsit)
+- intent: bsit_careers_query
+  examples: |
+    - what jobs can i get with a [bsit](bsit) degree
+    - what jobs can i get with a [bs information technology](bsit) degree
+    - [bsit](bsit) careers
+    - [bsit](bsit) jobs
+    - [bs information tech](bsit) jobs
+    - [bs information](bsit) careers
+    - [bsit](bsit) graduate jobs
+    - [bsit](bsit) graduate careers
+    - [bs infotech](bsit) jobs
+    - [bs infotech](bsit) careers
+- intent: bscs_query
+  examples: |
+    - what is [bscs](bscs)
+    - [BSCS](bscs)
+    - what does [bscs](bscs) mean
+    - [bachelor of science in computer science](bscs)
+    - whats [bscs](bscs)
+    - what is [bs computer science](bscs)
+    - [bs computer science](bscs)
+- intent: inc_bscs_query
+  examples: |
+    - [cs](bscs)
+    - [comsci](bscs)
+    - [computer science](bscs)
+    - [CS](bscs)
+- intent: bscs_careers_query
+  examples: |
+    - what jobs can i get with a [bscs](bscs) degree
+    - what jobs can i get with a [bs computer science](bscs) degree
+    - what jobs can i get with a [compsci](bscs) degree
+    - [bscs](bscs) careers
+    - [bscs](bscs) jobs
+    - [bs computer science](bscs) jobs
+    - [bs computer science](bscs) careers
+    - [bscs](bscs) graduate jobs
+    - [bscs](bscs) graduate careers
+    - [bs comsci](bscs) jobs
+    - [bs comsci](bscs) careers
+- intent: bsis_query
+  examples: |
+    - what is [bsis](bsis)
+    - [BSIS](bsis)
+    - what does [bsis](bsis) mean
+    - whats [bsis](bsis)
+    - [bachelor of science in information science](bsis)
+    - [bs information science](bsis)
+    - what is [bs information science](bsis)
+    - [bsis](bsis) definition
+    - what does [bsis](bsis) do
+    - [bs information science](bsis) definition
+- intent: inc_bsis_query
+  examples: |
+    - [information systems](bsis) degree
+    - [information systems](bsis)
+    - [information systems course](bsis)
+- intent: bsis_careers_query
+  examples: |
+    - what jobs can i get with a [bsis](bsis) degree
+    - what jobs can i get with a [bs information systems](bsis) degree
+    - what jobs can i get with a [information systems](bsis) degree
+    - [bsis](bsis) careers
+    - [bsis](bsis) jobs
+    - [bs information systems](bsis) jobs
+    - [bs information systems](bsis) careers
+    - [bsis](bsis) graduate jobs
+    - [bsis](bsis) graduate careers
+    - [bs infosys](bsis) jobs
+    - [bs infosys](bsis) careers
+- intent: bsemc_query
+  examples: |
+    - what is [bsemc](bsemc)
+    - [BSEMC](bsemc)
+    - what does [bsemc](bsemc) mean
+    - whats [BSEMC](bsemc)
+    - whats [bsemc](bsemc)
+    - [bsemc](bsemc)
+    - what is [BSEMC](bsemc)
+- intent: inc_bsemc_query
+  examples: |
+    - [emc](bsemc)
+    - what is [emc](bsemc)
+    - what [emc](bsemc)
+    - [entertainment and multimedia](bsemc) degree
+    - whats [emc](bsemc)
+    - [emc](bsemc) degree
+- intent: bsemc_careers_query
+  examples: |
+    - what jobs can i get with a [bsemc](bsemc) degree
+    - what careers can a [bsemc](bsemc) graduate have
+    - what can i do with my [bsemc](bsemc) degree
+    - [bsemc](bsemc) jobs
+    - [bsemc](bsemc) careers
+    - [bachelor of science in entertainment and multimedia computing](bsemc) jobs
+    - [bachelor of science in entertainment and multimedia computing](bsemc) careers
+- intent: bsemc_gamedev_query
+  examples: |
+    - whats [bsemc](bsemc) major in [game development](gamedev)
+    - what does [bsemc](bsemc) major in [game dev](gamedev) mean
+    - [bsemc](bsemc) [game development](gamedev)
+    - whats [bsemc](bsemc) [game dev](gamedev)
+    - [bsemc](bsemc) [game dev](gamedev)
+    - what does [bsemc](bsemc) [game dev](gamedev) mean
+    - [BSEMC](bsemc) major in [game dev](gamedev)
+    - [BSEMC](bsemc) [game dev](gamedev)
+    - [bsemc](bsemc) [gamedev](gamedev)
+- intent: bsemc_gamedev_careers_query
+  examples: |
+    - what jobs can i get with a bsemc gamedev degree
+    - what jobs can i get with a bsemc game development degree
+    - what careers can a bsemc gamedev have
+    - bsemc game dev careers
+    - bsemc gamedev jobs
+    - gamedev careers
+    - gamedev jobs
+    - game development careers
+    - game development jobs
+- intent: bsemc_digiani_query
+  examples: |
+    - what is [bsemc](bsemc) major in [digital animation](digiani)
+    - what does [bsemc](bsemc) major in [digiani](digiani) mean
+    - [bsemc](bsemc) [digital animation](digiani)
+    - What is [bsemc](bsemc) [digital animation](digiani)
+    - whats [bsemc](bsemc) [digiani](digiani)
+    - whats [bsemc](bsenc) [digital animation](digiani)
+    - [bsemc](bsemc) [digiani](digiani)
+    - what is [bsemc](bsemc) major in [digiani](digiani)
+    - whats [bsemc](bsemc) major in [digital animation](digiani)
+    - [bsemc](bsemc) [digiani](digiani) definition
+    - [digiani](digiani) definition
+- intent: bsemc_digiani_careers_query
+  examples: |
+    - what jobs can i get with a [bsemc](bsemc) [digiani](digiani) degree
+    - what jobs can i get with a [bsemc](bsemc) major in [digital animation](digiani) degree
+    - what careers can a [bsemc](bsemc) [digiani](digiani) have
+    - [bsemc](bsemc) [digiani](digiani) careers
+    - [bsemc](bsemc) [digiani](digiani) jobs
+    - [digiani](digiani) careers
+    - [digiani](digiani) jobs
+    - [digital animation](digiani) careers
+    - [digtal animation](digiani) jobs
+- intent: admission_process_query
+  examples: |
+    - how to enroll
+    - what are the admission processes
+    - what are the admission procedures
+    - please guide me through admission
+    - how can i enroll
+    - steps in enrollment
+    - what are the steps in enrollment
+    - how can i enroll
+- intent: provide_preferences
+  examples: |
+    - [A](preferences). Software development and programming
+    - [B](preferences). Information systems and data management
+    - [C](preferences). Multimedia and entertainment technologies
+    - [D](preferences). Library and information science
+    - [A](preferences). Yes
+    - [B](preferences). No
+    - [A](preferences). Developing software applications
+    - [B](preferences). Managing and optimizing information systems
+    - [C](preferences). Troubleshooting computer hardware
+    - [D](preferences). Creating multimedia content for entertainment
+    - [E](preferences). Organizing and managing information resources in a library setting
+    - [A](preferences). I enjoy playing games and exploring their design.
+    - [B](preferences). I'm not particularly interested in gaming.
+    - [A](preferences). Organizational and management
+    - [B](preferences). Creative and design
+    - [A](preferences). Creating innovative software solutions
+    - [B](preferences). Providing technical assistance
+    - [C](preferences). Managing and securing information systems
+    - [D](preferences). Designing engaging multimedia content
+    - [E](preferences). Preserving and organizing information in a library setting
+    - [A](preferences). Software Engineer
+    - [B](preferences). IT Support
+    - [C](preferences). Systems Analysts
+    - [D](preferences). Game Designer/Developer
+    - [E](preferences). 3D Artist/Animator
+    - [F](preferences). Librarian
+    - i choose [A](preferences)
+    - i choose [B](preferences)
+    - i choose [C](preferences)
+    - i choose [D](preferences)
+    - [A](preferences). Computer Programming
+    - [B](preferences). Computer hardware troubleshooting
+    - [C](preferences). Game Development
+    - [D](preferences). Art (e.g. Digital/Traditional Art)
+    - [E](preferences). Data Management
+- intent: sample_image
+  examples: |
+    - sample image
+    - image
+- intent: virtual_office
+  examples: |
+    - where to access virtual office
+    - cics virtual office
+    - i need to talk to someone for a serious concern
+    - virtual office
+    - im in need of human assistance
+    - is there someone who i can talk to to solve my issue
+- intent: ask_guidance_take_gamedev_course
+  examples: |
+    - I'm interested in bsemc gamedev
+    - Can I get into game development
+    - Is it ok for me take gamedev
+    - I'd like to study gamedev
+    - Is gamedev the right course for me
+    - i would like to study game development
+    - i like to study game dev
+- intent: ask_what_game_designer
+  examples: |
+    - what is a [game designer](career)
+    - [game designer](career)
+    - whats a [game designer](career)
+    - [game designer](career)
+    - what does [game designer](career) mean
+    - what does a [game designer](career) do
+- intent: ask_game_designer_skills
+  examples: |
+    - What skills do game designers need?
+    - Skills required for game designer?
+    - game designer skills
+    - what skills do i need as a game designer
+- intent: ask_game_designer_salary
+  examples: |
+    - What is the average salary for game designers?
+    - How much do game designers earn?
+    - Salary range for game designer?
+    - how much does a game designer earn
+    - whats the salary for a game designer
+    - game designer salary
+- intent: ask_game_designer_education
+  examples: |
+    - What education is required to become a game designer?
+    - Do I need a degree to be a game designer?
+    - What qualifications do game designers need?
+    - what degree program is needed for a game designer
+    - game designer qualifications
+    - What are the educational paths to becoming a game designer?
+    - educational qualifications required to be a game designer
+- intent: ask_game_designer_growth
+  examples: |
+    - How can game designers advance in their careers?
+    - Career progression for game designers?
+    - Opportunities for growth in game design?
+    - how to improve as a game designer
+- intent: ask_game_designer_challenges
+  examples: |
+    - What challenges do game designers face?
+    - What are Common obstacles in designing games?
+    - How difficult is game design?
+    - how difficult is game designing
+    - what challenges does a game designer encounter
+    - challenges for a game designer
+- intent: ask_game_designer_versus_artist
+  examples: |
+    - What's the difference between a game designer and a game artist?
+    - Are game designers and game artists the same?
+    - How do the roles of game designer and game artist differ?
+    - game designer vs game artist
+    - difference between game designer and game artist
+- intent: ask_what_game_artist
+  examples: |
+    - What does a [game artist](career) do?
+    - [game artists](career)
+    - Can you tell me more about [game artists](career) 
+    - whats a [game artist](career)
+    - what do [game artists](career) do
+    - what is a [game artist](career)
+- intent: ask_game_artist_skills
+  examples: |
+    - What skills do game artists have?
+    - What do I need to become a game artist?
+    - Do I need to be artistic to become game artist?
+    - what skills does a game artist supposed to have
+    - what skills are required for a game artist
+    - game artist skills
+- intent: ask_game_artist_salary
+  examples: |
+    - What is the average salary for game artists?
+    - How much do game artists earn?
+    - Salary range for game artist?
+    - how much does a game artist earn
+    - game artist salary
+- intent: ask_game_artist_education
+  examples: |
+    - Do I need a degree to be a game artist?
+    - What qualifications do game artists need?
+    - what degree program is needed for a game artist
+    - what degree program do game artist need to get
+    - degree program for game artists
+    - educational path for a game artist
+    - educational qualifications for a game artist
+- intent: ask_game_artist_growth
+  examples: |
+    - How can game artists advance in their careers?
+    - Career progression for game artists?
+    - Opportunities for growth in game art?
+    - how to improve as a game artist
+    - game artist career progression
+    - improving as a game artist
+- intent: ask_game_artist_challenges
+  examples: |
+    - What challenges do game artists face?
+    - Common obstacles for game artists?
+    - Difficulties in game art?
+    - what challenges does game artists face
+    - what are the difficulties in game art
+    - game art difficulties
+    - game art challenges
+- intent: ask_what_game_programmer
+  examples: |
+    - Can you tell me more about the role of a [game programmer](career)
+    - [game programmer](career) definition
+    - [game programmer](career)
+    - whats a [game programmer](career)
+    - [game programmer](career)
+    - what is a [game programmer](career)
+- intent: ask_game_programmer_skills
+  examples: |
+    - What skills do game programmers need?
+    - Skills required for game programmer?
+    - game programmer skills
+    - required skills for a game programmer
+    - skills needed for a game programmer
+    - what skills are require for game programmers?
+- intent: ask_game_programmer_salary
+  examples: |
+    - What is the average salary for game programmers?
+    - How much do game programmers earn?
+    - Salary range for game programmer?
+    - game programmer salary
+    - how much does a game programmer earn
+- intent: ask_game_programmer_education
+  examples: |
+    - What education is required to become a game programmer?
+    - Do I need a degree to be a game programmer?
+    - What qualifications do game programmers need?
+    - what degree program is required for a game programmer
+    - degree program for a game programmer
+- intent: ask_game_programmer_growth
+  examples: |
+    - How can game programmers advance in their careers?
+    - Career progression for game programmers?
+    - Opportunities for growth in game programming?
+    - how to improve as a game programmer 
+    - growth in game programming
+    - improving as a game programmer
+    - game programmer growth
+- intent: ask_game_programmer_challenges
+  examples: |
+    - What challenges do game programmers face?
+    - Common obstacles for game programmers?
+    - Difficulties in game programming?
+    - what are the difficulties in game programming
+    - game programmer challenges
+    - challenges in game programming
+- intent: ask_what_narrative_designer
+  examples: |
+    - What does a [narrative designer](career) do?
+    - What is involved in being a [narrative designer](career?
+    - whats a [narrative designer](career)
+    - what is a [narrative designer](career)
+    - [narrative designer](career)
+    - narrative designing
+- intent: ask_narrative_designer_skills
+  examples: |
+    - What skills do narrative designers need?
+    - Skills required for narrative designer?
+    - What abilities are important for a narrative designer?
+    - what skills does a narrative designer need
+    - what skills are required for a narrative designer
+    - narrative designer skills
+- intent: ask_narrative_designer_salary
+  examples: |
+    - What is the average salary for narrative designers?
+    - How much do narrative designers earn?
+    - Salary range for narrative designer?
+    - narrative designer salary
+    - how much does a narrative designer earn
+    - narrative designer income
+- intent: ask_narrative_designer_education
+  examples: |
+    - What education is required to become a narrative designer?
+    - Do I need a degree to be a narrative designer?
+    - What qualifications do narrative designers need?
+    - what degree program does a narrative designer need
+    - narrative designer education
+    - degree program for a narrative designer
+    - narrative designer qualifications
+- intent: ask_narrative_designer_growth
+  examples: |
+    - How can narrative designers advance in their careers?
+    - Career progression for narrative designers?
+    - Opportunities for growth in narrative design?
+    - improving as a narrative designer
+    - how to improve as a narrative designer
+    - narrative designer growth
+- intent: ask_narrative_designer_challenges
+  examples: |
+    - What challenges do narrative designers face?
+    - Common obstacles for narrative designers?
+    - Difficulties in narrative design?
+    - what are the difficulties in narrative designing
+    - what are the challenges in narrative designing
+    - narrative designer challenges
+- intent: ask_what_associate_game_producer
+  examples: |
+    - What does an Associate Game Producer do?
+    - Can you explain the role of an Associate Game Producer?
+    - whats an associate game producer
+    - what is an associate game producer
+    - associate game producer
+    - whats associate game producer
+- intent: ask_how_become_associate_game_producer
+  examples: |
+    - How can I become an Associate Game Producer?
+    - What steps do I need to take to become an Associate Game Producer?
+    - Can you provide guidance on becoming an Associate Game Producer?
+    - how to become an associate game producer
+    - how can i become an associate game producer
+    - how to be an associate game producer
+    - how can i be an associate game producer
+- intent: ask_what_senior_game_sound_engineer
+  examples: |
+    - What is a Senior Game Sound Engineer responsible for?
+    - Can you explain the role of a Senior Game Sound Engineer?
+    - what does a senior game sound engineer do
+    - game sound engineer
+    - senior game sound engineer job
+    - whats a senior game sound engineer
+    - senior game sound engineer
+    - what is a senior game sound engineer
+- intent: ask_how_become_senior_game_sound_engineer
+  examples: |
+    - How can I become a Senior Game Sound Engineer?
+    - What qualifications are needed to become a Senior Game Sound Engineer?
+    - Can you provide guidance on becoming a Senior Game Sound Engineer?
+    - how to be a game sound engineer
+    - how can i be a game sound engineer
+    - how to become a senior game sound engineer
+- intent: ask_what_business_dev_specialist
+  examples: |
+    - What is a Business Development Specialist?
+    - Can you explain the role of a Business Development Specialist?
+    - I'm interested in Business Development Specialists, what do they do?
+    - whats a business dev specialist
+    - business dev specialist
+    - business dev specialist job
+    - business development specialist
+- intent: ask_how_become_business_dev_specialist
+  examples: |
+    - How can I become a Business Development Specialist?
+    - What steps do I need to take to become a Business Development Specialist?
+    - Can you provide guidance on becoming a Business Development Specialist?
+    - how to become a business dev specialist
+    - how can i be a business development specialist
+    - how to be a business development specialist
+- intent: ask_DigiAni_benefits
+  examples: |
+    - What are the benefits of studying Digital Animation?
+    - Why should I consider Digital Animation?
+    - What are the advantages of pursuing DigiAni?
+    - What can I gain from studying Digital Animation?
+    - Are there any benefits to getting a degree in DigiAni?
+- intent: ask_DigiAni_required_skills
+  examples: |
+    - What skills do I need to succeed in Digital Animation?
+    - What abilities are necessary for studying DigiAni?
+    - What skills are required for DigiAni students?
+    - Can you list the key skills needed for Digital Animation?
+    - What are the important skills for Digital Animation professionals?
+    - digiani required skills
+    - digiani skills
+- intent: ask_visual_effects_artist
+  examples: |
+    - What does a [visual effects artist](career) do?
+    - Can you explain the role of a [visual effects artist](career)
+    - What are the responsibilities of a [visual effects artist](career)
+    - What is involved in being a [visual effects artist](career)
+    - What is a [visual effects artist](career)
+    - whats a [visual effects artist](career)
+    - [visual effects artist](career)
+- intent: ask_multimedia_designer
+  examples: |
+    - What does a [multimedia designer](career) do?
+    - Can you explain the role of a [multimedia designer](career) 
+    - What are the responsibilities of a [multimedia designer](career)
+    - What is involved in being a [multimedia designer](career)
+    - What is a [multimedia designer](career)
+    - [multimedia designer](career)
+    - whats a [multimedia designer](career)
+- intent: ask_video_editor
+  examples: |
+    - What does a video editor do?
+    - Can you explain the role of a video editor?
+    - What are the responsibilities of a video editor?
+    - What is involved in being a video editor?
+    - What is a video editor?
+    - video editor
+- intent: ask_how_become_visual_effects_artist
+  examples: |
+    - How can I become a [visual effects artist](career)
+    - What steps do I need to take to become a [visual effects artist](career)
+    - Can you provide guidance on becoming a [visual effects artist](career)
+    - how to become a [visual effects artist](career)
+    - how can i be a [visual effects artist](career)
+- intent: ask_how_become_multimedia_designer
+  examples: |
+    - How can I become a [multimedia designer](career)?
+    - What steps do I need to take to become a [multimedia designer](career)
+    - Can you provide guidance on becoming a [multimedia designer](career)
+    - how to be a [multimedia designer](career)
+    - how can i be a [multimedia designer](career)
+    - how to become a [multimedia designer](career)
+- intent: ask_how_become_video_editor
+  examples: |
+    - How can I become a video editor?
+    - What steps do I need to take to become a video editor?
+    - Can you provide guidance on becoming a video editor?
+    - how to be a video editor
+    - how can i be a video editor
+- intent: ask_what_creative_content_developer
+  examples: |
+    - What is a [Creative Content Developer](career)
+    - Can you explain the role of a [Creative Content Developer](career)
+    - I'm curious about [Creative Content Developers](career) , what do they do?
+    - whats a [creative content developer](career)
+    - [creative content developer](career) what they do
+    - what is [creative content dev](career)
+    - [creative content developer](career)
+    - what does a [creative content developer](career) do
+- intent: ask_how_become_creative_content_developer
+  examples: |
+    - How can I become a Creative Content Developer?
+    - What steps do I need to take to become a Creative Content Developer?
+    - Can you provide guidance on becoming a Creative Content Developer?
+    - how to become a creative content dev
+    - how to be a creative content dev
+    - how to be a cc dev
+    - how do i be a creative content dev
+- intent: ask_what_ad_builders
+  examples: |
+    - What are Ad Builders?
+    - Can you explain the role of Ad Builders?
+    - I want to know more about Ad Builders, what do they do?
+    - what ad builder
+    - what is an ad builder
+    - what does an ad builder do
+    - whats an ad builder
+    - ad builder
+- intent: ask_how_become_ad_builders
+  examples: |
+    - How can I become Ad Builders?
+    - how to become an ad builder
+    - how to be an ad builder
+    - Can you provide guidance on becoming Ad Builders?
+    - how can i be an ad builder
+- intent: ask_what_technical_director
+  examples: |
+    - What is a Technical Director?
+    - Can you explain the role of a Technical Director?
+    - I'm interested in Technical Directors, what do they do?
+    - whats a technical director
+    - what does a technical director do
+    - technical director
+- intent: ask_how_become_technical_director
+  examples: |
+    - How can I become a Technical Director?
+    - What steps do I need to take to become a Technical Director?
+    - Can you provide guidance on becoming a Technical Director?
+    - how can i be a technical director
+    - how to be a technical director
+- intent: ask_how_become_3d_modeler
+  examples: |
+    - How can I become a 3D modeler?
+    - What steps do I need to take to become a 3D modeler?
+    - Can you provide guidance on becoming a 3D modeler?
+    - how to become a 3d modeler
+    - how can i be a 3d modeler
+- intent: ask_what_3d_modeler
+  examples: |
+    - What is a 3D modeler?
+    - Can you explain the role of a 3D modeler?
+    - I'm curious, what does a 3D modeler do?
+    - whats a 3d modeler
+    - 3d modeler
+    - what does a 3d modeler do
+- intent: ask_how_become_animator
+  examples: |
+    - How can I become an animator?
+    - What steps do I need to take to become an animator?
+    - Can you provide guidance on pursuing a career as an animator?
+    - how to be an animator
+    - how can i be an animator
+- intent: ask_what_animator
+  examples: |
+    - What is an animator?
+    - Can you explain the role of an animator?
+    - I'm interested, what does an animator do?
+    - whats an animator
+    - animator
+    - what does an animator do
+- intent: ask_how_become_concept_artist
+  examples: |
+    - How can I become a concept artist?
+    - What steps do I need to take to become a concept artist?
+    - Can you provide guidance on becoming a concept artist?
+    - how to be a concept artist
+    - how can i be a concept artist
+    - how to become a concept artist
+    - concept artist
+- intent: ask_what_concept_artist
+  examples: |
+    - What is a concept artist?
+    - Can you explain the role of a concept artist?
+    - I'd like to know, what does a concept artist do?
+    - concept artist
+    - whats a concept artist
+    - what does a concept artist do
+- intent: ask_how_become_motion_graphics_designer
+  examples: |
+    - How can I become a motion graphics designer?
+    - What steps do I need to take to become a motion graphics designer?
+    - Can you provide guidance on pursuing a career as a motion graphics designer?
+    - how to become a motion graphics designer
+    - how can i be a motion graphics designer
+    - how to be a motion graphics designer
+- intent: ask_what_motion_graphics_designer
+  examples: |
+    - What is a [motion graphics designer](career)
+    - Can you explain the role of a motion graphics designer?
+    - I'm curious, what does a motion graphics designer do?
+    - [motion graphics designer](career)
+    - whats a motion graphics designer
+    - what does a motion graphic designer do
+- intent: ask_guidance_take_digiani_course
+  examples: |
+    - is bsemc digiani the right program for me
+    - bsemc digiani the right course for me
+    - i would like to study bsemc digiani
+    - im unsure whether to take bsemc digiani
+    - can u help me decide if digital animation is the right program for me
+    - i like to study digital animation
+    - i want to enroll in digiani course
+
+
+#---------------------------------
+
+- intent: ask_help_choose_jobs
+  examples: |
+    - Which of these IT careers should I choose
+    - What IT career is best for me
+    - I don't know where I'd excel in these IT careers
+
+- intent: express_no_interest
+  examples: |
+    - None of these  fields interest me
+    - im not interested in these fields
+    - I don't like any of these  jobs
+  # bridge into other fields (digi ani, gamedev, etsetera etsetera etsetera)
+
+- intent: express_web_interest
+  examples: |
+    - I always wanted to know how the internet works
+    - Website creation seems fascinating
+    - I'd love to get a job that is very involved with the internet
+
+- intent: express_comp_troubleshooting_interest
+  examples: |
+    - I've always wanted to know how to fix computers and troubleshoot errors
+    - I want to be able to help people fix problems with their computers
+    - Computer troubleshooting sounds interesting
+    - I want to be more focused on hardware
+- intent: express_data_interest
+  examples: |
+    - I've always wanted to work with data
+    - I want to analyze data and use it to help businesses make decisions
+    - Can I get a job involving data
+- intent: express_networking_interest
+  examples: |
+    - Networking is a field I'm interested in exploring.
+    - I've always wanted to create networks
+    - Networking technology fascinates me
+- intent: express_software_interest
+  examples: |
+    - I'm interested in software development. Can you tell me about career options in this field?
+    - What career paths can I pursue in software development?
+    - How can I start a career in software engineering?
+
+- intent: express_library_interest
+  examples: |
+    - I'm considering a career in library science. What are my options?
+    - Can you provide guidance on pursuing a career in libraries?
+    - What types of jobs are available in the library field?
+
+- intent: express_cyber_sec_interest
+  examples: |
+    - I want to work in cybersecurity. What career paths should I consider?
+    - Can you give me advice on starting a career in cybersecurity?
+    - What are the opportunities like in the field of cybersecurity?
+
+- intent: express_game_dev_interest
+  examples: |
+    - I'm passionate about game development. How can I get started in this industry?
+    - What are the career prospects for game developers?
+    - Can you provide guidance on pursuing a career in game development?
+- intent: express_digi_art_interest
+  examples: |
+    - I'm interested in digital art. Can you tell me more about career options in this field?
+    - What career paths can I pursue in digital art and animation?
+    - How can I start a career in the creative industry, specifically in digital art and special effects?
+- intent: express_AI_interest
+  examples: |
+    - I've always wanted to create my own AI
+    - working in the ai field seems fascinating
+    - AI is the future, I want a job in that
+# IT guide questions
+- intent: ask_guidance_take_IT_course
+  examples: |
+    - Please give me guidance in taking IT
+    - I'm unsure about taking IT
+    - Is IT a good course for me?
+    - Is it okay for me to take IT?
+    - I want to enroll in IT course
+    - I don't know how to code can I still get into BSIT?
+    - Do I need good computer skills to get into BSIT?
+    - I know programming and I am tech savvy, should I take BSIT?
+# - intent: ask_what_is_BSIT
+#   examples: |
+#     - What is Bachelor of Science in Information Technology?
+#     - Can you explain what BSIT is?
+#     - What does BSIT stand for?
+#     - I'm not sure what BSIT is. Can you tell me?
+#     - Could you provide more information about BSIT?
+#     - what bsit means
+#     - what do you do in bsit
+- intent: ask_BSIT_benefits
+  examples: |
+    - What are the benefits of studying BSIT?
+    - Why should I consider BSIT?
+    - What are the advantages of pursuing BSIT?
+    - What can I gain from studying BSIT?
+    - Are there any benefits to getting a BSIT degree?
+    - is BSIT in demand
+# - intent: ask_BSIT_careers
+#   examples: |
+#     - What careers can I pursue with a BSIT degree?
+#     - What job opportunities are available for BSIT graduates?
+#     - What kind of jobs can I get with a BSIT degree?
+#     - What kind of work do bsit graduates do?
+#     - Can you tell me about the employment options for BSIT graduates?
+#     - What to do after graduating from BSIT
+- intent: ask_BSIT_required_skills
+  examples: |
+    - What skills do I need to succeed in BSIT?
+    - What abilities are necessary for studying BSIT?
+    - What skills are required for BSIT students?
+    - Can you list the key skills needed for BSIT?
+    - What are the important skills for BSIT professionals?
+    - What do I need to study before entering bsit
+
+  #webdev intents
+
+
+- intent: ask_what_web_developer
+  examples: |
+    - What does a web developer do?
+    - Can you explain the role of a web developer?
+    - What are the responsibilities of a web developer?
+    - What is involved in being a web developer?
+    - What is a web developer?
+    - Do web developers create websites?
+    - web developer
+    - whats web developer
+- intent: ask_how_become_web_developer
+  examples: |
+    - How can I become a web developer?
+    - What steps do I need to take to start a career in web development?
+    - What education or training is required to become a web developer?
+    - Can you guide me on the process of becoming a web developer
+- intent: express_front_end_interest
+  examples: |
+    - I'm really interested in frontend development.
+    - Frontend development seems fascinating to me.
+    - I enjoy working on the frontend side of things.
+    - I'm passionate about creating user interfaces and experiences.
+    - I like designing beautiful website arts.
+    - I am not comfortable with setting up the backend.
+- intent: express_more_code_interest
+  examples: |
+    - I'm more interested in designing website logic than visual design.
+    - I prefer working on the functionality and logic of websites.
+    - Developing website logic appeals to me more than frontend design.
+    - I'm passionate about building the application logic of websites.
+    - I'm not that good at designing.
+    - I can design but it's not my specialty.
+- intent: ask_js_dev_learning_materials
+  examples: |
+    - Yes Please do recommend coding courses for web development
+    - I don't know how to start building websites
+    - I want to know how to code websites
+    - I want to learn javascript
+- intent: express_more_design_interest
+  examples: |
+    - I have a strong interest in designing websites.
+    - Designing web interfaces and layouts excites me.
+    - I'm passionate about creating visually appealing websites.
+    - I want to learn more about the design aspects of web development.
+    - I want to create websites with website builders and not from code.
+    - I don't like coding websites it is not my forte
+    - I can code websites but I am not comfortable with it.
+    - I prefer designing websites more
+- intent: ask_web_design_learning_materials
+  examples: |
+    - I want to learn how to design.
+    - Where can I learn about web design
+    - Yes can you please give me web design courses
+    - Can you get better at web design?
+    - How do I make my websites more beautiful
+    - Yes can you recommend me some design learning materials
+- intent: express_back_end_interest
+  examples: |
+    - I'm interested in backend development.
+    - I don't like frontend much
+    - Backend coding is something I'm interested in exploring.
+    - I want to work on server-side programming.
+    - I'm passionate about building robust backend systems.
+    - I like to work more behind the scenes
+    - I like setting up the environment for the website
+    - Connecting systems together sounds exciting to learn
+    - Website layouts and design I don't like
+    - I want to be involved more with databases and connections
+- intent: ask_back_end_learning_materials
+  examples: |
+    - Yes Please do recommend me some backend courses.
+    - Where can I learn backend development
+    - I don't know where to start in backend development
+    - Any good place to start backend development learning?
+# dev ops
+
+- intent: ask_how_become_dev_ops
+  examples: |
+    - How can I become a DevOps engineer?
+    - What steps should I take to pursue a career in DevOps?
+    - Can you guide me on becoming a DevOps professional?
+    - I want to become a dev ops
+    - What should I focus on to become dev ops
+    - Does devops need certs to get jobs
+- intent: ask_what_dev_ops
+  examples: |
+    - What does a DevOps engineer do?
+    - Can you explain the role of a DevOps professional?
+    - What are the responsibilities of someone in DevOps?
+    - What DevOps means?
+    - is devops the one managing containers?
+  # network engineer
+
+- intent: ask_how_become_network_engineer
+  examples: |
+    - How do I become a network engineer?
+    - What path should I follow to become a network engineer?
+    - Can you provide guidance on entering the network engineering field?
+    - Do I need certificates to get a job as network engineer
+    - What skills I need to learn to become network engineer
+
+- intent: ask_what_network_engineer
+  examples: |
+    - What is the role of a network engineer?
+    - Can you explain the responsibilities of a network engineer?
+    - What do network engineers typically work on?
+    - Is network engineer responsible for handling network?
+    - Do network engineers fix networks
+    - network engineer
+  # IT support
+- intent: ask_how_become_IT_support
+  examples: |
+    - How can I get into IT support?
+    - What are the steps to become an IT support specialist?
+    - Can you advise on starting a career in IT support?
+    - Do I need certificates to become it support?
+    - What skills I need to learn to become support
+    - Are good troubleshooting skills required
+- intent: ask_what_IT_support
+  examples: |
+    - What does an IT support specialist do?
+    - Can you explain the role of an IT support professional?
+    - What tasks are typically handled by IT support?
+    - What IT support means
+    - Is IT support like the call center agent
+    - does IT support fix the hardwares?
+  # QA tester
+- intent: ask_how_become_QA_tester
+  examples: |
+    - How do I become a Quality Assurance tester?
+    - What path should I take to pursue a career in QA testing?
+    - Can you provide guidance on entering the QA testing field?
+    - do I need certificates to become qa tester
+    - What software I need to learn to become quality assurance tester
+- intent: ask_what_QA_tester
+  examples: |
+    - What is the role of a QA tester?
+    - Can you explain the responsibilities of a QA tester?
+    - What skills are required for QA testing?
+    - is quality assurance tester the one testing software
+    - what does it mean to assure quality of software
+# db admin
+- intent: ask_how_become_db_admin
+  examples: |
+    - How can I become a database administrator?
+    - What steps do I need to take to become a DB admin?
+    - Can you provide guidance on pursuing a career as a database administrator?
+    - What qualifications are required to become a DB admin?
+    - How do I gain the necessary skills and experience to work as a database administrator?
+    - Is sql needed to be db admin
+    - do I need certificates to become database admin
+- intent: ask_what_db_admin
+  examples: |
+    - What exactly does a database administrator do?
+    - Can you explain the role and responsibilities of a DB admin?
+    - What are the key tasks performed by a database administrator?
+    - What skills are essential for someone working as a database administrator?
+    - How does a database administrator contribute to an organization's operations?
+    - does db admin manage databases
+    - is db admin in charge of maintenance of database
+- intent: ask_how_become_IT_audit_assistant
+  examples: |
+    - How can I become an IT Audit Assistant?
+    - What steps do I need to take to become an IT Audit Assistant?
+    - Can you provide guidance on becoming an IT Audit Assistant?
+    - do I need certs to become IT audit
+    - Is accounting knowledge needed to be successful in IT audit
+- intent: ask_what_IT_audit_assistant
+  examples: |
+    - What is an IT Audit Assistant?
+    - Can you explain the role of an IT Audit Assistant?
+    - I'm curious about IT Audit Assistant, what do they do?
+    - what it audit means
+- intent: ask_how_become_system_integration_admin
+  examples: |
+    - How can I become a System Integration Admin?
+    - What steps do I need to take to become a System Integration Admin?
+    - Can you provide guidance on becoming a System Integration Admin?
+
+- intent: ask_what_system_integration_admin
+  examples: |
+    - What is a System Integration Admin?
+    - Can you explain the role of a System Integration Admin?
+    - I want to learn about System Integration Admin, what do they do?
+    - what is system integration mean
+- intent: ask_how_become_computer_programmer
+  examples: |
+    - How can I become a Computer Programmer?
+    - What steps do I need to take to become a Computer Programmer?
+    - Can you provide guidance on becoming a Computer Programmer?
+    - What languages I need to learn to be computer programmer
+    - What I need to do to become comp programmer
+    - I want to become computer programmer
+    - Can you help me in becoming programmer
+- intent: ask_what_computer_programmer
+  examples: |
+    - What is a Computer Programmer?
+    - Can you explain the role of a Computer Programmer?
+    - I'm interested in Computer Programming, what do they do?
+    - What computer programmer does
+    - Is computer programmer creating programs?
+- intent: ask_how_become_system_admin
+  examples: |
+    - How can I become a System Administrator?
+    - What steps do I need to take to become a System Administrator?
+    - Can you provide guidance on becoming a System Administrator?
+    - Is certs needed to become sys admin
+    - what kind of skills system admin needs
+- intent: ask_what_system_admin
+  examples: |
+    - What is a System Administrator?
+    - Can you explain the role of a System Administrator?
+    - I want to learn about System Administration, what do they do?
+    - What system admin does
+    - system admin
+    - what does it mean to administrate systems
+    
+
+- intent: ask_what_mobile_developer
+  examples: |
+    - What is a mobile developer?
+    - Can you explain the role of a mobile developer?
+    - I'm curious, what does a mobile developer do?
+
+- intent: ask_how_become_mobile_developer
+  examples: |
+    - How can I become a mobile developer?
+    - What steps do I need to take to become a mobile developer?
+    - Can you provide guidance on pursuing a career as a mobile developer?
+
+- intent: ask_what_desktop_developer
+  examples: |
+    - What is a desktop developer?
+    - Can you explain the role of a desktop developer?
+    - I'm interested, what does a desktop developer do?
+
+- intent: ask_how_become_desktop_developer
+  examples: |
+    - How can I become a desktop developer?
+    - What steps do I need to take to become a desktop developer?
+    - Can you provide guidance on pursuing a career as a desktop developer?
+
+- intent: ask_mobile_develop_learning_materials
+  examples: |
+    - Can you recommend some learning materials for mobile development?
+    - What books or courses should I study for mobile development?
+    - Where can I find tutorials for learning mobile development?
+
+- intent: ask_desktop_develop_learning_materials
+  examples: |
+    - Can you suggest learning resources for desktop development?
+    - What are some good online courses for learning desktop development?
+    - Do you have any recommendations for books on desktop development?
