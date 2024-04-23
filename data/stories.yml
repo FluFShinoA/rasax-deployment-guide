@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.1"
 
 stories:
 
@@ -14,85 +14,85 @@ stories:
 
 - story: Access neuvle query
   steps:
-    - intent: access_neuvle
-    - action: utter_access_neuvle
-    - action: utter_greet2
+  - intent: access_neuvle
+  - action: utter_access_neuvle
+  - action: utter_greet2
 
 - story: User asks about Programs offered by CICS
   steps:
-    - intent: ask_programs_offered_cics
-    - action: utter_programs_offered
-    - action: utter_know_more_programs
-    - intent: deny
-    - action: utter_no_interest
+  - intent: ask_programs_offered_cics
+  - action: utter_programs_offered
+  - action: utter_know_more_programs
+  - intent: deny
+  - action: utter_no_interest
 
 - story: User asks about Programs offered by CICS
   steps:
-    - intent: ask_programs_offered_cics
-    - action: utter_programs_offered
-    - action: utter_know_more_programs
+  - intent: ask_programs_offered_cics
+  - action: utter_programs_offered
+  - action: utter_know_more_programs
 
 - story: User asks about tuition fee
   steps:
-    - intent: ask_tuition_fee
-    - action: action_tuition_fee
-    - intent: inform_units
-    - action: action_calculate_tuition_fee
-    - action: utter_greet2
+  - intent: ask_tuition_fee
+  - action: action_tuition_fee
+  - intent: inform_units
+  - action: action_calculate_tuition_fee
+  - action: utter_greet2
 
 - story: User asks about BLIS
   steps:
-    - intent: blis_query
-    - action: utter_blis_answer
-    - action: utter_greet2
+  - intent: blis_query
+  - action: utter_blis_answer
+  - action: utter_greet2
 
 - story: incomplete blis query
   steps:
-    - intent: inc_blis_query
-    - action: utter_inc_blis_answer
-    - intent: affirm
-    - action: utter_blis_answer
-    - action: utter_greet2
+  - intent: inc_blis_query
+  - action: utter_inc_blis_answer
+  - intent: affirm
+  - action: utter_blis_answer
+  - action: utter_greet2
 
 - story: User asks about BSIT
   steps:
-    - intent: bsit_query
-    - action: utter_bsit_answer
-    - action: utter_bsit_careers
-    - action: utter_greet2
+  - intent: bsit_query
+  - action: utter_bsit_answer
+  - action: utter_bsit_careers
+  - action: utter_greet2
 - story: incomplete bsit query
   steps:
-    - intent: inc_bsit_query
-    - action: utter_inc_bsit_answer
-    - intent: affirm
-    - action: utter_bsit_answer
-    - action: utter_bsit_careers
-    - action: utter_greet2
+  - intent: inc_bsit_query
+  - action: utter_inc_bsit_answer
+  - intent: affirm
+  - action: utter_bsit_answer
+  - action: utter_bsit_careers
+  - action: utter_greet2
 - story: user asks about bsit careers
   steps:
-    - intent: bsit_careers_query
-    - action: utter_bsit_careers
-    - action: utter_greet2
+  - intent: bsit_careers_query
+  - action: utter_bsit_careers
+  - action: utter_greet2
 
 - story: User asks about BSCS
   steps:
-    - intent: bscs_query
-    - action: utter_bscs_answer
-    - action: utter_bscs_careers
-    - action: utter_greet2
+  - intent: bscs_query
+  - action: utter_bscs_answer
+  - action: utter_bscs_careers
+  - action: utter_greet2
 - story: incomplete bscs query
   steps:
-    - intent: inc_bscs_query
-    - action: utter_inc_bscs_answer
-    - intent: affirm
-    - action: utter_bscs_answer
-    - action: utter_bscs_careers
-    - action: utter_greet2
+  - intent: inc_bscs_query
+  - action: utter_inc_bscs_answer
+  - intent: affirm
+  - action: utter_bscs_answer
+  - action: utter_bscs_careers
+  - action: utter_greet2
 - story: user asks about bscs careers
   steps:
-    - intent: bscs_careers_query
-    - action: utter_bscs_careers
-    - action: utter_greet2
+  - intent: bscs_careers_query
+  - action: utter_bscs_careers
+  - action: utter_greet2
 
 - story: User asks about BSIS
   steps: 
@@ -102,17 +102,17 @@ stories:
   - action: utter_greet2
 - story: incomplete bsis query
   steps:
-    - intent: inc_bsis_query
-    - action: utter_inc_bsis_answer
-    - intent: affirm
-    - action: utter_bsis_answer
-    - action: utter_bsis_careers
-    - action: utter_greet2
+  - intent: inc_bsis_query
+  - action: utter_inc_bsis_answer
+  - intent: affirm
+  - action: utter_bsis_answer
+  - action: utter_bsis_careers
+  - action: utter_greet2
 - story: user asks about bsis careers
   steps:
-    - intent: bsis_careers_query
-    - action: utter_bsis_careers
-    - action: utter_greet2
+  - intent: bsis_careers_query
+  - action: utter_bsis_careers
+  - action: utter_greet2
 
 - story: User asks about BSEMC
   steps: 
@@ -186,55 +186,55 @@ stories:
 
 - story: gamedev Guidance strong
   steps:
-    - intent: ask_guidance_take_gamedev_course
-    - action: utter_ask_gamedev_fields_okay
-    - intent: affirm
-    - action: utter_ask_adaptation_okay_gamedev
-    - intent: affirm
-    - action: utter_problem_solving_okay_gamedev
-    - intent: affirm
-    - action: utter_strongly_recommend_gamedev
+  - intent: ask_guidance_take_gamedev_course
+  - action: utter_ask_gamedev_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_gamedev
+  - intent: affirm
+  - action: utter_problem_solving_okay_gamedev
+  - intent: affirm
+  - action: utter_strongly_recommend_gamedev
 - story: gamedev Guidance medium 1
   steps:
-    - intent: ask_guidance_take_gamedev_course
-    - action: utter_ask_gamedev_fields_okay
+  - intent: ask_guidance_take_gamedev_course
+  - action: utter_ask_gamedev_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_gamedev
+  - or:
     - intent: affirm
-    - action: utter_ask_adaptation_okay_gamedev
-    - or:
-        - intent: affirm
-        - intent: deny
-    - action: utter_problem_solving_okay_gamedev
     - intent: deny
-    - action: utter_medium_recommend_gamedev
+  - action: utter_problem_solving_okay_gamedev
+  - intent: deny
+  - action: utter_medium_recommend_gamedev
 
 - story: gamedev Guidance medium 2
   steps:
-    - intent: ask_guidance_take_gamedev_course
-    - action: utter_ask_gamedev_fields_okay
-    - intent: affirm
-    - action: utter_ask_adaptation_okay_gamedev
-    - intent: deny
-    - action: utter_problem_solving_okay_gamedev
-    - intent: affirm
-    - action: utter_medium_recommend_gamedev
+  - intent: ask_guidance_take_gamedev_course
+  - action: utter_ask_gamedev_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_gamedev
+  - intent: deny
+  - action: utter_problem_solving_okay_gamedev
+  - intent: affirm
+  - action: utter_medium_recommend_gamedev
 
 - story: gamedev Guidance slight
   steps:
-    - intent: ask_guidance_take_gamedev_course
-    - action: utter_ask_gamedev_fields_okay
-    - intent: deny
-    - action: utter_ask_willing_adjust_gamedev_okay
-    - intent: affirm
-    - action: utter_slight_recommend_gamedev
+  - intent: ask_guidance_take_gamedev_course
+  - action: utter_ask_gamedev_fields_okay
+  - intent: deny
+  - action: utter_ask_willing_adjust_gamedev_okay
+  - intent: affirm
+  - action: utter_slight_recommend_gamedev
 
 - story: gamedev Guidance EEEEEEE
   steps:
-    - intent: ask_guidance_take_gamedev_course
-    - action: utter_ask_gamedev_fields_okay
-    - intent: deny
-    - action: utter_ask_willing_adjust_gamedev_okay
-    - intent: deny
-    - action: utter_not_recommend_gamedev
+  - intent: ask_guidance_take_gamedev_course
+  - action: utter_ask_gamedev_fields_okay
+  - intent: deny
+  - action: utter_ask_willing_adjust_gamedev_okay
+  - intent: deny
+  - action: utter_not_recommend_gamedev
 
 
 - story: AskAboutGameDesignerRole
@@ -362,250 +362,250 @@ stories:
 
 # - story: Discuss gamedev careers
 #   steps:
-#     - intent: ask_possible_careers_game_dev
-#     - action: utter_possible_careers_game_dev
+#   - intent: ask_possible_careers_game_dev
+#   - action: utter_possible_careers_game_dev
 
 - story: Difference between game designers and game artists
   steps:
-    - intent: ask_game_designer_versus_artist
-    - action: utter_game_designer_versus_artist_info
+  - intent: ask_game_designer_versus_artist
+  - action: utter_game_designer_versus_artist_info
 
 - story: Inquire about Associate Game Producer role
   steps:
-    - intent: ask_what_associate_game_producer
-    - action: utter_what_associate_game_producer
+  - intent: ask_what_associate_game_producer
+  - action: utter_what_associate_game_producer
 
 - story: Becoming an Associate Game Producer
   steps:
-    - intent: ask_how_become_associate_game_producer
-    - action: utter_how_become_associate_game_producer
+  - intent: ask_how_become_associate_game_producer
+  - action: utter_how_become_associate_game_producer
 
 - story: Inquire about Senior Game Sound Engineer role
   steps:
-    - intent: ask_what_senior_game_sound_engineer
-    - action: utter_what_senior_game_sound_engineer
+  - intent: ask_what_senior_game_sound_engineer
+  - action: utter_what_senior_game_sound_engineer
 
 - story: Becoming a Senior Game Sound Engineer
   steps:
-    - intent: ask_how_become_senior_game_sound_engineer
-    - action: utter_how_become_senior_game_sound_engineer
+  - intent: ask_how_become_senior_game_sound_engineer
+  - action: utter_how_become_senior_game_sound_engineer
 
 - story: Inquire about Business Development Specialist role
   steps:
-    - intent: ask_what_business_dev_specialist
-    - action: utter_what_business_dev_specialist
+  - intent: ask_what_business_dev_specialist
+  - action: utter_what_business_dev_specialist
 
 - story: Becoming a Business Development Specialist
   steps:
-    - intent: ask_how_become_business_dev_specialist
-    - action: utter_how_become_business_dev_specialist
+  - intent: ask_how_become_business_dev_specialist
+  - action: utter_how_become_business_dev_specialist
 
 # digiani stories allen ---------------------------------------------------------------
 
 - story: HowBecome3DModeler
   steps:
-    - intent: ask_how_become_3d_modeler
-    - action: utter_how_become_3d_modeler
-    - action: utter_greet2
+  - intent: ask_how_become_3d_modeler
+  - action: utter_how_become_3d_modeler
+  - action: utter_greet2
 
 - story: WhatIs3DModeler
   steps:
-    - intent: ask_what_3d_modeler
-    - action: utter_what_3d_modeler
-    - action: utter_greet2
+  - intent: ask_what_3d_modeler
+  - action: utter_what_3d_modeler
+  - action: utter_greet2
 
 - story: HowBecomeAnimator
   steps:
-    - intent: ask_how_become_animator
-    - action: utter_how_become_animator
-    - action: utter_greet2
+  - intent: ask_how_become_animator
+  - action: utter_how_become_animator
+  - action: utter_greet2
 
 - story: WhatIsAnimator
   steps:
-    - intent: ask_what_animator
-    - action: utter_what_animator
-    - action: utter_greet2
+  - intent: ask_what_animator
+  - action: utter_what_animator
+  - action: utter_greet2
 
 - story: HowBecomeConceptArtist
   steps:
-    - intent: ask_how_become_concept_artist
-    - action: utter_how_become_concept_artist
-    - action: utter_greet2
+  - intent: ask_how_become_concept_artist
+  - action: utter_how_become_concept_artist
+  - action: utter_greet2
 
 - story: WhatIsConceptArtist
   steps:
-    - intent: ask_what_concept_artist
-    - action: utter_what_concept_artist
-    - action: utter_greet2
+  - intent: ask_what_concept_artist
+  - action: utter_what_concept_artist
+  - action: utter_greet2
 
 - story: HowBecomeMotionGraphicsDesigner
   steps:
-    - intent: ask_how_become_motion_graphics_designer
-    - action: utter_how_become_motion_graphics_designer
-    - action: utter_greet2
+  - intent: ask_how_become_motion_graphics_designer
+  - action: utter_how_become_motion_graphics_designer
+  - action: utter_greet2
 
 - story: WhatIsMotionGraphicsDesigner
   steps:
-    - intent: ask_what_motion_graphics_designer
-    - action: utter_what_motion_graphics_designer
-    - action: utter_greet2
+  - intent: ask_what_motion_graphics_designer
+  - action: utter_what_motion_graphics_designer
+  - action: utter_greet2
 
 - story: digiani Guidance strong
   steps:
-    - intent: ask_guidance_take_digiani_course
-    - action: utter_ask_digiani_fields_okay
-    - intent: affirm
-    - action: utter_ask_adaptation_okay_digiani
-    - intent: affirm
-    - action: utter_problem_solving_okay_digiani
-    - intent: affirm
-    - action: utter_strongly_recommend_digiani
-    - action: utter_know_more_digiani
-    - intent: deny
-    - action: utter_no_interest
+  - intent: ask_guidance_take_digiani_course
+  - action: utter_ask_digiani_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_digiani
+  - intent: affirm
+  - action: utter_problem_solving_okay_digiani
+  - intent: affirm
+  - action: utter_strongly_recommend_digiani
+  - action: utter_know_more_digiani
+  - intent: deny
+  - action: utter_no_interest
 
 - story: digiani Guidance medium 1
   steps:
-    - intent: ask_guidance_take_digiani_course
-    - action: utter_ask_digiani_fields_okay
+  - intent: ask_guidance_take_digiani_course
+  - action: utter_ask_digiani_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_digiani
+  - or:
     - intent: affirm
-    - action: utter_ask_adaptation_okay_digiani
-    - or:
-        - intent: affirm
-        - intent: deny
-    - action: utter_problem_solving_okay_digiani
     - intent: deny
-    - action: utter_medium_recommend_digiani
-    - action: utter_know_more_digiani
-    - intent: deny
-    - action: utter_no_interest
+  - action: utter_problem_solving_okay_digiani
+  - intent: deny
+  - action: utter_medium_recommend_digiani
+  - action: utter_know_more_digiani
+  - intent: deny
+  - action: utter_no_interest
 
 - story: digiani Guidance medium 2
   steps:
-    - intent: ask_guidance_take_digiani_course
-    - action: utter_ask_digiani_fields_okay
-    - intent: affirm
-    - action: utter_ask_adaptation_okay_digiani
-    - intent: deny
-    - action: utter_problem_solving_okay_digiani
-    - intent: affirm
-    - action: utter_medium_recommend_digiani
-    - action: utter_know_more_digiani
-    - intent: deny
-    - action: utter_no_interest
+  - intent: ask_guidance_take_digiani_course
+  - action: utter_ask_digiani_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_digiani
+  - intent: deny
+  - action: utter_problem_solving_okay_digiani
+  - intent: affirm
+  - action: utter_medium_recommend_digiani
+  - action: utter_know_more_digiani
+  - intent: deny
+  - action: utter_no_interest
 
 - story: digiani Guidance slight
   steps:
-    - intent: ask_guidance_take_digiani_course
-    - action: utter_ask_digiani_fields_okay
-    - intent: deny
-    - action: utter_ask_willing_adjust_digiani_okay
-    - intent: affirm
-    - action: utter_slight_recommend_digiani
-    - action: utter_know_more_digiani
-    - intent: deny
-    - action: utter_no_interest
+  - intent: ask_guidance_take_digiani_course
+  - action: utter_ask_digiani_fields_okay
+  - intent: deny
+  - action: utter_ask_willing_adjust_digiani_okay
+  - intent: affirm
+  - action: utter_slight_recommend_digiani
+  - action: utter_know_more_digiani
+  - intent: deny
+  - action: utter_no_interest
 
 - story: digiani Guidance EEEEEEE
   steps:
-    - intent: ask_guidance_take_digiani_course
-    - action: utter_ask_digiani_fields_okay
-    - intent: deny
-    - action: utter_ask_willing_adjust_digiani_okay
-    - intent: deny
-    - action: utter_not_recommend_digiani
-    - action: utter_greet3
+  - intent: ask_guidance_take_digiani_course
+  - action: utter_ask_digiani_fields_okay
+  - intent: deny
+  - action: utter_ask_willing_adjust_digiani_okay
+  - intent: deny
+  - action: utter_not_recommend_digiani
+  - action: utter_greet3
 
 - story: Respond to ask_DigiAni_benefits
   steps:
-    - intent: ask_DigiAni_benefits
-    - action: utter_DigiAni_benefits
-    - action: utter_greet2
+  - intent: ask_DigiAni_benefits
+  - action: utter_DigiAni_benefits
+  - action: utter_greet2
 
 - story: Respond to ask_DigiAni_required_skills
   steps:
-    - intent: ask_DigiAni_required_skills
-    - action: utter_DigiAni_required_skills
-    - action: utter_greet2
+  - intent: ask_DigiAni_required_skills
+  - action: utter_DigiAni_required_skills
+  - action: utter_greet2
 
 - story: Respond to ask_visual_effects_artist
   steps:
-    - intent: ask_visual_effects_artist
-    - action: utter_ask_visual_effects_artist
-    - action: utter_greet2
+  - intent: ask_visual_effects_artist
+  - action: utter_ask_visual_effects_artist
+  - action: utter_greet2
 
 - story: Respond to ask_multimedia_designer
   steps:
-    - intent: ask_multimedia_designer
-    - action: utter_ask_multimedia_designer
-    - action: utter_greet2
+  - intent: ask_multimedia_designer
+  - action: utter_ask_multimedia_designer
+  - action: utter_greet2
 
 - story: Respond to ask_video_editor
   steps:
-    - intent: ask_video_editor
-    - action: utter_ask_video_editor
-    - action: utter_greet2
+  - intent: ask_video_editor
+  - action: utter_ask_video_editor
+  - action: utter_greet2
 
 - story: Respond to inquiry about how to become a visual effects artist
   steps:
-    - intent: ask_how_become_visual_effects_artist
-    - action: utter_how_become_visual_effects_artist
-    - action: utter_greet2
+  - intent: ask_how_become_visual_effects_artist
+  - action: utter_how_become_visual_effects_artist
+  - action: utter_greet2
 
 - story: Respond to inquiry about how to become a multimedia designer
   steps:
-    - intent: ask_how_become_multimedia_designer
-    - action: utter_how_become_multimedia_designer
-    - action: utter_greet2
+  - intent: ask_how_become_multimedia_designer
+  - action: utter_how_become_multimedia_designer
+  - action: utter_greet2
 
 - story: Respond to inquiry about how to become a video editor
   steps:
-    - intent: ask_how_become_video_editor
-    - action: utter_how_become_video_editor
-    - action: utter_greet2
+  - intent: ask_how_become_video_editor
+  - action: utter_how_become_video_editor
+  - action: utter_greet2
 
 - story: Respond to inquiry about Creative Content Developer role
   steps:
-    - intent: ask_what_creative_content_developer
-    - action: utter_what_creative_content_developer
-    - action: utter_greet2
+  - intent: ask_what_creative_content_developer
+  - action: utter_what_creative_content_developer
+  - action: utter_greet2
 
 - story: Provide guidance on becoming a Creative Content Developer
   steps:
-    - intent: ask_how_become_creative_content_developer
-    - action: utter_how_become_creative_content_developer
-    - action: utter_greet2
+  - intent: ask_how_become_creative_content_developer
+  - action: utter_how_become_creative_content_developer
+  - action: utter_greet2
 
 - story: Respond to inquiry about Ad Builders role
   steps:
-    - intent: ask_what_ad_builders
-    - action: utter_what_ad_builders
-    - action: utter_greet2
+  - intent: ask_what_ad_builders
+  - action: utter_what_ad_builders
+  - action: utter_greet2
 
 - story: Provide guidance on becoming Ad Builders
   steps:
-    - intent: ask_how_become_ad_builders
-    - action: utter_how_become_ad_builders
-    - action: utter_greet2
+  - intent: ask_how_become_ad_builders
+  - action: utter_how_become_ad_builders
+  - action: utter_greet2
 
 - story: Respond to inquiry about Technical Director role
   steps:
-    - intent: ask_what_technical_director
-    - action: utter_what_technical_director
-    - action: utter_greet2
+  - intent: ask_what_technical_director
+  - action: utter_what_technical_director
+  - action: utter_greet2
 
 - story: Provide guidance on becoming a Technical Director
   steps:
-    - intent: ask_how_become_technical_director
-    - action: utter_how_become_technical_director
-    - action: utter_greet2
+  - intent: ask_how_become_technical_director
+  - action: utter_how_become_technical_director
+  - action: utter_greet2
 
 - story: interactive_story_1
   steps:
   - intent: bsemc_digiani_query
-    entities:
-    - program: bsemc
-    - major: digiani
+  entities:
+  - program: bsemc
+  - major: digiani
   - action: utter_bsemc_digiani_answer
   - action: utter_ask_what_is_DigiAni
   - action: utter_DigiAni_simplified
@@ -627,9 +627,9 @@ stories:
 - story: game programmer sad path
   steps:
   - intent: bsemc_gamedev_query
-    entities:
-    - program: bsemc
-    - major: gamedev
+  entities:
+  - program: bsemc
+  - major: gamedev
   - action: utter_bsemc_gamedev_answer
   - action: utter_bsemc_gamedev_careers
   - intent: ask_what_game_programmer
@@ -642,279 +642,520 @@ stories:
   - intent: ask_tuition_fee
   - action: action_tuition_fee
   - intent: inform_units
-    entities:
-    - number_of_units: '22'
+  entities:
+  - number_of_units: '22'
   - action: action_calculate_tuition_fee
   - action: utter_greet2
 
 - story: IT Guidance strong
   steps:
-    - intent: ask_guidance_take_IT_course
-    - action: utter_ask_IT_fields_okay
-    - intent: affirm
-    - action: utter_ask_adaptation_okay
-    - intent: affirm
-    - action: utter_problem_solving_okay
-    - intent: affirm
-    - action: utter_strongly_recommend_IT
+  - intent: ask_guidance_take_IT_course
+  - action: utter_ask_IT_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay
+  - intent: affirm
+  - action: utter_problem_solving_okay
+  - intent: affirm
+  - action: utter_strongly_recommend_IT
 - story: IT Guidance medium 1
   steps:
-    - intent: ask_guidance_take_IT_course
-    - action: utter_ask_IT_fields_okay
-    - intent: affirm
-    - action: utter_ask_adaptation_okay
-    - or:
-        - intent: affirm
-        - intent: deny
-    - action: utter_problem_solving_okay
-    - intent: deny
-    - action: utter_medium_recommend_IT
+  - intent: ask_guidance_take_IT_course
+  - action: utter_ask_IT_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay
+  - or:
+     - intent: affirm
+     - intent: deny
+  - action: utter_problem_solving_okay
+  - intent: deny
+  - action: utter_medium_recommend_IT
 
 - story: IT Guidance medium 2
   steps:
-    - intent: ask_guidance_take_IT_course
-    - action: utter_ask_IT_fields_okay
-    - intent: affirm
-    - action: utter_ask_adaptation_okay
-    - intent: deny
-    - action: utter_problem_solving_okay
-    - intent: affirm
-    - action: utter_medium_recommend_IT
+  - intent: ask_guidance_take_IT_course
+  - action: utter_ask_IT_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay
+  - intent: deny
+  - action: utter_problem_solving_okay
+  - intent: affirm
+  - action: utter_medium_recommend_IT
 
 - story: IT Guidance slight
   steps:
-    - intent: ask_guidance_take_IT_course
-    - action: utter_ask_IT_fields_okay
-    - intent: deny
-    - action: utter_ask_willing_adjust_IT_okay
-    - intent: affirm
-    - action: utter_slight_recommend_IT
+  - intent: ask_guidance_take_IT_course
+  - action: utter_ask_IT_fields_okay
+  - intent: deny
+  - action: utter_ask_willing_adjust_IT_okay
+  - intent: affirm
+  - action: utter_slight_recommend_IT
 
 - story: IT Guidance EEEEEEE
   steps:
-    - intent: ask_guidance_take_IT_course
-    - action: utter_ask_IT_fields_okay
-    - intent: deny
-    - action: utter_ask_willing_adjust_IT_okay
-    - intent: deny
-    - action: utter_not_recommend_IT
+  - intent: ask_guidance_take_IT_course
+  - action: utter_ask_IT_fields_okay
+  - intent: deny
+  - action: utter_ask_willing_adjust_IT_okay
+  - intent: deny
+  - action: utter_not_recommend_IT
 #after grad guidance
 - story: shourai shiranai baka na hito
   steps:
-    - intent: ask_help_choose_jobs
-    - action: utter_help_choose_jobs
-    - intent: express_no_interest
-    - action: utter_guidance_no_interest
+  - intent: ask_help_choose_jobs
+  - action: utter_help_choose_jobs
+  - intent: express_no_interest
+  - action: utter_guidance_no_interest
 
 - story: web interest
   steps:
-    - intent: express_web_interest
-    - action: utter_guidance_web_careers
+  - intent: express_web_interest
+  - action: utter_guidance_web_careers
 
 - story: ComputerTroubleshootingInterest
   steps:
-    - intent: express_comp_troubleshooting_interest
-    - action: utter_guidance_comp_troubleshooting_careers
+  - intent: express_comp_troubleshooting_interest
+  - action: utter_guidance_comp_troubleshooting_careers
 
 - story: DataAnalysisInterest
   steps:
-    - intent: express_data_interest
-    - action: utter_guidance_data_careers
+  - intent: express_data_interest
+  - action: utter_guidance_data_careers
 
 - story: NetworkingInterest
   steps:
-    - intent: express_networking_interest
-    - action: utter_guidance_networking_careers
+  - intent: express_networking_interest
+  - action: utter_guidance_networking_careers
 
 - story: SoftInterest
   steps:
-    - intent: express_software_interest
-    - action: utter_guidance_software_careers
+  - intent: express_software_interest
+  - action: utter_guidance_software_careers
 
 - story: LibraryInterest
   steps:
-    - intent: express_library_interest
-    - action: utter_guidance_library_careers
+  - intent: express_library_interest
+  - action: utter_guidance_library_careers
 
 - story: CyberSecInterest
   steps:
-    - intent: express_cyber_sec_interest
-    - action: utter_guidance_cyber_sec_careers
+  - intent: express_cyber_sec_interest
+  - action: utter_guidance_cyber_sec_careers
 
 - story: GameDevInterest
   steps:
-    - intent: express_game_dev_interest
-    - action: utter_guidance_game_dev_careers
+  - intent: express_game_dev_interest
+  - action: utter_guidance_game_dev_careers
 - story: DigitalArtInterest
   steps:
-    - intent: express_digi_art_interest
-    - action: utter_guidance_digi_art_careers
+  - intent: express_digi_art_interest
+  - action: utter_guidance_digi_art_careers
 - story: AIInterest
   steps:
-    - intent: express_AI_interest
-    - action: utter_guidance_AI_careers
+  - intent: express_AI_interest
+  - action: utter_guidance_AI_careers
 
 # web dev stories
 - story: WebDeveloperInterest
   steps:
-    - intent: ask_how_become_web_developer
-    - action: utter_how_become_web_developer
+  - intent: ask_how_become_web_developer
+  - action: utter_how_become_web_developer
 
 - story: WebDeveloperFrontEndDesignerInterest
   steps:
-    - intent: express_front_end_interest
-    - action: utter_front_end_interest
-    - intent: express_more_design_interest
-    - action: utter_more_design_interest
-    - action: utter_recommend_learning_materials
-    - intent: ask_web_design_learning_materials
-    - action: utter_web_design_learning_materials
+  - intent: express_front_end_interest
+  - action: utter_front_end_interest
+  - intent: express_more_design_interest
+  - action: utter_more_design_interest
+  - action: utter_recommend_learning_materials
+  - intent: ask_web_design_learning_materials
+  - action: utter_web_design_learning_materials
 
 - story: WebDeveloperNoFrontEndDesignerInterest
   steps:
-    - intent: express_front_end_interest
-    - action: utter_front_end_interest
-    - intent: express_more_code_interest
-    - action: utter_more_code_interest
-    - action: utter_recommend_learning_materials
-    - intent: ask_js_dev_learning_materials
-    - action: utter_js_dev_learning_materials
+  - intent: express_front_end_interest
+  - action: utter_front_end_interest
+  - intent: express_more_code_interest
+  - action: utter_more_code_interest
+  - action: utter_recommend_learning_materials
+  - intent: ask_js_dev_learning_materials
+  - action: utter_js_dev_learning_materials
 
 - story: WebDeveloperBackEndDeveloperInterest
   steps:
-    - intent: express_back_end_interest
-    - action: utter_back_end_interest
-    - intent: ask_back_end_learning_materials
-    - action: utter_back_end_learning_materials
+  - intent: express_back_end_interest
+  - action: utter_back_end_interest
+  - intent: ask_back_end_learning_materials
+  - action: utter_back_end_learning_materials
 
 # db admin stories
 
 - story: DbAdminInterest
   steps:
-    - intent: ask_how_become_db_admin
-    - action: utter_how_become_db_admin
+  - intent: ask_how_become_db_admin
+  - action: utter_how_become_db_admin
 
 - story: WhatDbAdmin
   steps:
-    - intent: ask_what_db_admin
-    - action: utter_what_db_admin
+  - intent: ask_what_db_admin
+  - action: utter_what_db_admin
 # DevOps stories
 
 - story: DevOpsInterest
   steps:
-    - intent: ask_how_become_dev_ops
-    - action: utter_how_become_dev_ops
+  - intent: ask_how_become_dev_ops
+  - action: utter_how_become_dev_ops
 
 - story: WhatDevOps
   steps:
-    - intent: ask_what_dev_ops
-    - action: utter_what_dev_ops
+  - intent: ask_what_dev_ops
+  - action: utter_what_dev_ops
 
 # Network Engineer stories
 
 - story: NetworkEngineerInterest
   steps:
-    - intent: ask_how_become_network_engineer
-    - action: utter_how_become_network_engineer
+  - intent: ask_how_become_network_engineer
+  - action: utter_how_become_network_engineer
 
 - story: WhatNetworkEngineer
   steps:
-    - intent: ask_what_network_engineer
-    - action: utter_what_network_engineer
+  - intent: ask_what_network_engineer
+  - action: utter_what_network_engineer
 
 # IT Support stories
 
 - story: ITSupportInterest
   steps:
-    - intent: ask_how_become_IT_support
-    - action: utter_how_become_IT_support
+  - intent: ask_how_become_IT_support
+  - action: utter_how_become_IT_support
 
 - story: WhatITSupport
   steps:
-    - intent: ask_what_IT_support
-    - action: utter_what_IT_support
+  - intent: ask_what_IT_support
+  - action: utter_what_IT_support
 
 # QA Tester stories
 
 - story: QATesterInterest
   steps:
-    - intent: ask_how_become_QA_tester
-    - action: utter_how_become_QA_tester
+  - intent: ask_how_become_QA_tester
+  - action: utter_how_become_QA_tester
 
 - story: WhatQATester
   steps:
-    - intent: ask_what_QA_tester
-    - action: utter_what_QA_tester
+  - intent: ask_what_QA_tester
+  - action: utter_what_QA_tester
 # IT Audit Assistant stories
 
 - story: ITAuditAssistantInterest
   steps:
-    - intent: ask_how_become_IT_audit_assistant
-    - action: utter_how_become_IT_audit_assistant
+  - intent: ask_how_become_IT_audit_assistant
+  - action: utter_how_become_IT_audit_assistant
 
 - story: WhatITAuditAssistant
   steps:
-    - intent: ask_what_IT_audit_assistant
-    - action: utter_what_IT_audit_assistant
+  - intent: ask_what_IT_audit_assistant
+  - action: utter_what_IT_audit_assistant
 
 # System Integration Admin stories
 
 - story: SystemIntegrationAdminInterest
   steps:
-    - intent: ask_how_become_system_integration_admin
-    - action: utter_how_become_system_integration_admin
+  - intent: ask_how_become_system_integration_admin
+  - action: utter_how_become_system_integration_admin
 
 - story: WhatSystemIntegrationAdmin
   steps:
-    - intent: ask_what_system_integration_admin
-    - action: utter_what_system_integration_admin
+  - intent: ask_what_system_integration_admin
+  - action: utter_what_system_integration_admin
 
 # Computer Programmer stories
 
 - story: ComputerProgrammerInterest
   steps:
-    - intent: ask_how_become_computer_programmer
-    - action: utter_how_become_computer_programmer
+  - intent: ask_how_become_computer_programmer
+  - action: utter_how_become_computer_programmer
 
 - story: WhatComputerProgrammer
   steps:
-    - intent: ask_what_computer_programmer
-    - action: utter_what_computer_programmer
+  - intent: ask_what_computer_programmer
+  - action: utter_what_computer_programmer
 
 # System Admin stories
 
 - story: SystemAdminInterest
   steps:
-    - intent: ask_how_become_system_admin
-    - action: utter_how_become_system_admin
+  - intent: ask_how_become_system_admin
+  - action: utter_how_become_system_admin
 
 - story: WhatSystemAdmin
   steps:
-    - intent: ask_what_system_admin
-    - action: utter_what_system_admin
+  - intent: ask_what_system_admin
+  - action: utter_what_system_admin
 
 
 - story: MobileDeveloperInterest
   steps:
-    - intent: ask_what_mobile_developer
-    - action: utter_what_mobile_developer
+  - intent: ask_what_mobile_developer
+  - action: utter_what_mobile_developer
 
 - story: BecomeMobileDeveloper
   steps:
-    - intent: ask_how_become_mobile_developer
-    - action: utter_how_become_mobile_developer
+  - intent: ask_how_become_mobile_developer
+  - action: utter_how_become_mobile_developer
 
 - story: DesktopDeveloperInterest
   steps:
-    - intent: ask_what_desktop_developer
-    - action: utter_what_desktop_developer
+  - intent: ask_what_desktop_developer
+  - action: utter_what_desktop_developer
 
 - story: BecomeDesktopDeveloper
   steps:
-    - intent: ask_how_become_desktop_developer
-    - action: utter_how_become_desktop_developer
+  - intent: ask_how_become_desktop_developer
+  - action: utter_how_become_desktop_developer
 
 - story: MobileDevLearningMaterials
   steps:
-    - intent: ask_mobile_develop_learning_materials
-    - action: utter_mobile_develop_learning_materials
+  - intent: ask_mobile_develop_learning_materials
+  - action: utter_mobile_develop_learning_materials
+
+
+# BLIS
+
+- story: libsci Guidance strong
+  steps:
+  - intent: ask_guidance_take_libsci_course
+  - action: utter_ask_libsci_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_libsci
+  - intent: affirm
+  - action: utter_problem_solving_okay_libsci
+  - intent: affirm
+  - action: utter_strongly_recommend_libsci
+- story: libsci Guidance medium 1
+  steps:
+  - intent: ask_guidance_take_libsci_course
+  - action: utter_ask_libsci_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_libsci
+  - or:
+      - intent: affirm
+      - intent: deny
+  - action: utter_problem_solving_okay_libsci
+  - intent: deny
+  - action: utter_medium_recommend_libsci
+
+- story: libsci Guidance medium 2
+  steps:
+  - intent: ask_guidance_take_libsci_course
+  - action: utter_ask_libsci_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_libsci
+  - intent: deny
+  - action: utter_problem_solving_okay_libsci
+  - intent: affirm
+  - action: utter_medium_recommend_libsci
+
+- story: libsci Guidance slight
+  steps:
+  - intent: ask_guidance_take_libsci_course
+  - action: utter_ask_libsci_fields_okay
+  - intent: deny
+  - action: utter_ask_willing_adjust_libsci_okay
+  - intent: affirm
+  - action: utter_slight_recommend_libsci
+
+- story: libsci Guidance EEEEEEE
+  steps:
+  - intent: ask_guidance_take_libsci_course
+  - action: utter_ask_libsci_fields_okay
+  - intent: deny
+  - action: utter_ask_willing_adjust_libsci_okay
+  - intent: deny
+  - action: utter_not_recommend_libsci
+
+# BSCS
+- story: CS Guidance strong
+  steps:
+  - intent: ask_guidance_take_CS_course
+  - action: utter_ask_CS_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_CS
+  - intent: affirm
+  - action: utter_problem_solving_okay_CS
+  - intent: affirm
+  - action: utter_strongly_recommend_CS
+- story: CS Guidance medium 1
+  steps:
+  - intent: ask_guidance_take_CS_course
+  - action: utter_ask_CS_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_CS
+  - or:
+      - intent: affirm
+      - intent: deny
+  - action: utter_problem_solving_okay_CS
+  - intent: deny
+  - action: utter_medium_recommend_CS
+
+- story: CS Guidance medium 2
+  steps:
+  - intent: ask_guidance_take_CS_course
+  - action: utter_ask_CS_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_CS
+  - intent: deny
+  - action: utter_problem_solving_okay_CS
+  - intent: affirm
+  - action: utter_medium_recommend_CS
+
+- story: CS Guidance slight
+  steps:
+  - intent: ask_guidance_take_CS_course
+  - action: utter_ask_CS_fields_okay
+  - intent: deny
+  - action: utter_ask_willing_adjust_CS_okay
+  - intent: affirm
+  - action: utter_slight_recommend_CS
+
+- story: CS Guidance EEEEEEE
+  steps:
+  - intent: ask_guidance_take_CS_course
+  - action: utter_ask_CS_fields_okay
+  - intent: deny
+  - action: utter_ask_willing_adjust_CS_okay
+  - intent: deny
+  - action: utter_not_recommend_CS
+
+- story: HowBecomeEthicalHacker
+  steps:
+  - intent: ask_how_become_ethical_hacker
+  - action: utter_how_become_ethical_hacker
+
+- story: WhatIsEthicalHacker
+  steps:
+  - intent: ask_what_ethical_hacker
+  - action: utter_what_ethical_hacker
+
+- story: HowBecomeSecurityEngineer
+  steps:
+  - intent: ask_how_become_cybersecurity_engineer
+  - action: utter_how_become_security_engineer
+
+- story: WhatIsSecurityEngineer
+  steps:
+  - intent: ask_what_cybersecurity_engineer
+  - action: utter_what_security_engineer
+
+- story: HowBecomePenetrationTester
+  steps:
+  - intent: ask_how_become_penetration_tester
+  - action: utter_how_become_penetration_tester
+
+- story: WhatIsPenetrationTester
+  steps:
+  - intent: ask_what_penetration_tester
+  - action: utter_what_penetration_tester
+
+- story: HowBecomeCybersecurityConsultant
+  steps:
+  - intent: ask_how_become_cybersecurity_consultant
+  - action: utter_how_become_cybersecurity_consultant
+
+- story: WhatIsCybersecurityConsultant
+  steps:
+  - intent: ask_what_cybersecurity_consultant
+  - action: utter_what_cybersecurity_consultant
+
+- story: What ML Engineer
+  steps:
+  - intent: ask_what_ml_engineer
+  - action: utter_what_ml_engineer
+
+- story: What NLP Specialist
+  steps:
+  - intent: ask_what_nlp_specialist
+  - action: utter_what_nlp_specialist
+
+- story: What Computer Vision Engineer
+  steps:
+  - intent: ask_what_computer_vision_engineer
+  - action: utter_what_computer_vision_engineer
+
+- story: How Become ML Engineer
+  steps:
+  - intent: ask_how_become_ml_engineer
+  - action: utter_how_become_ml_engineer
+
+- story: How Become NLP Specialist
+  steps:
+  - intent: ask_how_become_nlp_specialist
+  - action: utter_how_become_nlp_specialist
+
+- story: How Become Computer Vision Engineer
+  steps:
+  - intent: ask_how_become_computer_vision_engineer
+  - action: utter_how_become_computer_vision_engineer
+
+- story: What IT Support Specialist
+  steps:
+  - intent: ask_what_it_support_specialist
+  - action: utter_what_it_support_specialist
+
+- story: How Become IT Support Specialist
+  steps:
+  - intent: ask_how_become_it_support_specialist
+  - action: utter_how_become_it_support_specialist
+
+# BSIS
+- story: IS Guidance strong
+  steps:
+  - intent: ask_guidance_take_IS_course
+  - action: utter_ask_IS_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_IS
+  - intent: affirm
+  - action: utter_problem_solving_okay_IS
+  - intent: affirm
+  - action: utter_strongly_recommend_IS
+- story: IS Guidance medium 1
+  steps:
+  - intent: ask_guidance_take_IS_course
+  - action: utter_ask_IS_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_IS
+  - or:
+    - intent: affirm
+    - intent: deny
+  - action: utter_problem_solving_okay_IS
+  - intent: deny
+  - action: utter_medium_recommend_IS
+
+- story: IS Guidance medium 2
+  steps:
+  - intent: ask_guidance_take_IS_course
+  - action: utter_ask_IS_fields_okay
+  - intent: affirm
+  - action: utter_ask_adaptation_okay_IS
+  - intent: deny
+  - action: utter_problem_solving_okay_IS
+  - intent: affirm
+  - action: utter_medium_recommend_IS
+
+- story: IS Guidance slight
+  steps:
+  - intent: ask_guidance_take_IS_course
+  - action: utter_ask_IS_fields_okay
+  - intent: deny
+  - action: utter_ask_willing_adjust_IS_okay
+  - intent: affirm
+  - action: utter_slight_recommend_IS
+
+- story: IS Guidance EEEEEEE
+  steps:
+  - intent: ask_guidance_take_IS_course
+  - action: utter_ask_IS_fields_okay
+  - intent: deny
+  - action: utter_ask_willing_adjust_IS_okay
+  - intent: deny
+  - action: utter_not_recommend_IS
