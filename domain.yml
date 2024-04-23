@@ -1813,9 +1813,7 @@ responses:
         Link is: https://examspinas.com/unlocking-success-a-comprehensive-guide-to-the-librarians-licensure-examination-lle/
 
   utter_how_become_archivist:
-    - text: "To become an archivist, you need to have background experience in archiving materials 
-    usually in museums or art centers. BLIS and MLIS degrees are required. Specialization in archiving
-     from those courses are also preferred"
+    - text: "To become an archivist, you need to have background experience in archiving materials usually in museums or art centers. BLIS and MLIS degrees are required. Specialization in archiving from those courses are also preferred"
 
   utter_how_become_research_specialist:
     - text: "To become a research specialist, you typically need a bachelor's degree in a relevant field such as library science, information science, or a subject area related to your research focus. Pursuing advanced degrees or certifications may enhance your qualifications. Gaining experience through research projects, internships, or entry-level positions can also be helpful."
