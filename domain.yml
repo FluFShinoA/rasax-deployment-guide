@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3.1'
 intents:
 - access_neuvle
 - admission_process_query
