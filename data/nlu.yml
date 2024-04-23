@@ -1,5 +1,431 @@
 version: "3.1"
 nlu:
+- intent: ask_admission_requirements
+  examples: |
+    - what are the admission requirements
+    - admission requirements
+    - admission
+    - admision
+    - NEU requirements admission
+    - what I need for admission
+    - documents for admission
+    - what is required for admission
+- intent: ask_old_student_requirements
+  examples: |
+    - what are the admission requirements old
+    - admission requirements old
+    - admission old
+    - admision old
+    - NEU requirements admission old
+    - what I need for admission old
+    - documents for admission old
+    - what is required for admission old
+
+- intent: ask_new_student_requirements
+  examples: |
+    - what are the admission requirements new
+    - admission requirements new
+    - admission new
+    - admision new
+    - NEU requirements admission new
+    - what I need for admission new
+    - documents for admission new
+    - what is required for admission new
+
+- intent: ask_local_new_student_requirements
+  examples: |
+    - what are the admission requirements new non foreign
+    - admission requirements new non foreign
+    - admission new non foreign
+    - admision new non foreign
+    - NEU requirements admission new non foreign
+    - what I need for admission new non foreign
+    - documents for admission new non foreign
+    - what is required for admission new non foreign
+
+- intent: ask_foreign_new_student_requirements
+  examples: |
+    - what are the admission requirements new foreign
+    - admission requirements new foreign
+    - admission new foreign
+    - admision new foreign
+    - NEU requirements admission new foreign
+    - what I need for admission new foreign
+    - documents for admission new foreign
+    - what is required for admission new foreign
+
+- intent: ask_born_in_phil_requirements
+  examples: |
+    - what are the admission requirements new foreign born in phil
+    - admission requirements new foreign born in phil
+    - admission new foreign born in phil
+    - admision new foreign born in phil
+    - NEU requirements admission new foreign born in phil
+    - what I need for admission new foreign born in phil
+    - documents for admission new foreign born in phil
+    - what is required for admission new foreign born in phil
+
+- intent: ask_born_abroad_requirements
+  examples: |
+    - what are the admission requirements new foreign born abroad
+    - admission requirements new foreign born abroad
+    - admission new foreign born abroad
+    - admision new foreign born abroad
+    - NEU requirements admission new foreign born abroad
+    - what I need for admission new foreign born abroad
+    - documents for admission new foreign born abroad
+    - what is required for admission new foreign born abroad
+
+- intent: admission_process_query
+  examples: |
+    - what are the admission processes
+    - what are the admission procedures
+    - admission processes
+    - admission procedures
+    - please guide me through admission
+    - admission guide
+    
+
+- intent: ask_enrollment_process
+  examples: |
+    - how enrollment process
+    - how to enroll
+    - what are enrollment process
+    - what are enrollment procedure
+    - enroll
+    - enrollment
+    - enrol
+    - enrollment procedure
+
+- intent: ask_enrollment_process_new
+  examples: |
+    - how enrollment process new
+    - how to enroll new
+    - what are enrollment process new
+    - what are enrollment procedure new
+    - enroll new
+    - enrollment new
+    - enrol new
+    - enrollment procedure new
+
+- intent: ask_enrollment_process_old
+  examples: |
+    - how enrollment process old
+    - how to enroll old
+    - what are enrollment process old
+    - what are enrollment procedure old
+    - enroll old
+    - enrollment old
+    - enrol old
+    - enrollment procedure old
+    
+
+- intent: ask_tuition_fee
+  examples: |
+    - How much is the tuition fee
+    - Can you tell me about the tuition fee
+    - What is the cost per unit for tuition
+    - How much does one unit of tuition cost
+    - tuition fee
+    - tuition
+    - tuiton
+    - tuition price
+
+- intent: inform_units
+  examples: |
+    - I'm planning on enrolling [15](number_of_units) units
+    - I want to take [12](number_of_units) units next semester
+    - Considering [20](number_of_units) units for the upcoming term
+    - [23](number_of_units) units
+    - [10](number_of_units) 
+    - [11](number_of_units) unit
+    - I need [12](number_of_units) unit
+
+- intent: ask_calculate_tuition
+  examples: |
+    - help calculate tuition
+    - calculate tuition
+    - caluclate tuiton
+    - calculte tuition
+    - can you calculate tuition
+
+- intent: ask_scholarship_links
+  examples: |
+    - recommend scholarships
+    - send scholarships
+    - Isko
+    - scholarship
+    - scholarships
+    - skolarships
+    - does NEU have scholarships?
+    - give scholarships
+- intent: ask_payment_process
+  examples: |
+    - tuition payment process
+    - how to process tuition
+    - how to pay tuition
+    - tuition pay
+    - pay tuiton
+    - tuition pay process
+    - where pay tuition
+
+
+
+
+- intent: ask_entry_grade
+  examples: |
+    - what entry grade i need
+    - entry grade requirements
+    - entry grade
+    - entry garde
+    - enty grade
+    - how high grade to enter
+    - grade requirements
+
+- intent: ask_start_of_class
+  examples: |
+    - when class start
+    - start of class
+    - start class
+    - strat class
+    - start of classes
+    - expected start of class
+    - start date of class
+    
+    
+
+- intent: ask_non_inc_can_enroll
+  examples: |
+    - is neu for INC only
+    - can non INC enroll
+    - non INC
+    - not INC
+    - if not inc can enroll?
+    - non INC enroll
+    - is neu INC school
+    - neu INC school
+    - is non INC not allowed
+    - intent: ask_bsit_curriculum
+  examples: |
+    - BSIT curriculum
+    - send BSIT curriculum
+    - bsit curiculum
+    - send bsit curriculum
+    - bsit subjects
+    - bsit curriculum subjects
+    - bsit expected subjects
+    - bsit curr
+- intent: ask_bscs_curriculum
+  examples: |
+    - BSCS curriculum
+    - send BSCS curriculum
+    - bscs curiculum
+    - send bscs curriculum
+    - bscs subjects
+    - bscs curriculum subjects
+    - bscs expected subjects
+    - bscs curr
+- intent: ask_bsis_curriculum
+  examples: |
+    - BSIS curriculum
+    - send BSIS curriculum
+    - bsis curiculum
+    - send bsis curriculum
+    - bsis subjects
+    - bsis curriculum subjects
+    - bsis expected subjects
+    - bsis curr
+- intent: ask_blis_curriculum
+  examples: |
+    - BLIS curriculum
+    - send BLIS curriculum
+    - blis curiculum
+    - send blis curriculum
+    - blis subjects
+    - blis curriculum subjects
+    - blis expected subjects
+    - blis curr
+- intent: ask_digiani_curriculum
+  examples: |
+    - DigiAni curriculum
+    - send DigiAni curriculum
+    - digiani curiculum
+    - send digiani curriculum
+    - digiani subjects
+    - digiani curriculum subjects
+    - digiani expected subjects
+    - digiani curr
+- intent: ask_gamedev_curriculum
+  examples: |
+    - GameDev curriculum
+    - send GameDev curriculum
+    - gamedev curiculum
+    - send gamedev curriculum
+    - gamedev subjects
+    - gamedev curriculum subjects
+    - gamedev expected subjects
+    - gamedev curr
+    
+
+- intent: ask_bsit
+  examples: |
+    - BSIT
+    - BSIT course
+    - IT
+    - bsit
+    - Information Technology
+    - IT course
+    - Info Tech
+    - BS-IT
+- intent: ask_bscs
+  examples: |
+    - BSCS
+    - BSCS course
+    - CS
+    - BSCS
+    - Computer Science
+    - cs course
+    - Com Sci
+    - BS-CS
+- intent: ask_bsis
+  examples: |
+    - BSIS
+    - BSIS course
+    - IS
+    - BSIS
+    - Information Systems
+    - IS course
+    - Info Sys
+    - BS-IS
+- intent: ask_blis
+  examples: |
+    - BLIS
+    - BLIS course
+    - LS
+    - BLIS
+    - Lib Sci
+    - libsci course
+    - Library Science
+    - BL-IS
+- intent: ask_digiani
+  examples: |
+    - DigiAni
+    - DigiAni course
+    - DA
+    - BSEMC DA
+    - DigiAni
+    - digiani course
+    - BSEMC Digital Animation
+    - Digi-Ani
+- intent: ask_gamedev
+  examples: |
+    - GameDev
+    - GameDev course
+    - GD
+    - BSEMC GD
+    - GameDev
+    - gamedev course
+    - BSEMC Game Development
+    - Game-Dev
+
+
+- intent: ask_bsit_careers
+  examples: |
+    - bsit careers
+    - bsit jobs
+    - IT careers
+    - IT jobs
+    - jobs for IT
+    - career path for IT
+    - career paths IT
+    - IT career
+- intent: ask_bscs_careers
+  examples: |
+    - bscs careers
+    - bscs jobs
+    - CS careers
+    - CS jobs
+    - jobs for CS
+    - career path for CS
+    - career paths CS
+    - CS career
+- intent: ask_bsis_careers
+  examples: |
+    - bsis careers
+    - bsis jobs
+    - IS careers
+    - IS jobs
+    - jobs for IS
+    - career path for IS
+    - career paths IS
+    - IS career
+- intent: ask_blis_careers
+  examples: |
+    - blis careers
+    - blis jobs
+    - Library careers
+    - Library jobs
+    - jobs for BLIS
+    - career path for BLIS
+    - career paths BLIS
+    - Library career
+- intent: ask_digiani_careers
+  examples: |
+    - digiani careers
+    - digiani jobs
+    - Animation careers
+    - Animation jobs
+    - jobs for DigiAni
+    - career path for DigiAni
+    - career paths DigiAni
+    - Animation career
+- intent: ask_gamedev_careers
+  examples: |
+    - gamedev careers
+    - gamedev jobs
+    - Game careers
+    - Game jobs
+    - jobs for gamedev
+    - career path for gamedev
+    - career paths gamedev
+    - Game career
+    
+
+- intent: ask_programs_offered_cics
+  examples: |
+    - cics programs
+    - cics degrees
+    - CICS courses
+    - CiCS degree courses
+    - programs offered cics
+    - cics course options
+    - cics program options
+    - cics degrees offered
+- intent: ask_program_recommendation
+  examples: |
+    - recommended course
+    - what is best degree?
+    - I can't choose degree.
+    - help me choose a degree.
+    - degree program recommend
+    - recommend program
+    - recommend degree
+    - recommend course
+
+- intent: provide_preferences
+  examples: |
+    - i choose [A](preferences)
+    - i choose [B](preferences)
+    - i choose [C](preferences)
+    - i choose [D](preferences)
+    - i choose [E](preferences)
+    - i choose [F](preferences)
+    - [A](preferences)
+    - [B](preferences)
+    - [C](preferences)
+    - [D](preferences)
+    - [E](preferences)
+    - [F](preferences)
 - intent: greet
   examples: |
     - hey
@@ -57,6 +483,7 @@ nlu:
     - I need help
     - how contact NEU
     - need to contact NEU
+
 - intent: ask_faculty_options
   examples: |
     - faculty info
@@ -67,6 +494,7 @@ nlu:
     - professors
     - who is faculty
     - list of faculty
+
 - intent: ask_faculty_emails
   examples: |
     - faculty info emails
@@ -77,6 +505,7 @@ nlu:
     - professors emails
     - where is faculty emails
     - list of faculty emails
+
 - intent: ask_current_dean
   examples: |
     - Dean of CICS department
@@ -85,6 +514,8 @@ nlu:
     - dean
     - curr dean
     - CS Dean
+    
+
 - intent: ask_neu_address
   examples: |
     - where is NEU
@@ -95,6 +526,7 @@ nlu:
     - address
     - campus location
     - NEU directions
+
 - intent: ask_tsora_directions
   examples: |
     - Tandang Sora
@@ -125,6 +557,9 @@ nlu:
     - What to ride to NEU from central
     - central 
     - central ave directions
+    
+
+
 - intent: ask_human_assist
   examples: |
     - where to access virtual office
@@ -134,6 +569,8 @@ nlu:
     - I need professor's assistance
     - is there someone who i can talk to to solve my issue
     - contact numbers
+
+
 - intent: ask_neu_official_sites
   examples: |
     - what are official sites of neu
@@ -144,6 +581,8 @@ nlu:
     - official site
     - neu website
     - automate
+
+
 - intent: neu_socials
   examples: |
     - neu socials
@@ -154,457 +593,3 @@ nlu:
     - neu fb
     - neu ig
     - socials
-
-# bscs
-- intent: ask_guidance_take_CS_course
-  examples: |
-    - Please give me guidance in taking CS
-    - I'm unsure about taking CS
-    - Is CS a good course for me?
-    - Is it okay for me to take CS?
-    - I want to enroll in cS course
-    - I don't know how to code can I still get into BSCS?
-    - Do I need good computer skills to get into BSCS?
-    - I know programming and I am tech savvy, should I take BSCS?
-
-
-
-# - intent: ask_what_is_BSCS
-#   examples: |
-#     - What is Bachelor of Science in Computer Science?
-#     - Can you explain what BSCS is?
-#     - What does BSCS stand for?
-#     - I'm not sure what BSCS is. Can you tell me?
-#     - Could you provide more information about BSCS?
-
-- intent: ask_BSCS_benefits
-  examples: |
-    - What are the benefits of studying BSCS?
-    - Why should I consider BSCS?
-    - What are the advantages of pursuing BSCS?
-    - What can I gain from studying BSCS?
-    - Are there any benefits to getting a BSCS degree?
-
-# - intent: ask_BSCS_careers
-#   examples: |
-#     - What careers can I pursue with a BSCS degree?
-#     - What job opportunities are available for BSCS graduates?
-#     - What kind of jobs can I get with a BSCS degree?
-#     - What are the career prospects for BSCS students?
-#     - Can you tell me about the employment options for BSCS graduates?
-
-- intent: ask_BSCS_salary
-  examples: |
-    - How much do BSCS graduates earn?
-    - What is the average salary for BSCS professionals?
-    - What is the salary range for jobs in BSCS?
-    - Can you provide information about BSCS salaries?
-    - What is the earning potential for BSCS graduates?
-
-- intent: ask_BSCS_required_skills
-  examples: |
-    - What skills do I need to succeed in BSCS?
-    - What abilities are necessary for studying BSCS?
-    - What skills are required for BSCS students?
-    - Can you list the key skills needed for BSCS?
-    - What are the important skills for BSCS professionals?
-    - bscs skills
-
-- intent: ask_what_software_developer
-  examples: |
-    - What does a software developer do?
-    - Can you explain the role of a software developer?
-    - What are the responsibilities of a software developer?
-    - What is involved in being a software developer?
-    - What is a software developer?
-
-- intent: ask_what_data_scientist
-  examples: |
-    - What does a data scientist do?
-    - Can you explain the role of a data scientist?
-    - What are the responsibilities of a data scientist?
-    - What is involved in being a data scientist?
-    - What is a data scientist?
-
-- intent: ask_what_cybersecurity_analyst
-  examples: |
-    - What does a cybersecurity analyst do?
-    - Can you explain the role of a cybersecurity analyst?
-    - What are the responsibilities of a cybersecurity analyst?
-    - What is involved in being a cybersecurity analyst?
-    - What is a cybersecurity analyst?
-
-- intent: ask_what_computer_scientist
-  examples: |
-    - What does a computer scientist do?
-    - Can you explain the role of a computer scientist?
-    - What are the responsibilities of a computer scientist?
-    - What is involved in being a computer scientist?
-    - What is a computer scientist?
-
-
-
-- intent: ask_how_become_software_developer
-  examples: |
-    - How can I become a software developer?
-    - What steps do I need to take to become a software developer?
-    - Can you provide guidance on pursuing a career as a software developer?
-    - What qualifications are required to become a software developer?
-    - How do I gain the necessary skills and experience to work as a software developer?
-
-- intent: ask_how_become_data_scientist
-  examples: |
-    - How can I become a data scientist?
-    - What steps do I need to take to become a data scientist?
-    - Can you provide guidance on pursuing a career as a data scientist?
-    - What qualifications are required to become a data scientist?
-    - How do I gain the necessary skills and experience to work as a data scientist?
-
-- intent: ask_how_become_cybersecurity_analyst
-  examples: |
-    - How can I become a cybersecurity analyst?
-    - What steps do I need to take to become a cybersecurity analyst?
-    - Can you provide guidance on pursuing a career as a cybersecurity analyst?
-    - What qualifications are required to become a cybersecurity analyst?
-    - How do I gain the necessary skills and experience to work as a cybersecurity analyst?
-
-- intent: ask_how_become_computer_scientist
-  examples: |
-    - How can I become a computer scientist?
-    - What steps do I need to take to become a computer scientist?
-    - Can you provide guidance on pursuing a career as a computer scientist?
-    - What qualifications are required to become a computer scientist?
-    - How do I gain the necessary skills and experience to work as a computer scientist?
-
-- intent: ask_how_become_software_engineer
-  examples: |
-    - How can I become a software engineer?
-    - What steps do I need to take to become a software engineer?
-
-- intent: ask_what_software_engineer
-  examples: |
-    - What is a software engineer?
-    - What do software engineers do?
-    - What it means to engineer software
-
-
-- intent: ask_how_become_ethical_hacker
-  examples: |
-    - How can I become an ethical hacker?
-    - What steps do I need to take to become an ethical hacker?
-    - Can you provide guidance on becoming an ethical hacker?
-
-- intent: ask_what_ethical_hacker
-  examples: |
-    - What is an ethical hacker?
-    - Can you explain the role of an ethical hacker?
-    - I'm curious, what does an ethical hacker do?
-
-- intent: ask_how_become_cybersecurity_engineer
-  examples: |
-    - How can I become a security engineer?
-    - What steps do I need to take to become a security engineer?
-    - Can you provide guidance on becoming a security engineer?
-
-- intent: ask_what_cybersecurity_engineer
-  examples: |
-    - What is a security engineer?
-    - Can you explain the role of a security engineer?
-    - I'd like to know, what does a security engineer do?
-
-- intent: ask_how_become_penetration_tester
-  examples: |
-    - How can I become a penetration tester?
-    - What steps do I need to take to become a penetration tester?
-    - Can you provide guidance on becoming a penetration tester?
-
-- intent: ask_what_penetration_tester
-  examples: |
-    - What is a penetration tester?
-    - Can you explain the role of a penetration tester?
-    - I'm interested, what does a penetration tester do?
-
-- intent: ask_how_become_cybersecurity_consultant
-  examples: |
-    - How can I become a cybersecurity consultant?
-    - What steps do I need to take to become a cybersecurity consultant?
-    - Can you provide guidance on becoming a cybersecurity consultant?
-
-- intent: ask_what_cybersecurity_consultant
-  examples: |
-    - What is a cybersecurity consultant?
-    - Can you explain the role of a cybersecurity consultant?
-    - I'd like to know, what does a cybersecurity consultant do?
-
-- intent: ask_what_ml_engineer
-  examples: |
-    - What is a machine learning engineer?
-    - Can you explain the role of a machine learning engineer?
-    - I'm curious, what does a machine learning engineer do?
-
-- intent: ask_how_become_ml_engineer
-  examples: |
-    - How can I become a machine learning engineer?
-    - What steps do I need to take to become a machine learning engineer?
-    - Can you provide guidance on becoming a machine learning engineer?
-
-- intent: ask_what_nlp_specialist
-  examples: |
-    - What is an NLP specialist?
-    - Can you explain the role of an NLP specialist?
-    - I'd like to know, what does an NLP specialist do?
-
-- intent: ask_how_become_nlp_specialist
-  examples: |
-    - How can I become an NLP specialist?
-    - What steps do I need to take to become an NLP specialist?
-    - Can you provide guidance on becoming an NLP specialist?
-
-- intent: ask_what_computer_vision_engineer
-  examples: |
-    - What is a computer vision engineer?
-    - Can you explain the role of a computer vision engineer?
-    - I'm interested, what does a computer vision engineer do?
-
-- intent: ask_how_become_computer_vision_engineer
-  examples: |
-    - How can I become a computer vision engineer?
-    - What steps do I need to take to become a computer vision engineer?
-    - Can you provide guidance on becoming a computer vision engineer?
-
-- intent: ask_what_it_support_specialist
-  examples: |
-    - What is an IT support specialist?
-    - Can you explain the role of an IT support specialist?
-    - I'm curious, what does an IT support specialist do?
-
-- intent: ask_how_become_it_support_specialist
-  examples: |
-    - How can I become an IT support specialist?
-    - What steps do I need to take to become an IT support specialist?
-    - Can you provide guidance on becoming an IT support specialist?
-
-# BSIS
-- intent: ask_BSIS_benefits
-  examples: |
-    - What are the benefits of studying BSIS?
-    - Can you list the advantages of BSIS?
-    - Why should I consider BSIS?
-    - What are the pros of pursuing BSIS?
-- intent: ask_BSIS_required_skills
-  examples: |
-    - What skills are required for BSIS?
-    - Can you list the essential skills for BSIS students?
-    - What abilities do I need to succeed in BSIS?
-    - What are the necessary skills for studying BSIS?
-- intent: ask_BSIS_BSIT_difference
-  examples: |
-    - What is the difference between BSIS and BSIT?
-    - Can you explain the distinction between BSIS and BSIT?
-    - What sets BSIS apart from BSIT?
-    - How does BSIS differ from BSIT?
-    - What are the main differences between BSIS and BSIT?
-- intent: ask_BSIT_BSCS_difference
-  examples: |
-    - How does BSIT differ from BSCS?
-    - What is the difference between BSIT and BSCS?
-    - Can you explain the distinction between BSIT and BSCS?
-    - What sets BSIT apart from BSCS?
-    - What are the main differences between BSIT and BSCS?
-- intent: ask_BSIS_BSCS_difference
-  examples: |
-    - What is the difference between BSIS and BSCS?
-    - Can you explain the distinction between BSIS and BSCS?
-    - How does BSIS differ from BSCS?
-    - What sets BSIS apart from BSCS?
-    - What are the main differences between BSIS and BSCS?
-- intent: ask_BSIS_BSIT_similarities
-  examples: |
-    - Are there any similarities between BSIS and BSIT?
-    - Can you tell me how BSIS and BSIT are similar?
-    - What do BSIS and BSIT have in common?
-    - Are there any overlapping aspects between BSIS and BSIT?
-    - How are BSIS and BSIT alike?
-- intent: ask_BSIT_BSCS_similarities
-  examples: |
-    - What similarities exist between BSIT and BSCS?
-    - Can you tell me how BSIT and BSCS are similar?
-    - What do BSIT and BSCS have in common?
-    - Are there any overlapping aspects between BSIT and BSCS?
-    - How are BSIT and BSCS alike?
-- intent: ask_BSIS_BSCS_similarities
-  examples: |
-    - Are there any similarities between BSIS and BSCS?
-    - Can you tell me how BSIS and BSCS are similar?
-    - What do BSIS and BSCS have in common?
-    - Are there any overlapping aspects between BSIS and BSCS?
-    - How are BSIS and BSCS alike?
-- intent: ask_what_data_analyst
-  examples: |
-    - What does a data analyst do?
-    - Can you explain the role of a data analyst?
-    - What are the responsibilities of a data analyst?
-    - What is involved in being a data analyst?
-    - What is a data analyst?
-- intent: ask_how_become_data_analyst
-  examples: |
-    - How can I become a data analyst?
-    - What steps do I need to take to become a data analyst?
-    - Can you provide guidance on pursuing a career as a data analyst?
-    - What qualifications are required to become a data analyst?
-    - How do I gain the necessary skills and experience to work as a data analyst?
-- intent: ask_what_systems_analyst
-  examples: |
-    - What does a systems analyst do?
-    - Can you explain the role of a systems analyst?
-    - What are the responsibilities of a systems analyst?
-    - What is involved in being a systems analyst?
-    - What is a systems analyst?
-- intent: ask_how_become_systems_analyst
-  examples: |
-    - How can I become a systems analyst?
-    - What steps do I need to take to become a systems analyst?
-    - Can you provide guidance on pursuing a career as a systems analyst?
-    - What qualifications are required to become a systems analyst?
-    - How do I gain the necessary skills and experience to work as a systems analyst?
-- intent: ask_what_project_manager
-  examples: |
-    - What does a project manager do?
-    - Can you explain the role of a project manager?
-    - What are the responsibilities of a project manager?
-    - What is involved in being a project manager?
-    - What is a project manager?
-- intent: ask_how_become_project_manager
-  examples: |
-    - How can I become a project manager?
-    - What steps do I need to take to become a project manager?
-    - Can you provide guidance on pursuing a career as a project manager?
-    - What qualifications are required to become a project manager?
-    - How do I gain the necessary skills and experience to work as a project manager?
-- intent: ask_other_universities
-  examples: |
-    - What are some other universities offering similar programs?
-    - Can you recommend other universities with similar courses?
-    - NEU CICS sucks man
-    - I'm interested in exploring other universities. Do you have any suggestions?
-- intent: ask_what_solutions_specialist
-  examples: |
-    - What is a Solutions Specialist?
-    - Can you explain the role of a Solutions Specialist?
-    - I'm curious about Solutions Specialists, what do they do?
-- intent: ask_how_become_solutions_specialist
-  examples: |
-    - How can I become a Solutions Specialist?
-    - What steps do I need to take to become a Solutions Specialist?
-    - Can you provide guidance on becoming a Solutions Specialist?
-- intent: ask_what_documentation_specialist
-  examples: |
-    - What is a Documentation Specialist?
-    - Can you explain the role of a Documentation Specialist?
-    - I'm curious about Documentation Specialists, what do they do?
-- intent: ask_how_become_documentation_specialist
-  examples: |
-    - How can I become a Documentation Specialist?
-    - What steps do I need to take to become a Documentation Specialist?
-    - Can you provide guidance on becoming a Documentation Specialist?
-- intent: ask_what_end_user_trainer
-  examples: |
-    - What is an End User Trainer?
-    - Can you explain the role of an End User Trainer?
-    - I'm curious about End User Trainers, what do they do?
-- intent: ask_how_become_end_user_trainer
-  examples: |
-    - How can I become an End User Trainer?
-    - What steps do I need to take to become an End User Trainer?
-    - Can you provide guidance on becoming an End User Trainer?
-- intent: ask_what_organizational_process_analyst
-  examples: |
-    - What is an Organizational Process Analyst?
-    - Can you explain the role of an Organizational Process Analyst?
-    - I'm curious about Organizational Process Analysts, what do they do?
-- intent: ask_how_become_organizational_process_analyst
-  examples: |
-    - How can I become an Organizational Process Analyst?
-    - What steps do I need to take to become an Organizational Process Analyst?
-    - Can you provide guidance on becoming an Organizational Process Analyst?
-- intent: ask_guidance_take_IS_course
-  examples: |
-    - Please give me guidance in taking IS
-    - I'm unsure about taking IS
-    - Is IS a good course for me?
-    - Is it okay for me to take IS?
-    - I want to enroll in IS course
-    - I don't know how to code can I still get into BSIS?
-    - Do I need good computer skills to get into BSIS?
-    - I know programming and I am tech savvy, should I take BSIS?
-
-# BLIS
-- intent: ask_guidance_take_libsci_course
-  examples: |
-    - Please give me guidance in taking Library Science
-    - I'm unsure about taking libsci
-    - Is libsci a good course for me?
-    - Is it okay for me to take libsci?
-    - I want to enroll in libsci course
-    - I don't know how to code can I still get into BLIS?
-    - Do I need good computer skills to get into BLIS?
-    - I know programming and I am tech savvy, should I take BLIS?
-- intent: ask_LibSci_benefits
-  examples: |
-    - What are the benefits of LibSci?
-    - Why choose LibSci?
-    - Does LibSci have advantages?
-- intent: ask_LibSci_required_skills
-  examples: |
-    - What skills are required for working in LibSci?
-    - What skills do I need to have for a career in LibSci?
-    - Could you list the essential skills needed in LibSci?
-- intent: ask_help_library_exam
-  examples: |
-    - Can you provide some advice for the librarian licensure exam?
-    - I'm preparing for my librarian licensure exam. Any tips?
-    - Yes, please help me prepare for the exam
-- intent: ask_how_become_librarian
-  examples: |
-    - How can I become a librarian?
-    - What steps do I need to take to become a librarian?
-    - Can you provide guidance on pursuing a career as a librarian?
-    - What qualifications are required to become a librarian?
-    - How do I gain the necessary skills and experience to work as a librarian?
-
-- intent: ask_how_become_archivist
-  examples: |
-    - How can I become an archivist?
-    - What steps do I need to take to become an archivist?
-    - Can you provide guidance on pursuing a career as an archivist?
-    - What qualifications are required to become an archivist?
-    - How do I gain the necessary skills and experience to work as an archivist?
-
-- intent: ask_how_become_research_specialist
-  examples: |
-    - How can I become a research specialist?
-    - What steps do I need to take to become a research specialist?
-    - Can you provide guidance on pursuing a career as a research specialist?
-    - What qualifications are required to become a research specialist?
-    - How do I gain the necessary skills and experience to work as a research specialist?
-- intent: ask_what_librarian
-  examples: |
-    - What does a librarian do?
-    - Can you explain the role of a librarian?
-    - What are the responsibilities of a librarian?
-    - What tasks are typically performed by librarians?
-    - Can you provide information about the duties of a librarian?
-- intent: ask_what_archivist
-  examples: |
-    - What does an archivist do?
-    - Can you explain the role of an archivist?
-    - What are the responsibilities of an archivist?
-    - What tasks are typically performed by archivists?
-    - Can you provide information about the duties of an archivist?
-- intent: ask_what_research_specialist
-  examples: |
-    - What does a research specialist do?
-    - Can you explain the role of a research specialist?
-    - What are the responsibilities of a research specialist?
-    - What tasks are typically performed by research specialists?
-    - Can you provide information about the duties of a research specialist?
