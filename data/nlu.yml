@@ -20,7 +20,6 @@ nlu:
     - what I need for admission old
     - documents for admission old
     - what is required for admission old
-
 - intent: ask_new_student_requirements
   examples: |
     - what are the admission requirements new
@@ -31,7 +30,6 @@ nlu:
     - what I need for admission new
     - documents for admission new
     - what is required for admission new
-
 - intent: ask_local_new_student_requirements
   examples: |
     - what are the admission requirements new non foreign
@@ -42,7 +40,6 @@ nlu:
     - what I need for admission new non foreign
     - documents for admission new non foreign
     - what is required for admission new non foreign
-
 - intent: ask_foreign_new_student_requirements
   examples: |
     - what are the admission requirements new foreign
@@ -53,7 +50,6 @@ nlu:
     - what I need for admission new foreign
     - documents for admission new foreign
     - what is required for admission new foreign
-
 - intent: ask_born_in_phil_requirements
   examples: |
     - what are the admission requirements new foreign born in phil
@@ -64,7 +60,6 @@ nlu:
     - what I need for admission new foreign born in phil
     - documents for admission new foreign born in phil
     - what is required for admission new foreign born in phil
-
 - intent: ask_born_abroad_requirements
   examples: |
     - what are the admission requirements new foreign born abroad
@@ -75,7 +70,6 @@ nlu:
     - what I need for admission new foreign born abroad
     - documents for admission new foreign born abroad
     - what is required for admission new foreign born abroad
-
 - intent: admission_process_query
   examples: |
     - what are the admission processes
@@ -84,8 +78,6 @@ nlu:
     - admission procedures
     - please guide me through admission
     - admission guide
-    
-
 - intent: ask_enrollment_process
   examples: |
     - how enrollment process
@@ -96,7 +88,6 @@ nlu:
     - enrollment
     - enrol
     - enrollment procedure
-
 - intent: ask_enrollment_process_new
   examples: |
     - how enrollment process new
@@ -107,7 +98,6 @@ nlu:
     - enrollment new
     - enrol new
     - enrollment procedure new
-
 - intent: ask_enrollment_process_old
   examples: |
     - how enrollment process old
@@ -118,8 +108,6 @@ nlu:
     - enrollment old
     - enrol old
     - enrollment procedure old
-    
-
 - intent: ask_tuition_fee
   examples: |
     - How much is the tuition fee
@@ -130,7 +118,6 @@ nlu:
     - tuition
     - tuiton
     - tuition price
-
 - intent: inform_units
   examples: |
     - I'm planning on enrolling [15](number_of_units) units
@@ -140,7 +127,6 @@ nlu:
     - [10](number_of_units) 
     - [11](number_of_units) unit
     - I need [12](number_of_units) unit
-
 - intent: ask_calculate_tuition
   examples: |
     - help calculate tuition
@@ -148,7 +134,6 @@ nlu:
     - caluclate tuiton
     - calculte tuition
     - can you calculate tuition
-
 - intent: ask_scholarship_links
   examples: |
     - recommend scholarships
@@ -168,10 +153,6 @@ nlu:
     - pay tuiton
     - tuition pay process
     - where pay tuition
-
-
-
-
 - intent: ask_entry_grade
   examples: |
     - what entry grade i need
@@ -181,7 +162,6 @@ nlu:
     - enty grade
     - how high grade to enter
     - grade requirements
-
 - intent: ask_start_of_class
   examples: |
     - when class start
@@ -191,9 +171,6 @@ nlu:
     - start of classes
     - expected start of class
     - start date of class
-    
-    
-
 - intent: ask_non_inc_can_enroll
   examples: |
     - is neu for INC only
@@ -205,7 +182,7 @@ nlu:
     - is neu INC school
     - neu INC school
     - is non INC not allowed
-    - intent: ask_bsit_curriculum
+- intent: ask_bsit_curriculum
   examples: |
     - BSIT curriculum
     - send BSIT curriculum
@@ -265,8 +242,6 @@ nlu:
     - gamedev curriculum subjects
     - gamedev expected subjects
     - gamedev curr
-    
-
 - intent: ask_bsit
   examples: |
     - BSIT
@@ -327,8 +302,6 @@ nlu:
     - gamedev course
     - BSEMC Game Development
     - Game-Dev
-
-
 - intent: ask_bsit_careers
   examples: |
     - bsit careers
@@ -389,8 +362,6 @@ nlu:
     - career path for gamedev
     - career paths gamedev
     - Game career
-    
-
 - intent: ask_programs_offered_cics
   examples: |
     - cics programs
@@ -453,7 +424,6 @@ nlu:
     - tnx
     - ty
     - tnxs
-
 - intent: affirm
   examples: |
     - I don't mind
@@ -483,7 +453,6 @@ nlu:
     - I need help
     - how contact NEU
     - need to contact NEU
-
 - intent: ask_faculty_options
   examples: |
     - faculty info
@@ -494,7 +463,6 @@ nlu:
     - professors
     - who is faculty
     - list of faculty
-
 - intent: ask_faculty_emails
   examples: |
     - faculty info emails
@@ -505,7 +473,6 @@ nlu:
     - professors emails
     - where is faculty emails
     - list of faculty emails
-
 - intent: ask_current_dean
   examples: |
     - Dean of CICS department
@@ -514,8 +481,6 @@ nlu:
     - dean
     - curr dean
     - CS Dean
-    
-
 - intent: ask_neu_address
   examples: |
     - where is NEU
@@ -526,7 +491,6 @@ nlu:
     - address
     - campus location
     - NEU directions
-
 - intent: ask_tsora_directions
   examples: |
     - Tandang Sora
@@ -557,9 +521,6 @@ nlu:
     - What to ride to NEU from central
     - central 
     - central ave directions
-    
-
-
 - intent: ask_human_assist
   examples: |
     - where to access virtual office
@@ -569,8 +530,6 @@ nlu:
     - I need professor's assistance
     - is there someone who i can talk to to solve my issue
     - contact numbers
-
-
 - intent: ask_neu_official_sites
   examples: |
     - what are official sites of neu
@@ -581,8 +540,6 @@ nlu:
     - official site
     - neu website
     - automate
-
-
 - intent: neu_socials
   examples: |
     - neu socials
