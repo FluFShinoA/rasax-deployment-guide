@@ -1,187 +1,157 @@
-version: "3.1"
 nlu:
-- intent: ask_admission_requirements
+- intent: greet
   examples: |
-    - what are the admission requirements
-    - admission requirements
-    - admission
-    - admision
-    - NEU requirements admission
-    - what I need for admission
-    - documents for admission
-    - what is required for admission
-- intent: ask_old_student_requirements
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - good afternoon
+    - yo
+    - Ho
+- intent: goodbye
   examples: |
-    - what are the admission requirements old
-    - admission requirements old
-    - admission old
-    - admision old
-    - NEU requirements admission old
-    - what I need for admission old
-    - documents for admission old
-    - what is required for admission old
-- intent: ask_new_student_requirements
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+- intent: thank
   examples: |
-    - what are the admission requirements new
-    - admission requirements new
-    - admission new
-    - admision new
-    - NEU requirements admission new
-    - what I need for admission new
-    - documents for admission new
-    - what is required for admission new
-- intent: ask_local_new_student_requirements
+    - thanks
+    - thank you
+    - appreciate it
+    - many thanks
+    - tnx
+    - ty
+    - tnxs
+- intent: affirm
   examples: |
-    - what are the admission requirements new non foreign
-    - admission requirements new non foreign
-    - admission new non foreign
-    - admision new non foreign
-    - NEU requirements admission new non foreign
-    - what I need for admission new non foreign
-    - documents for admission new non foreign
-    - what is required for admission new non foreign
-- intent: ask_foreign_new_student_requirements
+    - I don't mind
+    - sure
+    - Yes
+    - yeah
+    - ok
+    - Y
+    - oks
+    - Yah
+- intent: deny
   examples: |
-    - what are the admission requirements new foreign
-    - admission requirements new foreign
-    - admission new foreign
-    - admision new foreign
-    - NEU requirements admission new foreign
-    - what I need for admission new foreign
-    - documents for admission new foreign
-    - what is required for admission new foreign
-- intent: ask_born_in_phil_requirements
+    - No
+    - I'd rather not
+    - Not interested
+    - nope
+    - N
+    - X
+    - not ok
+    - nah
+- intent: ask_other_options
   examples: |
-    - what are the admission requirements new foreign born in phil
-    - admission requirements new foreign born in phil
-    - admission new foreign born in phil
-    - admision new foreign born in phil
-    - NEU requirements admission new foreign born in phil
-    - what I need for admission new foreign born in phil
-    - documents for admission new foreign born in phil
-    - what is required for admission new foreign born in phil
-- intent: ask_born_abroad_requirements
+    - I have other concerns
+    - I don't see my concern
+    - other concern
+    - other concren
+    - I need help
+    - how contact NEU
+    - need to contact NEU
+- intent: ask_faculty_options
   examples: |
-    - what are the admission requirements new foreign born abroad
-    - admission requirements new foreign born abroad
-    - admission new foreign born abroad
-    - admision new foreign born abroad
-    - NEU requirements admission new foreign born abroad
-    - what I need for admission new foreign born abroad
-    - documents for admission new foreign born abroad
-    - what is required for admission new foreign born abroad
-- intent: admission_process_query
+    - faculty info
+    - cics faculty
+    - faculty
+    - facluty
+    - teachers
+    - professors
+    - who is faculty
+    - list of faculty
+- intent: ask_faculty_emails
   examples: |
-    - what are the admission processes
-    - what are the admission procedures
-    - admission processes
-    - admission procedures
-    - please guide me through admission
-    - admission guide
-- intent: ask_enrollment_process
+    - faculty info emails
+    - cics faculty emails
+    - faculty emails
+    - facluty emails
+    - teachers emails
+    - professors emails
+    - where is faculty emails
+    - list of faculty emails
+- intent: ask_current_dean
   examples: |
-    - how enrollment process
-    - how to enroll
-    - what are enrollment process
-    - what are enrollment procedure
-    - enroll
-    - enrollment
-    - enrol
-    - enrollment procedure
-- intent: ask_enrollment_process_new
+    - Dean of CICS department
+    - Current Dean
+    - who is dean
+    - dean
+    - curr dean
+    - CS Dean
+- intent: ask_neu_address
   examples: |
-    - how enrollment process new
-    - how to enroll new
-    - what are enrollment process new
-    - what are enrollment procedure new
-    - enroll new
-    - enrollment new
-    - enrol new
-    - enrollment procedure new
-- intent: ask_enrollment_process_old
+    - where is NEU
+    - NEU address
+    - how to go NEU
+    - NEU where
+    - NEU location
+    - address
+    - campus location
+    - NEU directions
+- intent: ask_tsora_directions
   examples: |
-    - how enrollment process old
-    - how to enroll old
-    - what are enrollment process old
-    - what are enrollment procedure old
-    - enroll old
-    - enrollment old
-    - enrol old
-    - enrollment procedure old
-- intent: ask_tuition_fee
+    - Tandang Sora
+    - NEU from Tandang Sora
+    - tsora
+    - tsora to neu
+    - T.Sora to neu campus
+    - What to ride to NEU from tandang sora
+    - tandang soraa
+    - tandang sora directions
+- intent: ask_vis_directions
   examples: |
-    - How much is the tuition fee
-    - Can you tell me about the tuition fee
-    - What is the cost per unit for tuition
-    - How much does one unit of tuition cost
-    - tuition fee
-    - tuition
-    - tuiton
-    - tuition price
-- intent: inform_units
+    - Visayas Ave
+    - NEU from Visayas Ave
+    - vis ave
+    - visayas to neu
+    - visayas to neu campus
+    - What to ride to NEU from visayas
+    - visayas 
+    - visayas ave directions
+- intent: ask_cen_directions
   examples: |
-    - I'm planning on enrolling [15](number_of_units) units
-    - I want to take [12](number_of_units) units next semester
-    - Considering [20](number_of_units) units for the upcoming term
-    - [23](number_of_units) units
-    - [10](number_of_units) 
-    - [11](number_of_units) unit
-    - I need [12](number_of_units) unit
-- intent: ask_calculate_tuition
+    - Central Ave
+    - NEU from Central Ave
+    - cen ave
+    - central to neu
+    - central to neu campus
+    - What to ride to NEU from central
+    - central 
+    - central ave directions
+- intent: ask_human_assist
   examples: |
-    - help calculate tuition
-    - calculate tuition
-    - caluclate tuiton
-    - calculte tuition
-    - can you calculate tuition
-- intent: ask_scholarship_links
+    - where to access virtual office
+    - cics virtual office
+    - i have serious concern
+    - virtual office cics
+    - I need professor's assistance
+    - is there someone who i can talk to to solve my issue
+    - contact numbers
+- intent: ask_neu_official_sites
   examples: |
-    - recommend scholarships
-    - send scholarships
-    - Isko
-    - scholarship
-    - scholarships
-    - skolarships
-    - does NEU have scholarships?
-    - give scholarships
-- intent: ask_payment_process
+    - what are official sites of neu
+    - official sites of neu
+    - where vle
+    - where automate
+    - neu sites
+    - official site
+    - neu website
+    - automate
+- intent: neu_socials
   examples: |
-    - tuition payment process
-    - how to process tuition
-    - how to pay tuition
-    - tuition pay
-    - pay tuiton
-    - tuition pay process
-    - where pay tuition
-- intent: ask_entry_grade
-  examples: |
-    - what entry grade i need
-    - entry grade requirements
-    - entry grade
-    - entry garde
-    - enty grade
-    - how high grade to enter
-    - grade requirements
-- intent: ask_start_of_class
-  examples: |
-    - when class start
-    - start of class
-    - start class
-    - strat class
-    - start of classes
-    - expected start of class
-    - start date of class
-- intent: ask_non_inc_can_enroll
-  examples: |
-    - is neu for INC only
-    - can non INC enroll
-    - non INC
-    - not INC
-    - if not inc can enroll?
-    - non INC enroll
-    - is neu INC school
-    - neu INC school
-    - is non INC not allowed
+    - neu socials
+    - neu social media
+    - neu facebook
+    - neu twitter
+    - neu instagram
+    - neu fb
+    - neu ig
+    - socials
 - intent: ask_bsit_curriculum
   examples: |
     - BSIT curriculum
@@ -397,156 +367,37 @@ nlu:
     - [D](preferences)
     - [E](preferences)
     - [F](preferences)
-- intent: greet
+- intent: ask_tuition_fee
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - good afternoon
-    - yo
-    - Ho
-- intent: goodbye
+    - How much is the tuition fee
+    - Can you tell me about the tuition fee
+    - What is the cost per unit for tuition
+    - How much does one unit of tuition cost
+    - tuition fee
+    - tuition
+    - tuiton
+    - tuition price
+- intent: inform_units
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-- intent: thank
+    - I'm planning on enrolling [15](number_of_units) units
+    - I want to take [12](number_of_units) units next semester
+    - Considering [20](number_of_units) units for the upcoming term
+    - [23](number_of_units) units
+    - [10](number_of_units) 
+    - [11](number_of_units) unit
+    - I need [12](number_of_units) unit
+- intent: ask_calculate_tuition
   examples: |
-    - thanks
-    - thank you
-    - appreciate it
-    - many thanks
-    - tnx
-    - ty
-    - tnxs
-- intent: affirm
+    - help calculate tuition
+    - calculate tuition
+    - caluclate tuiton
+    - calculte tuition
+    - can you calculate tuition
+- intent: ask_start_of_class
   examples: |
-    - I don't mind
-    - sure
-    - Yes
-    - yeah
-    - ok
-    - Y
-    - oks
-    - Yah
-- intent: deny
-  examples: |
-    - No
-    - I'd rather not
-    - Not interested
-    - nope
-    - N
-    - X
-    - not ok
-    - nah
-- intent: ask_other_options
-  examples: |
-    - I have other concerns
-    - I don't see my concern
-    - other concern
-    - other concren
-    - I need help
-    - how contact NEU
-    - need to contact NEU
-- intent: ask_faculty_options
-  examples: |
-    - faculty info
-    - cics faculty
-    - faculty
-    - facluty
-    - teachers
-    - professors
-    - who is faculty
-    - list of faculty
-- intent: ask_faculty_emails
-  examples: |
-    - faculty info emails
-    - cics faculty emails
-    - faculty emails
-    - facluty emails
-    - teachers emails
-    - professors emails
-    - where is faculty emails
-    - list of faculty emails
-- intent: ask_current_dean
-  examples: |
-    - Dean of CICS department
-    - Current Dean
-    - who is dean
-    - dean
-    - curr dean
-    - CS Dean
-- intent: ask_neu_address
-  examples: |
-    - where is NEU
-    - NEU address
-    - how to go NEU
-    - NEU where
-    - NEU location
-    - address
-    - campus location
-    - NEU directions
-- intent: ask_tsora_directions
-  examples: |
-    - Tandang Sora
-    - NEU from Tandang Sora
-    - tsora
-    - tsora to neu
-    - T.Sora to neu campus
-    - What to ride to NEU from tandang sora
-    - tandang soraa
-    - tandang sora directions
-- intent: ask_vis_directions
-  examples: |
-    - Visayas Ave
-    - NEU from Visayas Ave
-    - vis ave
-    - visayas to neu
-    - visayas to neu campus
-    - What to ride to NEU from visayas
-    - visayas 
-    - visayas ave directions
-- intent: ask_cen_directions
-  examples: |
-    - Central Ave
-    - NEU from Central Ave
-    - cen ave
-    - central to neu
-    - central to neu campus
-    - What to ride to NEU from central
-    - central 
-    - central ave directions
-- intent: ask_human_assist
-  examples: |
-    - where to access virtual office
-    - cics virtual office
-    - i have serious concern
-    - virtual office cics
-    - I need professor's assistance
-    - is there someone who i can talk to to solve my issue
-    - contact numbers
-- intent: ask_neu_official_sites
-  examples: |
-    - what are official sites of neu
-    - official sites of neu
-    - where vle
-    - where automate
-    - neu sites
-    - official site
-    - neu website
-    - automate
-- intent: neu_socials
-  examples: |
-    - neu socials
-    - neu social media
-    - neu facebook
-    - neu twitter
-    - neu instagram
-    - neu fb
-    - neu ig
-    - socials
+    - when class start
+    - start of class
+    - start class
+    - strat class
+    - start of classes
+    - expected start of class

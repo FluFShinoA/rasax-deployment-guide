@@ -1,4 +1,3 @@
-version: "3.1"
 stories:
 - story: greet
   steps:
@@ -8,7 +7,7 @@ stories:
   steps:
   - intent: thank
   - action: utter_thanks
-- story: others
+  - story: others
   steps:
     - intent: ask_other_options
     - action: utter_other_options
@@ -59,7 +58,8 @@ stories:
     - intent: neu_socials
     - action: utter_send_neu_socials
     - action: utter_greet2
-- story: User asks about Programs offered by CICS
+
+    - story: User asks about Programs offered by CICS
   steps:
     - intent: ask_programs_offered_cics
     - action: utter_programs_offered
@@ -142,62 +142,6 @@ stories:
   - intent: ask_gamedev_careers
   - action: utter_gamedev_careers
   - action: utter_greet2
-  - story: User admis options
-  steps:
-  - intent: admission_process_query
-  - action: utter_admission_process_options
-- story: ask if non INC can enroll
-  steps:
-    - intent: ask_non_inc_can_enroll
-    - action: utter_send_non_sectarian
-    - action: utter_greet2
-- story: enrollment options
-  steps:
-    - intent: ask_enrollment_process
-    - action: utter_enrollment_process
-- story: enrollment options old
-  steps:
-    - intent: ask_enrollment_process_old
-    - action: utter_enrollment_process_old
-    - action: utter_greet2
-- story: enrollment options new
-  steps:
-    - intent: ask_enrollment_process_new
-    - action: utter_enrollment_process_new
-    - action: utter_greet2
-- story: admis reqs options
-  steps:
-    - intent: ask_admission_requirements
-    - action: utter_admission_requirements
-- story: admis reqs old
-  steps:
-    - intent: ask_old_student_requirements
-    - action: utter_old_student_requirements
-    - action: utter_greet2
-- story: admis reqs new
-  steps:
-    - intent: ask_new_student_requirements
-    - action: utter_new_student_requirements
-- story: admis reqs non foreign
-  steps:
-    - intent: ask_local_new_student_requirements
-    - action: utter_local_new_student_requirements
-    - action: utter_greet2
-- story: admis reqs foreign
-  steps:
-    - intent: ask_foreign_new_student_requirements
-    - action: utter_foreign_new_student_requirements
-    - action: utter_greet2
-- story: admis reqs foreign born phil
-  steps:
-    - intent: ask_born_in_phil_requirements
-    - action: utter_born_in_phil_requirements
-    - action: utter_greet2
-- story: admis reqs foreign born abroad
-  steps:
-    - intent: ask_born_abroad_requirements
-    - action: utter_born_abroad_requirements
-    - action: utter_greet2
 - story: User calc tuition fee
   steps:
     - intent: ask_tuition_fee
@@ -209,16 +153,6 @@ stories:
       entities: 
         - number_of_units
     - action: action_calculate_tuition_fee
-    - action: utter_greet2
-- story: User isko
-  steps:
-    - intent: ask_scholarship_links
-    - action: utter_scholarship_links
-    - action: utter_greet2
-- story: User ask process
-  steps:
-    - intent: ask_payment_process
-    - action: utter_payment_process
     - action: utter_greet2
 - story: ask entry grade
   steps:
