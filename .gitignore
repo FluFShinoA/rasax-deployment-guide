@@ -50,7 +50,6 @@ tmp_training_data.json
 .DS_Store
 models/
 .mypy_cache/
-*.tar.gz
 secrets.tar
 .pytest_cache
 test_download.zip
